@@ -1,0 +1,123 @@
+[2025-04-19T11:51:14.940+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T11:44:48.406588+00:00 [queued]>
+[2025-04-19T11:51:14.960+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T11:44:48.406588+00:00 [queued]>
+[2025-04-19T11:51:14.961+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-19T11:51:14.994+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_students> on 2025-04-19 11:44:48.406588+00:00
+[2025-04-19T11:51:15.009+0000] {standard_task_runner.py:60} INFO - Started process 595 to run task
+[2025-04-19T11:51:15.020+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'ingest_students', 'manual__2025-04-19T11:44:48.406588+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmpz1t4ahpg']
+[2025-04-19T11:51:15.032+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask ingest_students
+[2025-04-19T11:51:15.204+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T11:44:48.406588+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T11:51:15.392+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='ingest_students' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T11:44:48.406588+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T11:44:48.406588+00:00'
+[2025-04-19T11:51:15.412+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9921269c-1d14-11f0-a1fd-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T11:51:16.141+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '739e111f-b01e-003f-7021-b15a43000000'
+    'x-ms-client-request-id': '9921269c-1d14-11f0-a1fd-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 11:51:14 GMT'
+[2025-04-19T11:51:16.153+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '999228b0-1d14-11f0-a1fd-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T11:51:16.303+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '739e1156-b01e-003f-2321-b15a43000000'
+    'x-ms-client-request-id': '999228b0-1d14-11f0-a1fd-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 11:51:14 GMT'
+[2025-04-19T11:51:16.331+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '99ad511c-1d14-11f0-a1fd-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T11:51:16.810+0000] {_universal.py:550} INFO - Response status: 206
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '739e1187-b01e-003f-5121-b15a43000000'
+    'x-ms-client-request-id': '99ad511c-1d14-11f0-a1fd-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 11:51:14 GMT'
+[2025-04-19T11:51:16.921+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.13, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-04-19T11:51:16.926+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-04-19T11:51:17.594+0000] {cursor.py:1028} INFO - query: [CREATE TABLE IF NOT EXISTS EDU_DB.BRONZE.raw_students ("Student ID" TEXT, "First...]
+[2025-04-19T11:51:17.725+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T11:51:17.744+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_bronze_dag.py", line 68, in load_csv_to_snowflake
+    cursor.execute(f"""
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/cursor.py", line 1132, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000008 (0A000): 01bbcae7-0106-2826-0000-0003d59a911d: Actual statement count 2 did not match the desired statement count 1.
+[2025-04-19T11:51:17.764+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=ingest_bronze_csv_to_snowflake, task_id=ingest_students, execution_date=20250419T114448, start_date=20250419T115114, end_date=20250419T115117
+[2025-04-19T11:51:17.799+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 14 for task ingest_students (000008 (0A000): 01bbcae7-0106-2826-0000-0003d59a911d: Actual statement count 2 did not match the desired statement count 1.; 595)
+[2025-04-19T11:51:17.826+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-04-19T11:51:17.895+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

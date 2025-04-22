@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: BRONZE
+    database: EDU_DB
+    schema: BRONZE
+    tables:
+      - name: RAW_STUDENTS
+      - name: RAW_COURSES
+      - name: RAW_ENROLLMENTS
+      - name: RAW_CONTACTS
+      - name: RAW_INTERACTIONS
+      - name: RAW_LEADS
+
+
+
+

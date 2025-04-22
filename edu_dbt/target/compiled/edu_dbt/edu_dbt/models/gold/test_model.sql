@@ -1,0 +1,1 @@
+select 'hello gold' as test_column

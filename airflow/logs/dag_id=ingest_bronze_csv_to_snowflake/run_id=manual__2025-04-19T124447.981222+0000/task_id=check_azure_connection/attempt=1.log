@@ -1,0 +1,72 @@
+[2025-04-19T12:44:50.880+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T12:44:47.981222+00:00 [queued]>
+[2025-04-19T12:44:50.895+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T12:44:47.981222+00:00 [queued]>
+[2025-04-19T12:44:50.897+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-19T12:44:50.919+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_azure_connection> on 2025-04-19 12:44:47.981222+00:00
+[2025-04-19T12:44:50.933+0000] {standard_task_runner.py:60} INFO - Started process 1441 to run task
+[2025-04-19T12:44:50.950+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'check_azure_connection', 'manual__2025-04-19T12:44:47.981222+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmp_sxjvbmi']
+[2025-04-19T12:44:50.964+0000] {standard_task_runner.py:88} INFO - Job 42: Subtask check_azure_connection
+[2025-04-19T12:44:51.071+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T12:44:47.981222+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T12:44:51.264+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='check_azure_connection' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T12:44:47.981222+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T12:44:47.981222+00:00'
+[2025-04-19T12:44:51.317+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '15f51f6e-1d1c-11f0-825a-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:44:51.926+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '91e84008-501e-0027-3828-b18524000000'
+    'x-ms-client-request-id': '15f51f6e-1d1c-11f0-825a-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:44:51 GMT'
+[2025-04-19T12:44:51.931+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '16530872-1d1c-11f0-825a-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:44:52.066+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '91e840a2-501e-0027-4628-b18524000000'
+    'x-ms-client-request-id': '16530872-1d1c-11f0-825a-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:44:51 GMT'
+[2025-04-19T12:44:52.069+0000] {logging_mixin.py:188} INFO - ✅ Connexion Azure OK — fichier lisible.
+[2025-04-19T12:44:52.071+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-04-19T12:44:52.091+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ingest_bronze_csv_to_snowflake, task_id=check_azure_connection, execution_date=20250419T124447, start_date=20250419T124450, end_date=20250419T124452
+[2025-04-19T12:44:52.143+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-04-19T12:44:52.225+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

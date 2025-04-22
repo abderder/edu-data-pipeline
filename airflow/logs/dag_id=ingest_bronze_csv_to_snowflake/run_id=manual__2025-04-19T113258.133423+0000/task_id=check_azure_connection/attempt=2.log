@@ -1,0 +1,102 @@
+[2025-04-19T11:36:48.374+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T11:32:58.133423+00:00 [queued]>
+[2025-04-19T11:36:48.396+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T11:32:58.133423+00:00 [queued]>
+[2025-04-19T11:36:48.399+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-04-19T11:36:48.429+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_azure_connection> on 2025-04-19 11:32:58.133423+00:00
+[2025-04-19T11:36:48.443+0000] {standard_task_runner.py:60} INFO - Started process 380 to run task
+[2025-04-19T11:36:48.453+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'check_azure_connection', 'manual__2025-04-19T11:32:58.133423+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmpinoz4wgk']
+[2025-04-19T11:36:48.461+0000] {standard_task_runner.py:88} INFO - Job 7: Subtask check_azure_connection
+[2025-04-19T11:36:48.580+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.check_azure_connection manual__2025-04-19T11:32:58.133423+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T11:36:48.702+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='check_azure_connection' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T11:32:58.133423+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T11:32:58.133423+00:00'
+[2025-04-19T11:36:48.725+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/erp_data/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '948b218e-1d12-11f0-8239-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T11:36:49.464+0000] {_universal.py:550} INFO - Response status: 404
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e9b188be-701e-0042-4a1f-b12b60000000'
+    'x-ms-client-request-id': '948b218e-1d12-11f0-8239-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'BlobNotFound'
+    'Date': 'Sat, 19 Apr 2025 11:36:47 GMT'
+[2025-04-19T11:36:49.479+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata?restype=REDACTED&comp=REDACTED&prefix=REDACTED&maxresults=REDACTED&sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '94fe35f2-1d12-11f0-8239-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T11:36:49.651+0000] {_universal.py:550} INFO - Response status: 403
+Response headers:
+    'Content-Length': '279'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e9b1890a-701e-0042-0c1f-b12b60000000'
+    'x-ms-client-request-id': '94fe35f2-1d12-11f0-8239-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-error-code': 'AuthorizationPermissionMismatch'
+    'Date': 'Sat, 19 Apr 2025 11:36:48 GMT'
+[2025-04-19T11:36:49.674+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_bronze_dag.py", line 40, in check_azure_connection
+    with fs.open(f"{BLOB_STORAGE_CONTAINER}/{TEST_BLOB_PATH}", mode='rb') as f:
+  File "/home/airflow/.local/lib/python3.10/site-packages/fsspec/spec.py", line 1295, in open
+    f = self._open(
+  File "/home/airflow/.local/lib/python3.10/site-packages/adlfs/spec.py", line 1745, in _open
+    return AzureBlobFile(
+  File "/home/airflow/.local/lib/python3.10/site-packages/adlfs/spec.py", line 1871, in __init__
+    if not hasattr(self, "details"):
+  File "/home/airflow/.local/lib/python3.10/site-packages/fsspec/spec.py", line 1664, in details
+    self._details = self.fs.info(self.path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/fsspec/asyn.py", line 103, in sync
+    raise return_result
+  File "/home/airflow/.local/lib/python3.10/site-packages/fsspec/asyn.py", line 56, in _runner
+    result[0] = await coro
+  File "/home/airflow/.local/lib/python3.10/site-packages/adlfs/spec.py", line 615, in _info
+    if await self._dir_exists(container, path):
+  File "/home/airflow/.local/lib/python3.10/site-packages/adlfs/spec.py", line 1344, in _dir_exists
+    async for blob in container_client.list_blobs(
+  File "/home/airflow/.local/lib/python3.10/site-packages/azure/core/async_paging.py", line 142, in __anext__
+    return await self.__anext__()
+  File "/home/airflow/.local/lib/python3.10/site-packages/azure/core/async_paging.py", line 145, in __anext__
+    self._page = await self._page_iterator.__anext__()
+  File "/home/airflow/.local/lib/python3.10/site-packages/azure/core/async_paging.py", line 94, in __anext__
+    self._response = await self._get_next(self.continuation_token)
+  File "/home/airflow/.local/lib/python3.10/site-packages/azure/storage/blob/aio/_list_blobs_helper.py", line 90, in _get_next_cb
+    process_storage_error(error)
+  File "/home/airflow/.local/lib/python3.10/site-packages/azure/storage/blob/_shared/response_handlers.py", line 184, in process_storage_error
+    exec("raise error from None")   # pylint: disable=exec-used # nosec
+  File "<string>", line 1, in <module>
+azure.core.exceptions.HttpResponseError: This request is not authorized to perform this operation using this permission.
+RequestId:e9b1890a-701e-0042-0c1f-b12b60000000
+Time:2025-04-19T11:36:48.1454474Z
+ErrorCode:AuthorizationPermissionMismatch
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:e9b1890a-701e-0042-0c1f-b12b60000000
+Time:2025-04-19T11:36:48.1454474Z</Message></Error>
+[2025-04-19T11:36:49.710+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=ingest_bronze_csv_to_snowflake, task_id=check_azure_connection, execution_date=20250419T113258, start_date=20250419T113648, end_date=20250419T113649
+[2025-04-19T11:36:49.732+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 7 for task check_azure_connection (This request is not authorized to perform this operation using this permission.
+RequestId:e9b1890a-701e-0042-0c1f-b12b60000000
+Time:2025-04-19T11:36:48.1454474Z
+ErrorCode:AuthorizationPermissionMismatch
+Content: <?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:e9b1890a-701e-0042-0c1f-b12b60000000
+Time:2025-04-19T11:36:48.1454474Z</Message></Error>; 380)
+[2025-04-19T11:36:49.778+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-04-19T11:36:49.812+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

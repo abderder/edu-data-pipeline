@@ -1,0 +1,28 @@
+[2025-04-20T23:10:55.863+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.run_dbt manual__2025-04-20T23:10:36.152699+00:00 [queued]>
+[2025-04-20T23:10:55.894+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.run_dbt manual__2025-04-20T23:10:36.152699+00:00 [queued]>
+[2025-04-20T23:10:55.904+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-20T23:10:55.955+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_dbt> on 2025-04-20 23:10:36.152699+00:00
+[2025-04-20T23:10:55.974+0000] {standard_task_runner.py:60} INFO - Started process 203 to run task
+[2025-04-20T23:10:55.982+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'run_dbt', 'manual__2025-04-20T23:10:36.152699+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmpk4db62j8']
+[2025-04-20T23:10:55.989+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask run_dbt
+[2025-04-20T23:10:56.082+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.run_dbt manual__2025-04-20T23:10:36.152699+00:00 [running]> on host 53923833aaf4
+[2025-04-20T23:10:56.251+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='run_dbt' AIRFLOW_CTX_EXECUTION_DATE='2025-04-20T23:10:36.152699+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-20T23:10:36.152699+00:00'
+[2025-04-20T23:10:56.265+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-04-20T23:10:56.270+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd .. && dbt run --full-refresh']
+[2025-04-20T23:10:56.322+0000] {subprocess.py:86} INFO - Output:
+[2025-04-20T23:11:00.399+0000] {subprocess.py:93} INFO - Usage: dbt run [OPTIONS]
+[2025-04-20T23:11:00.400+0000] {subprocess.py:93} INFO - Try 'dbt run -h' for help.
+[2025-04-20T23:11:00.401+0000] {subprocess.py:93} INFO - 
+[2025-04-20T23:11:00.403+0000] {subprocess.py:93} INFO - Error: Invalid value for '--profiles-dir': Path '/home/***/.dbt' does not exist.
+[2025-04-20T23:11:00.846+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-04-20T23:11:00.871+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-04-20T23:11:00.878+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=ingest_bronze_csv_to_snowflake, task_id=run_dbt, execution_date=20250420T231036, start_date=20250420T231055, end_date=20250420T231100
+[2025-04-20T23:11:00.910+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 12 for task run_dbt (Bash command failed. The command returned a non-zero exit code 2.; 203)
+[2025-04-20T23:11:00.946+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-04-20T23:11:00.972+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

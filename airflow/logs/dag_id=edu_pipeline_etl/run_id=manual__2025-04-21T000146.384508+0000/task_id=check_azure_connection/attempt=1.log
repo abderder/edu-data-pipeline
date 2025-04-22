@@ -1,0 +1,72 @@
+[2025-04-21T00:01:51.161+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: edu_pipeline_etl.check_azure_connection manual__2025-04-21T00:01:46.384508+00:00 [queued]>
+[2025-04-21T00:01:51.173+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: edu_pipeline_etl.check_azure_connection manual__2025-04-21T00:01:46.384508+00:00 [queued]>
+[2025-04-21T00:01:51.174+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-21T00:01:51.188+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): check_azure_connection> on 2025-04-21 00:01:46.384508+00:00
+[2025-04-21T00:01:51.194+0000] {standard_task_runner.py:60} INFO - Started process 134 to run task
+[2025-04-21T00:01:51.199+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'edu_pipeline_etl', 'check_azure_connection', 'manual__2025-04-21T00:01:46.384508+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/edu_pipeline_etl.py', '--cfg-path', '/tmp/tmp1l2lv0ct']
+[2025-04-21T00:01:51.202+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask check_azure_connection
+[2025-04-21T00:01:51.268+0000] {task_command.py:423} INFO - Running <TaskInstance: edu_pipeline_etl.check_azure_connection manual__2025-04-21T00:01:46.384508+00:00 [running]> on host 5edb91fd105d
+[2025-04-21T00:01:51.358+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='edu_pipeline_etl' AIRFLOW_CTX_TASK_ID='check_azure_connection' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T00:01:46.384508+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T00:01:46.384508+00:00'
+[2025-04-21T00:01:51.372+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&spr=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd3cf857e-1e43-11f0-b316-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.9.18 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-21T00:01:51.928+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aea99727-e01e-0040-5c50-b295d8000000'
+    'x-ms-client-request-id': 'd3cf857e-1e43-11f0-b316-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Mon, 21 Apr 2025 00:01:51 GMT'
+[2025-04-21T00:01:51.946+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&spr=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd426e24c-1e43-11f0-b316-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.9.18 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-21T00:01:52.074+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aea997b5-e01e-0040-4b50-b295d8000000'
+    'x-ms-client-request-id': 'd426e24c-1e43-11f0-b316-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Mon, 21 Apr 2025 00:01:51 GMT'
+[2025-04-21T00:01:52.079+0000] {logging_mixin.py:188} INFO - ✅ Connexion Azure OK — fichier lisible.
+[2025-04-21T00:01:52.081+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-04-21T00:01:52.105+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=edu_pipeline_etl, task_id=check_azure_connection, execution_date=20250421T000146, start_date=20250421T000151, end_date=20250421T000152
+[2025-04-21T00:01:52.138+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-04-21T00:01:52.178+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

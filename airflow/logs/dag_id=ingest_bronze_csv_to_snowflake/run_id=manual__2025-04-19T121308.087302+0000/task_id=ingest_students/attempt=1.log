@@ -1,0 +1,1310 @@
+[2025-04-19T12:13:15.666+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:13:08.087302+00:00 [queued]>
+[2025-04-19T12:13:15.704+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:13:08.087302+00:00 [queued]>
+[2025-04-19T12:13:15.707+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-19T12:13:15.763+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_students> on 2025-04-19 12:13:08.087302+00:00
+[2025-04-19T12:13:15.793+0000] {standard_task_runner.py:60} INFO - Started process 950 to run task
+[2025-04-19T12:13:15.810+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'ingest_students', 'manual__2025-04-19T12:13:08.087302+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmp9gg7ud78']
+[2025-04-19T12:13:15.816+0000] {standard_task_runner.py:88} INFO - Job 29: Subtask ingest_students
+[2025-04-19T12:13:15.977+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:13:08.087302+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T12:13:16.170+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='ingest_students' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T12:13:08.087302+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T12:13:08.087302+00:00'
+[2025-04-19T12:13:16.201+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'ac617b5a-1d17-11f0-99b2-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:13:16.876+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'f32e2fd9-501e-0018-4324-b14d87000000'
+    'x-ms-client-request-id': 'ac617b5a-1d17-11f0-99b2-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:13:14 GMT'
+[2025-04-19T12:13:16.887+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'acca2cd6-1d17-11f0-99b2-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:13:17.011+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'f32e3016-501e-0018-7624-b14d87000000'
+    'x-ms-client-request-id': 'acca2cd6-1d17-11f0-99b2-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:13:15 GMT'
+[2025-04-19T12:13:17.027+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'acdf778a-1d17-11f0-99b2-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:13:17.269+0000] {_universal.py:550} INFO - Response status: 206
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'f32e306c-501e-0018-4724-b14d87000000'
+    'x-ms-client-request-id': 'acdf778a-1d17-11f0-99b2-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:13:15 GMT'
+[2025-04-19T12:13:17.380+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.13, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-04-19T12:13:17.387+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-04-19T12:13:18.008+0000] {cursor.py:1028} INFO - query: [CREATE TABLE IF NOT EXISTS EDU_DB.BRONZE.raw_students ("Student ID" TEXT, "First...]
+[2025-04-19T12:13:18.189+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:18.193+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:13:18.196+0000] {cursor.py:1028} INFO - query: [TRUNCATE TABLE EDU_DB.BRONZE.raw_students;]
+[2025-04-19T12:13:18.528+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:18.530+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:13:18.536+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('46685257-bdd6-40fb-8667-1ad11c80...]
+[2025-04-19T12:13:20.305+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:20.309+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8fadc1a6-06cb-4fb3-9a1d-e644815e...]
+[2025-04-19T12:13:20.873+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:20.875+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b2b9437a-28df-4ec4-8e4a-2bbdc241...]
+[2025-04-19T12:13:21.545+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:21.550+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('43b7a3a6-9a8d-4a03-980d-7b71d8f5...]
+[2025-04-19T12:13:22.092+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:22.097+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0bbb2599-11ce-4dd2-b45e-d1f03139...]
+[2025-04-19T12:13:22.729+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:22.732+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ab9099a4-35a2-40ae-9af3-05535ec4...]
+[2025-04-19T12:13:23.077+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:23.080+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('af42e12f-3838-4326-8e94-4239b02b...]
+[2025-04-19T12:13:23.705+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:23.708+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('366eb16f-508e-4ad7-b7c9-3acfe059...]
+[2025-04-19T12:13:24.130+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.133+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf3c4c06-4343-48bc-89fa-6a688fb5...]
+[2025-04-19T12:13:24.562+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.564+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1c11f735-dc71-4d96-8c0f-d195c17a...]
+[2025-04-19T12:13:24.992+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.995+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dc5c0eed-8da0-465b-b898-97b9405c...]
+[2025-04-19T12:13:24.583+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.588+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e037e5ed-b8db-4672-b42d-47cc00d4...]
+[2025-04-19T12:13:24.245+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.248+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1ca35cfb-04fc-4d82-bd15-438552fb...]
+[2025-04-19T12:13:24.784+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:24.789+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('20de435d-2031-4750-840d-b9b4885f...]
+[2025-04-19T12:13:25.318+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:25.321+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('abf3ad39-fec2-4bbe-a624-5bfa4fcc...]
+[2025-04-19T12:13:25.751+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:25.753+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ae8cc93-8dcd-4d03-969b-66620562...]
+[2025-04-19T12:13:26.075+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:26.080+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8a0b3c33-36d8-493a-bc44-1fe7ab42...]
+[2025-04-19T12:13:26.396+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:26.399+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6e595ed3-a8b3-47fa-98d0-752b1825...]
+[2025-04-19T12:13:26.937+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:26.945+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ccf3a171-56dc-4907-ba6c-34ab6712...]
+[2025-04-19T12:13:27.364+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:27.367+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8ce21ea3-db20-456e-9c81-5fe7ceda...]
+[2025-04-19T12:13:27.797+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:27.803+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f02bad0-e706-4ef4-a6aa-9385dd59...]
+[2025-04-19T12:13:28.290+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:28.293+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c88a618e-fed4-457d-bb02-6576f512...]
+[2025-04-19T12:13:28.657+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:28.660+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('958ca9ba-0cd6-40c2-8ea2-622b5048...]
+[2025-04-19T12:13:29.195+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:29.199+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('91d63f78-e3e9-4e99-b10c-718b1eb0...]
+[2025-04-19T12:13:29.650+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:29.654+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('43ff5011-3d1a-45dd-906e-5a9ab758...]
+[2025-04-19T12:13:30.057+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:30.061+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('902059e4-ff9a-45c2-9f04-4aed7552...]
+[2025-04-19T12:13:30.489+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:30.493+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fbddcf7c-9c96-49ec-8d71-c366b41b...]
+[2025-04-19T12:13:30.918+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:30.921+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('48212ddb-45b8-4cd9-a7cb-6f2a8da0...]
+[2025-04-19T12:13:31.297+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:31.301+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c56811cd-5563-4616-80e8-5ece0b49...]
+[2025-04-19T12:13:31.638+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:31.642+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b0e6a969-e213-42b0-b1ee-dba31343...]
+[2025-04-19T12:13:31.997+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:32.001+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cbceabde-eede-4b07-a623-a6895d59...]
+[2025-04-19T12:13:32.536+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:32.540+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ccc56569-f9e8-4369-a999-b735dd56...]
+[2025-04-19T12:13:33.077+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:33.082+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1bac27a7-b386-47a4-8991-603f28c1...]
+[2025-04-19T12:13:33.508+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:33.513+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6601ddd0-3170-4437-a8f7-ef5a060e...]
+[2025-04-19T12:13:33.856+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:33.858+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('42deffcc-f86c-4ca2-a085-96db1d87...]
+[2025-04-19T12:13:34.262+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:34.268+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1d9af659-82ec-4f2d-bbf6-e16f9b30...]
+[2025-04-19T12:13:34.620+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:34.623+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('afd5dea5-89d7-4d6c-8e77-7f00ecf2...]
+[2025-04-19T12:13:35.014+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:35.017+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4f2d4796-81d2-47de-8ce1-eb90e669...]
+[2025-04-19T12:13:35.452+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:35.454+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf85bf0e-ad64-456c-a10f-aa3ff0bb...]
+[2025-04-19T12:13:35.986+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:35.994+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9479e1e6-c927-4d9b-ae0d-264835ce...]
+[2025-04-19T12:13:36.848+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:36.855+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f5b78cc7-e6b3-4944-8b32-3e357922...]
+[2025-04-19T12:13:37.171+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:37.173+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0640be0f-25b8-4d4b-b2fa-2de8ce7a...]
+[2025-04-19T12:13:37.494+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:37.497+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b00805cc-a7f3-4ae9-a5c7-3c443e75...]
+[2025-04-19T12:13:37.927+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:37.931+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('eadf5085-3fcb-4546-8eb2-25790cdb...]
+[2025-04-19T12:13:38.359+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:38.362+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('81392443-e45b-412e-b822-5688d0a4...]
+[2025-04-19T12:13:38.748+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:38.751+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('13d5f2f7-709b-4d97-864c-04af3d3f...]
+[2025-04-19T12:13:39.090+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:39.093+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('271e3ee2-b1a6-41f1-a20e-99d33b33...]
+[2025-04-19T12:13:39.869+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:39.873+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6b8e869f-d538-4b0e-b4f3-193c0ff0...]
+[2025-04-19T12:13:40.213+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:40.218+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8bcf53a1-bc10-4a52-bf5d-2fdf89c8...]
+[2025-04-19T12:13:41.596+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:41.599+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('addc3e13-ab3b-4d37-960c-95ee638c...]
+[2025-04-19T12:13:41.978+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:41.980+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('06f028ff-a9ba-4a27-907b-fe369786...]
+[2025-04-19T12:13:42.356+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:42.360+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c2dff335-5666-4f9f-93ac-2ab97467...]
+[2025-04-19T12:13:42.820+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:42.823+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c7fee39f-1190-4938-a66f-d7f73966...]
+[2025-04-19T12:13:43.199+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:43.204+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b31022f0-770c-4798-b7cc-863bf2a0...]
+[2025-04-19T12:13:43.566+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:43.571+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f54ad0a2-e874-46d7-ad66-a1bd9367...]
+[2025-04-19T12:13:43.950+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:43.953+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8861fe18-58e2-4888-8a83-81bec85a...]
+[2025-04-19T12:13:44.282+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:44.285+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bbda0242-2d17-4fc9-af7c-15ea272a...]
+[2025-04-19T12:13:44.697+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:44.701+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ef43613c-d4aa-49a3-bed8-c56cda09...]
+[2025-04-19T12:13:45.283+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:45.285+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7cd0129d-2e8d-4e87-9334-20e6d9d8...]
+[2025-04-19T12:13:46.041+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:46.047+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3dc98290-15ea-4b27-b0e9-12f2f2b4...]
+[2025-04-19T12:13:46.604+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:46.607+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b118f68d-6786-4506-b8ba-8abc4b53...]
+[2025-04-19T12:13:46.998+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:47.001+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('54aebd1b-8ce6-424d-bef5-9fe6ff23...]
+[2025-04-19T12:13:47.432+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:47.435+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f36cb62b-892e-4161-be2d-740a1e9b...]
+[2025-04-19T12:13:48.079+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:48.081+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3a3c563e-4bd6-4ee6-b1b1-b099d527...]
+[2025-04-19T12:13:48.511+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:48.515+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1a432f0a-7daa-49f0-80b6-fce2de53...]
+[2025-04-19T12:13:48.952+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:48.956+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7a4c75d4-dc99-404c-b0e9-8b3b40a2...]
+[2025-04-19T12:13:50.037+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:50.040+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f2f9e5fa-9016-4161-8fa7-01cd2631...]
+[2025-04-19T12:13:50.452+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:50.454+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fd72b050-96a9-454f-9c33-e1f94c1f...]
+[2025-04-19T12:13:50.992+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:50.996+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2812859a-1337-439e-8d4f-5d272c7f...]
+[2025-04-19T12:13:51.472+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:51.480+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('aff8754d-1238-4630-b43b-65a2dc0f...]
+[2025-04-19T12:13:52.213+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:52.215+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4ebfa5c3-cae9-44a7-aa79-ea680f44...]
+[2025-04-19T12:13:52.554+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:52.559+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('801ef1da-45b1-4d25-b153-3ae8670a...]
+[2025-04-19T12:13:52.975+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:52.978+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ac9ed156-f63f-4e41-ba9a-ca5e1761...]
+[2025-04-19T12:13:53.365+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:53.371+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6f962882-95d8-4980-bf37-d19c2e76...]
+[2025-04-19T12:13:53.775+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:53.781+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7ed70ed7-b194-490b-a961-929e546e...]
+[2025-04-19T12:13:52.662+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:52.666+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fcf56188-d32e-4dcd-83bc-9478dd6a...]
+[2025-04-19T12:13:52.999+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:53.005+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a01ac992-7f9d-4e64-81a6-423b9f64...]
+[2025-04-19T12:13:53.466+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:53.469+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9bdf0377-a149-43c2-b920-264c0763...]
+[2025-04-19T12:13:54.005+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:54.008+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1d0bc9bd-e9b5-45cf-9766-5cdafe04...]
+[2025-04-19T12:13:54.573+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:54.577+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('25074181-8d1f-4540-b4ef-f5453e65...]
+[2025-04-19T12:13:54.977+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:54.979+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d664d264-4c6e-47ff-b9de-7a3a4868...]
+[2025-04-19T12:13:55.520+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:55.523+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8b1e3b9d-c34b-4fbb-8d4a-75b8551a...]
+[2025-04-19T12:13:56.092+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:56.097+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cfb87e6f-e9d6-4f23-b489-d0707914...]
+[2025-04-19T12:13:56.466+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:56.469+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('03edd1f8-74f9-4d17-a912-b4bf86a4...]
+[2025-04-19T12:13:56.830+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:56.833+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('da330aa1-541c-4fcd-9a0d-4a5f148f...]
+[2025-04-19T12:13:57.306+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:57.311+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4991ab9b-ebc2-426f-af34-cf65a193...]
+[2025-04-19T12:13:57.784+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:57.788+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e746ccb9-4ca9-4f07-b1aa-0f6a2a96...]
+[2025-04-19T12:13:58.362+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:58.365+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('deef580f-9c07-4751-9437-45092cd1...]
+[2025-04-19T12:13:58.836+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:58.839+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cdfc6ee0-e61e-4e90-8267-deb3aab6...]
+[2025-04-19T12:13:59.310+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:59.313+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4d57d880-d865-469a-b4f3-31034006...]
+[2025-04-19T12:13:59.722+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:13:59.725+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d47d577b-fa5a-41ca-859d-d55d4b94...]
+[2025-04-19T12:14:00.180+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:00.183+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a2f963a3-3810-4e66-9a31-b4cccd4b...]
+[2025-04-19T12:14:00.694+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:00.697+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1712fb16-21a4-444f-bb7b-ee035d67...]
+[2025-04-19T12:14:01.230+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:01.235+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f1b64afe-d31e-4f1a-a9ff-1cae41c8...]
+[2025-04-19T12:14:01.777+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:01.782+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6502d6a2-ca6a-4224-971e-16cc5da3...]
+[2025-04-19T12:14:02.212+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:02.215+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('acc216a0-1bbc-41f7-9f18-e583f0b6...]
+[2025-04-19T12:14:02.557+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:02.561+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1dde7969-6886-43db-a634-8e784d5c...]
+[2025-04-19T12:14:03.192+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:03.307+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5efa9c5b-7421-4f46-a37e-4b0122ba...]
+[2025-04-19T12:14:03.671+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:03.675+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f396ea37-f065-4817-a87a-48509d9b...]
+[2025-04-19T12:14:03.985+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:03.991+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5e09a9ee-af88-4dec-bb1e-143b196f...]
+[2025-04-19T12:14:04.335+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:04.340+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0577aea9-f899-4246-98de-8ebba3b5...]
+[2025-04-19T12:14:04.787+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:04.790+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('00b9d4a3-9892-40ac-a689-33a9c9e4...]
+[2025-04-19T12:14:05.102+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:05.110+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c9d6a63b-ca3c-4f5f-9bb5-c40c03cd...]
+[2025-04-19T12:14:05.549+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:05.555+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c72c1fe3-72c2-4a16-b9eb-41681045...]
+[2025-04-19T12:14:06.078+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:06.088+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f9240e1-07f9-4d05-b6ca-6b8ba4b1...]
+[2025-04-19T12:14:06.519+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:06.527+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a21150f9-9fd3-4579-8667-72ce204e...]
+[2025-04-19T12:14:06.909+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:06.913+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('da509fed-1d4a-4d81-b3a7-d0e0cb08...]
+[2025-04-19T12:14:07.460+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:07.463+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('50032b35-1857-4baf-bac7-e2b96a7e...]
+[2025-04-19T12:14:07.836+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:07.840+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('be9d61ee-18b8-4245-ae8f-75a117dd...]
+[2025-04-19T12:14:08.242+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:08.248+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('99b479d4-49a2-44ae-b7e8-f8e50d2b...]
+[2025-04-19T12:14:08.733+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:08.736+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('39e58ff0-92f8-47d4-8750-3f1dc33a...]
+[2025-04-19T12:14:09.163+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:09.166+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('90fa6b57-24ac-4130-9eaf-528d2e70...]
+[2025-04-19T12:14:09.645+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:09.649+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('530ac1c7-b8ba-4368-8fc7-77685ebb...]
+[2025-04-19T12:14:10.183+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:10.188+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9b69554d-7c54-435f-ac8c-3b6aa974...]
+[2025-04-19T12:14:10.562+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:10.565+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3873e57f-0ba0-48e8-8ef4-92c1aac9...]
+[2025-04-19T12:14:10.890+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:10.892+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6e3f683a-bf3c-4140-bf54-a51101fa...]
+[2025-04-19T12:14:11.439+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:11.442+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6de59332-9364-43d0-9024-bdc6dcb3...]
+[2025-04-19T12:14:11.939+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:11.944+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('75c8e90d-9e3d-450d-b296-d9f0cd23...]
+[2025-04-19T12:14:12.326+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:12.330+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4f6e274b-deda-4027-a550-f74a1422...]
+[2025-04-19T12:14:12.773+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:12.776+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c6b6e4ad-e7ea-4d5a-b1a3-ac4d828c...]
+[2025-04-19T12:14:13.333+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:13.336+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a7cf705c-c257-4f73-829d-782b2722...]
+[2025-04-19T12:14:13.737+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:13.740+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a49b1cd9-9082-489b-a1cd-e87fec95...]
+[2025-04-19T12:14:14.108+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:14.110+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('46510367-cbdc-4318-8d85-a3d2a1a2...]
+[2025-04-19T12:14:14.491+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:14.494+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('171dabf9-daf4-41a7-ba34-d2e8dd3f...]
+[2025-04-19T12:14:15.039+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:15.042+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a6ded1d8-9258-47b7-8f50-1889e8b7...]
+[2025-04-19T12:14:15.714+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:15.718+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('812a1f9b-1596-4802-b6dd-6257fb7d...]
+[2025-04-19T12:14:16.155+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:16.160+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('990f0c5b-adcc-4daf-969f-3ab3c643...]
+[2025-04-19T12:14:16.569+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:16.573+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a8149562-da00-4f16-b946-9bcf4082...]
+[2025-04-19T12:14:17.239+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:17.243+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('caaa5bbe-a4bb-4962-a06e-0e1c8f15...]
+[2025-04-19T12:14:17.641+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:17.645+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7c7c404e-c422-403e-b29a-6339577b...]
+[2025-04-19T12:14:18.035+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:18.037+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9e374f7a-c42c-4c39-a05b-46c55636...]
+[2025-04-19T12:14:18.481+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:18.484+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f836f571-3cce-476c-b836-c448ad26...]
+[2025-04-19T12:14:18.922+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:18.926+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5e2ad32d-31ab-4b56-95c9-fdc7e76a...]
+[2025-04-19T12:14:19.322+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:19.325+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('331f63fb-d11f-48c0-a97c-a4fff75d...]
+[2025-04-19T12:14:19.769+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:19.773+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d88c656d-b61e-4fdb-9a43-5206ef2d...]
+[2025-04-19T12:14:20.426+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:20.431+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0da23e5c-6a36-4f18-86d3-db93ee33...]
+[2025-04-19T12:14:20.824+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:20.829+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('eada79a3-4970-4d9a-89ce-3cfb2339...]
+[2025-04-19T12:14:21.455+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:21.458+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f0b2a5d1-8c7e-4f42-a646-eaf9d5c0...]
+[2025-04-19T12:14:21.942+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:21.945+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6b79afcc-3d0a-4f0c-8c39-4ec71f31...]
+[2025-04-19T12:14:21.555+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:21.558+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0066853d-6de2-49a1-8a90-cd0c24c1...]
+[2025-04-19T12:14:21.173+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:21.177+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f4124360-1153-4e99-9c50-8720f982...]
+[2025-04-19T12:14:21.603+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:21.605+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('114b9547-c9dc-42b8-9b6a-81020428...]
+[2025-04-19T12:14:22.036+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:22.039+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7a8104de-b205-47bb-bb16-f75776f1...]
+[2025-04-19T12:14:22.359+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:22.362+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d0be73ee-fd37-4539-a5f2-02f983f0...]
+[2025-04-19T12:14:22.714+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:22.717+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e3b56360-6fdc-4bad-9e36-8127cca1...]
+[2025-04-19T12:14:23.118+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:23.120+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ba220065-1526-4718-8d18-0a824447...]
+[2025-04-19T12:14:23.497+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:23.500+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6d15f16f-b7b8-41a5-9a45-693d7227...]
+[2025-04-19T12:14:23.876+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:23.879+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a3b442bd-4649-4296-af58-42c3ff86...]
+[2025-04-19T12:14:24.251+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:24.260+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('08e895d7-702c-4821-8804-0fb7ad97...]
+[2025-04-19T12:14:24.648+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:24.651+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5f3c44dc-5ef7-47b8-b2e6-195f732e...]
+[2025-04-19T12:14:25.051+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:25.056+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8fc9c86b-e9dd-4bf5-a311-9aca848a...]
+[2025-04-19T12:14:25.482+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:25.486+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('12f5131a-da52-42ee-a2bf-18f51f65...]
+[2025-04-19T12:14:25.914+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:25.918+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a3404f08-b341-41b8-ad65-22b4b5a5...]
+[2025-04-19T12:14:26.258+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:26.263+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cdbcc653-77a7-48b7-9e70-f65f9280...]
+[2025-04-19T12:14:26.887+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:26.895+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('20156a72-12e1-43a6-932c-ae01d2c6...]
+[2025-04-19T12:14:27.529+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:27.532+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8d2238e6-c7bf-4fbc-943c-dd6de0c1...]
+[2025-04-19T12:14:28.084+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:28.090+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b596ca7c-ef4a-4a88-9299-e5052976...]
+[2025-04-19T12:14:28.501+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:28.505+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8892042f-9d4b-4bf9-8d85-e9c7a001...]
+[2025-04-19T12:14:29.256+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:29.261+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('', 'Pénélope', 'Verdier', '12/10...]
+[2025-04-19T12:14:29.687+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:29.692+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3eb05181-7ba2-4588-8d56-0a3df4e7...]
+[2025-04-19T12:14:30.116+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:30.119+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('76e5ae78-7bf7-41d3-aa66-2fce7089...]
+[2025-04-19T12:14:30.547+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:30.549+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3de28859-51b1-443c-9b2e-dedb8fc8...]
+[2025-04-19T12:14:31.005+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:31.010+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9d896047-dd39-4793-a257-a4a2f204...]
+[2025-04-19T12:14:31.532+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:31.536+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7f53a88e-4efc-4248-a10b-1a477fae...]
+[2025-04-19T12:14:31.843+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:31.848+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('98f6fd7f-7eb1-42f1-8806-f8040cf0...]
+[2025-04-19T12:14:32.276+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:32.280+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5da39a73-ba3d-47ff-83b4-7ee5e1e8...]
+[2025-04-19T12:14:32.816+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:32.821+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8cc36f3b-c3af-4cfe-b34a-6ca38116...]
+[2025-04-19T12:14:33.247+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:33.252+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8255da61-9a3b-4319-b2f5-751024ee...]
+[2025-04-19T12:14:33.610+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:33.613+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('23c8afdb-83f8-4f16-a4a4-474c9b33...]
+[2025-04-19T12:14:34.106+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:34.110+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7d66971e-8847-4c56-827c-9f8cd40a...]
+[2025-04-19T12:14:34.538+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:34.542+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e61599c8-cbf8-4f86-8ec3-f970956d...]
+[2025-04-19T12:14:34.968+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:34.971+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9ea7017c-b89f-4039-a107-cc468634...]
+[2025-04-19T12:14:35.512+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:35.519+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b0c4a01c-69b7-40fa-a6c4-32f66b35...]
+[2025-04-19T12:14:35.940+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:35.944+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a987b218-ff84-4aef-9336-723b8f96...]
+[2025-04-19T12:14:36.373+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:36.377+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('de1e994a-c5a1-4f5c-ad05-b9125ab2...]
+[2025-04-19T12:14:36.803+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:36.807+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f910abb3-f105-4252-b990-e2c94c6a...]
+[2025-04-19T12:14:37.343+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:37.346+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8b0e8eb1-ad37-4d9e-92cf-60211f33...]
+[2025-04-19T12:14:37.773+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:37.776+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d3f4a49b-33ba-4a88-b6c7-d6fa7aa4...]
+[2025-04-19T12:14:38.206+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:38.213+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('87f255d6-e7ba-46ac-ab7a-3d1c0cfe...]
+[2025-04-19T12:14:38.640+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:38.646+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('edd97a1a-fa58-4b27-8ce3-e7c3f6ea...]
+[2025-04-19T12:14:39.072+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:39.077+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e86e8e63-0f25-477d-a559-90e74910...]
+[2025-04-19T12:14:39.609+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:39.615+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4a1a81f5-ed10-4004-9f4e-713ef64e...]
+[2025-04-19T12:14:40.083+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:40.085+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('54a7b69b-1cd6-4b09-8f0e-6d2b315c...]
+[2025-04-19T12:14:40.472+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:40.474+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('317304b5-c1dd-484a-aca5-8d95915a...]
+[2025-04-19T12:14:41.020+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:41.022+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fb4fb88a-2f4d-4219-986b-2880ab54...]
+[2025-04-19T12:14:41.551+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:41.554+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('02ed73ce-92a8-4713-b90e-d44b951c...]
+[2025-04-19T12:14:41.983+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:41.986+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e5267a2b-ec50-4ce4-80a5-2e65afa2...]
+[2025-04-19T12:14:42.418+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:42.425+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6a74dbb7-5fa5-40aa-9b11-b530fd24...]
+[2025-04-19T12:14:43.062+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:43.065+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0fcf601f-1cb9-473a-906d-5c8cead0...]
+[2025-04-19T12:14:43.602+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:43.604+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e61d9cde-1747-4387-bd23-d4799549...]
+[2025-04-19T12:14:44.008+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:44.010+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ac3a812f-765e-4cb5-8f0d-55400ec7...]
+[2025-04-19T12:14:44.324+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:44.329+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('105291d3-b34c-4c73-9833-0b306c77...]
+[2025-04-19T12:14:44.684+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:44.689+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bab2b77d-fa74-4cc8-a43a-fb7ac40d...]
+[2025-04-19T12:14:45.189+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:45.192+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8a0f9508-dfe2-40a0-a96b-3c42f6d2...]
+[2025-04-19T12:14:45.582+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:45.585+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8b60c511-b816-4aeb-ac6a-7c857687...]
+[2025-04-19T12:14:45.923+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:45.928+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9d6b9b62-6b53-4a19-a902-b73fcf39...]
+[2025-04-19T12:14:46.296+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:46.301+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('705fddf5-66fa-4ca0-8b53-1932bd94...]
+[2025-04-19T12:14:46.658+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:46.765+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fc568b53-24ac-4722-a052-77394d40...]
+[2025-04-19T12:14:47.082+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:47.085+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7ee1011a-8e4c-4ab5-ad5d-0477adc2...]
+[2025-04-19T12:14:47.488+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:47.491+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('89b5aab0-c121-49db-af12-b150605f...]
+[2025-04-19T12:14:48.136+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:48.139+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8eaa5841-6aa0-426d-b7c0-d5f769a5...]
+[2025-04-19T12:14:48.471+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:48.474+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0d31812e-30c3-4756-9453-f867b97e...]
+[2025-04-19T12:14:48.998+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:49.001+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f64ab6ec-30a5-448e-afe9-b3d03639...]
+[2025-04-19T12:14:49.359+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:49.364+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5bf86f3c-a612-4a1c-889d-4b76775c...]
+[2025-04-19T12:14:49.684+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:49.687+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('340029c3-ea11-405b-91fa-cefad6f8...]
+[2025-04-19T12:14:50.049+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:50.052+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ae28023-5472-4d2d-b239-9ffb2704...]
+[2025-04-19T12:14:50.617+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:50.620+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2b54ff7a-5a28-47b2-8b83-83f2bb96...]
+[2025-04-19T12:14:49.465+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:49.469+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('13075157-d8c1-48e7-96cd-315508a8...]
+[2025-04-19T12:14:49.840+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:49.844+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f79a8a7-5f8a-44bd-b4bd-0c938177...]
+[2025-04-19T12:14:50.381+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:50.386+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('465568b7-b8e1-4f56-8787-ea210448...]
+[2025-04-19T12:14:50.811+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:50.823+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('86c5d1d6-9ea9-4508-b122-75923db0...]
+[2025-04-19T12:14:51.467+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:51.474+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('39d1c7ff-b27e-4442-bd7f-e9733e42...]
+[2025-04-19T12:14:51.998+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:52.003+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2bdfcb41-b3ed-48f1-826b-5383a301...]
+[2025-04-19T12:14:52.431+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:52.436+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e336c243-b139-4476-9e3c-e88be6b9...]
+[2025-04-19T12:14:52.863+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:52.868+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d218c9d6-c093-4fb0-a4e9-bcfd9647...]
+[2025-04-19T12:14:53.292+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:53.297+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6243bed7-54ec-4f33-8a62-4cbde582...]
+[2025-04-19T12:14:53.830+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:53.833+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c8969c5b-45f8-428d-a255-e1bb0795...]
+[2025-04-19T12:14:54.153+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:54.158+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cc4d5819-4b9d-4d58-9e5d-9c7ac5ac...]
+[2025-04-19T12:14:54.692+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:54.695+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4eea9db8-f165-4779-8154-7950176d...]
+[2025-04-19T12:14:55.123+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:55.125+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8de1596c-5a9a-406a-96f1-42a206b9...]
+[2025-04-19T12:14:55.557+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:55.560+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e6b0da0a-b98f-4dbe-95ae-de0fc777...]
+[2025-04-19T12:14:55.986+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:55.989+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6f46f1b1-2ace-4aa9-9032-46b3255b...]
+[2025-04-19T12:14:56.420+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:56.424+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9dde0188-9803-422e-beec-e88da002...]
+[2025-04-19T12:14:56.849+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:56.853+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dc08bf29-d2d3-4488-90c3-00186e3c...]
+[2025-04-19T12:14:57.279+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:57.283+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('51b30182-f7fe-404f-a5f3-0779f6ee...]
+[2025-04-19T12:14:57.626+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:57.629+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('905881df-ee9b-43e1-9d27-c09a5d71...]
+[2025-04-19T12:14:58.036+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:58.039+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a2224f96-23a1-4e20-bfd2-55eeac48...]
+[2025-04-19T12:14:58.562+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:58.564+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ec6a37ad-81b1-4db9-88cc-4d49669b...]
+[2025-04-19T12:14:59.004+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:59.009+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('902f3465-0b57-4720-9cd8-758ba5a1...]
+[2025-04-19T12:14:59.430+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:14:59.434+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf31c29f-82bb-4d84-b8d5-101f423c...]
+[2025-04-19T12:15:00.192+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:00.196+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1ac3bf31-7b96-42d1-8649-bcf6ff69...]
+[2025-04-19T12:15:00.624+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:00.629+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('18fdd2b9-79e5-49aa-992a-35497ba1...]
+[2025-04-19T12:15:01.055+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:01.058+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1bff3142-a5e1-4b55-97d3-f4ddd963...]
+[2025-04-19T12:15:01.486+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:01.489+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a3f66c61-2fb7-4dab-af38-3b43a137...]
+[2025-04-19T12:15:01.962+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:01.967+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c0986750-4741-4b48-b4ae-4abd36fc...]
+[2025-04-19T12:15:02.564+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:02.567+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('98d3148b-503b-4078-a39c-9ec6f746...]
+[2025-04-19T12:15:03.113+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:03.117+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3d131a3d-1e2c-4e7d-902c-f0ee224a...]
+[2025-04-19T12:15:03.426+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:03.429+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('', 'Julien', 'Coulon', '11-06-20...]
+[2025-04-19T12:15:03.859+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:03.863+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('22f3f068-7c0f-449d-8274-0f73f3ab...]
+[2025-04-19T12:15:04.289+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:04.292+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2ad11fe8-7d1b-495e-b1a0-449dd703...]
+[2025-04-19T12:15:04.720+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:04.722+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7eccdaf4-c413-4dc2-85c5-ae8abe15...]
+[2025-04-19T12:15:05.586+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:05.591+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1a37f6bd-6cd6-4011-bd61-f13b37f2...]
+[2025-04-19T12:15:06.014+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:06.017+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1e0d02b5-fe74-42cd-9d83-ad037066...]
+[2025-04-19T12:15:06.447+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:06.451+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f321333-ce31-4937-b4fa-32b6d043...]
+[2025-04-19T12:15:06.877+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:06.880+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dba6fdf8-f3d0-4ffb-8470-9848929e...]
+[2025-04-19T12:15:07.317+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:07.320+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c2efeecb-3f5f-4f4f-9417-62305274...]
+[2025-04-19T12:15:07.741+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:07.744+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('135508d0-73b5-4ad5-a00b-4b356a0a...]
+[2025-04-19T12:15:08.172+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:08.175+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c62dbaea-de70-4d30-80a2-136794fb...]
+[2025-04-19T12:15:08.711+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:08.715+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('363be5cb-d329-4724-adfd-171af7d7...]
+[2025-04-19T12:15:09.161+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:09.164+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0c648ca2-c323-4466-aebb-b90ee4e7...]
+[2025-04-19T12:15:10.046+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:10.049+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6d84414d-f541-41ea-bde9-1c42002c...]
+[2025-04-19T12:15:10.438+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:10.443+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e75f745a-aa1d-4fc6-9f31-273d1519...]
+[2025-04-19T12:15:10.803+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:10.807+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7a10013f-36a2-452b-8047-3139185d...]
+[2025-04-19T12:15:11.190+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:11.193+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3a9c4308-1221-4ddf-ba4a-902f21d6...]
+[2025-04-19T12:15:11.732+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:11.734+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('11836c4f-2492-44c7-ad58-db1bfe31...]
+[2025-04-19T12:15:12.086+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:12.089+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('379d58f9-dc26-4108-b140-11a1afc2...]
+[2025-04-19T12:15:12.484+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:12.487+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8dab66d3-3f87-4fc2-9591-52f2a505...]
+[2025-04-19T12:15:12.944+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:12.947+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf72ae52-304b-4370-8270-12389b5f...]
+[2025-04-19T12:15:13.455+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:13.458+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fca45567-0316-42d6-ba4a-58efe383...]
+[2025-04-19T12:15:13.896+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:13.899+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c536c66e-fcc4-491b-b457-07c67894...]
+[2025-04-19T12:15:14.427+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:14.432+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6a59c043-c461-4234-8044-beb2b66e...]
+[2025-04-19T12:15:14.964+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:14.967+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9620bee6-6406-4ace-93a5-e8508950...]
+[2025-04-19T12:15:15.504+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:15.507+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0e165b12-9bdc-40d1-9cbf-7b8c7410...]
+[2025-04-19T12:15:16.154+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:16.159+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d28fcf68-c871-47b3-8468-b74d85e3...]
+[2025-04-19T12:15:16.691+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:16.697+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e65fad87-c57c-4498-9e38-f711e2ec...]
+[2025-04-19T12:15:17.122+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:17.126+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0e3141ec-5c31-4464-82c2-99f07487...]
+[2025-04-19T12:15:17.453+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:17.456+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3a78b64a-1d86-40cb-b908-00f3ac93...]
+[2025-04-19T12:15:17.837+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:17.840+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('db842660-f5d8-4b91-ae60-81ac2dd0...]
+[2025-04-19T12:15:18.309+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.312+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('13f06822-d374-4a11-8571-295951e7...]
+[2025-04-19T12:15:18.849+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.852+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('53c9fe59-4f89-43b2-9847-dc53c605...]
+[2025-04-19T12:15:18.549+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.565+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7e4ce29f-f8cb-4b4c-9779-0e845e47...]
+[2025-04-19T12:15:18.112+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.116+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0274ce40-e090-46b6-b186-a5a8d6ee...]
+[2025-04-19T12:15:18.544+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.547+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f8f9a45d-0f55-4896-b610-396b7df5...]
+[2025-04-19T12:15:18.976+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:18.980+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('94ad6252-15bc-4a3e-bf76-55d7f97c...]
+[2025-04-19T12:15:19.824+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:19.828+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3c9d128a-2176-4930-b6d7-0248a995...]
+[2025-04-19T12:15:20.373+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:20.376+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c7a9f33c-22d8-49d3-b3e4-f986f18c...]
+[2025-04-19T12:15:20.817+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:20.821+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c534ca08-f6f2-4d1c-9bb8-b9c88932...]
+[2025-04-19T12:15:21.343+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:21.345+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b266986c-b467-48bd-938e-13e44de1...]
+[2025-04-19T12:15:21.776+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:21.779+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ad5be3c8-0c88-4714-8372-17e06570...]
+[2025-04-19T12:15:22.210+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:22.215+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c7ecfe71-d493-47fc-8fc9-8d2e030f...]
+[2025-04-19T12:15:22.637+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:22.641+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('329fc417-1081-4d45-bf45-f8a20594...]
+[2025-04-19T12:15:23.177+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:23.181+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('61fa8e7a-078c-46ce-bf02-23bc651e...]
+[2025-04-19T12:15:23.716+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:23.719+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9d3616a1-08de-4921-a60c-b547e228...]
+[2025-04-19T12:15:24.146+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:24.150+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2321e64e-620d-4a1f-879f-66281674...]
+[2025-04-19T12:15:25.037+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:25.041+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5254aad3-809c-4839-90ce-82e8e9a5...]
+[2025-04-19T12:15:25.440+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:25.443+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ffe62994-9580-4c2a-844f-c4b85b80...]
+[2025-04-19T12:15:25.870+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:25.873+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d86065a2-fdd5-40f8-96d7-44fdef69...]
+[2025-04-19T12:15:26.192+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:26.195+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fcedf994-d631-4383-b030-14d0f2c8...]
+[2025-04-19T12:15:27.057+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:27.060+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('051a0039-3803-4cee-9a06-92953b8d...]
+[2025-04-19T12:15:27.495+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:27.498+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d8230076-cd6b-403b-ab35-37a02d6e...]
+[2025-04-19T12:15:27.923+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:27.929+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('96053035-6545-4030-a981-fa54f121...]
+[2025-04-19T12:15:28.349+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:28.351+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('51397c06-a630-4d9d-bcb9-23f5f5ed...]
+[2025-04-19T12:15:28.890+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:28.895+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4b657bcc-b041-4f19-bbe7-18354e8b...]
+[2025-04-19T12:15:29.538+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:29.543+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1aa6f7cb-90c7-46ac-a3bf-e403388c...]
+[2025-04-19T12:15:29.966+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:29.969+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3fe1e8f3-35ad-4e88-83e4-f66802ea...]
+[2025-04-19T12:15:30.450+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:30.453+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f8170ebf-6b6e-44c5-bb8a-a843702f...]
+[2025-04-19T12:15:30.830+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:30.833+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('39bfca38-afe9-4e90-821c-3fb3a6a5...]
+[2025-04-19T12:15:31.370+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:31.457+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8c0b393a-1333-4bc9-bb63-5ff52931...]
+[2025-04-19T12:15:31.909+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:31.912+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0db5d441-2837-4418-af27-c1b9e3c6...]
+[2025-04-19T12:15:32.262+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:32.266+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('64953d5f-0cb4-4891-988d-f23b3ccf...]
+[2025-04-19T12:15:32.664+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:32.668+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('331de35c-7af6-4d41-99a7-b99ba005...]
+[2025-04-19T12:15:33.203+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:33.206+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1754bf08-43d7-4413-a939-ebd1e516...]
+[2025-04-19T12:15:33.635+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:33.637+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d64acb1f-39eb-438a-836e-3c49770e...]
+[2025-04-19T12:15:34.069+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:34.072+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f9ca17b-8db8-4adf-ba3e-46b096f8...]
+[2025-04-19T12:15:34.606+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:34.610+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('da9bccc1-e71c-481a-a511-e61a1436...]
+[2025-04-19T12:15:35.037+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:35.040+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('aee14f87-fcff-49e3-940f-f5896c62...]
+[2025-04-19T12:15:35.363+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:35.368+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('850a48d4-46b5-48de-9b4b-b8eb537d...]
+[2025-04-19T12:15:35.794+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:35.799+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f6ff3521-c225-4530-952a-53459682...]
+[2025-04-19T12:15:36.225+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:36.231+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2c154804-0997-49a3-b919-955c9be4...]
+[2025-04-19T12:15:36.770+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:36.774+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('44c1f1b5-ebbb-4763-b9a7-e63bbee9...]
+[2025-04-19T12:15:37.305+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:37.308+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('716fb276-be64-4c2a-b966-71a54cec...]
+[2025-04-19T12:15:37.736+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:37.739+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('84396fc0-c26e-4706-bc05-9799bdae...]
+[2025-04-19T12:15:38.168+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:38.174+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3362d476-d53a-457f-a00b-d5343158...]
+[2025-04-19T12:15:38.602+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:38.605+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('07d2fd4d-ae61-416a-9fb6-21aeec4e...]
+[2025-04-19T12:15:39.142+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:39.150+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('42378962-e4fd-4c34-9670-7a2129dc...]
+[2025-04-19T12:15:39.486+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:39.489+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('db6ba39b-36dd-4529-b704-d72fc7a2...]
+[2025-04-19T12:15:39.899+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:39.902+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2c56e0cd-a5ba-4472-a1df-5609e959...]
+[2025-04-19T12:15:40.328+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:40.331+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7779857f-37dc-4c78-8082-fcda7580...]
+[2025-04-19T12:15:40.766+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:40.769+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('485d831c-9bea-4529-9801-7a2fa5b8...]
+[2025-04-19T12:15:41.197+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:41.200+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f3c2944a-b60a-4dcc-a7f7-745142da...]
+[2025-04-19T12:15:41.624+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:41.627+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a7c854e4-0684-4c86-b8a6-040223d2...]
+[2025-04-19T12:15:42.060+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:42.063+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d0e656e5-9271-4f6e-bea8-2e3ab544...]
+[2025-04-19T12:15:42.729+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:42.735+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bdacdc5e-20c0-4275-b885-187d18fc...]
+[2025-04-19T12:15:43.245+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:43.249+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5f269466-54d1-432a-a308-2ddcc9c0...]
+[2025-04-19T12:15:43.598+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:43.604+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1eac41d9-801f-4909-b1cd-9f6ee3b1...]
+[2025-04-19T12:15:44.106+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:44.110+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('91c46efc-fcb8-46bb-a8c0-cbef57b9...]
+[2025-04-19T12:15:44.430+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:44.433+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c606ddc4-c2dd-401d-b59a-15334605...]
+[2025-04-19T12:15:44.863+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:44.871+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f71fb9a6-6dd4-4c96-a744-cb9e6ded...]
+[2025-04-19T12:15:45.400+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:45.403+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bbcd6c18-a06e-4de5-810e-4265ad3f...]
+[2025-04-19T12:15:45.831+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:45.836+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d2e76deb-10b6-4662-aac1-d5ca4e5d...]
+[2025-04-19T12:15:46.263+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:46.267+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f2b5a7ea-2a35-4e30-b03c-b04bc007...]
+[2025-04-19T12:15:46.692+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:46.696+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cac8d87e-a689-407f-b60b-4f875dd8...]
+[2025-04-19T12:15:47.125+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.128+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b0937085-0c59-41f8-850d-cbfed60b...]
+[2025-04-19T12:15:47.457+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.460+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('af8ca888-b1f8-4ad9-b49b-50892733...]
+[2025-04-19T12:15:47.070+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.074+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6b382a0a-231d-460b-b362-cd559b0a...]
+[2025-04-19T12:15:46.567+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:46.570+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('290e3e89-4b9c-42f4-a8e5-c8cdb414...]
+[2025-04-19T12:15:46.997+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.000+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7e7d9a19-ab45-4578-92fb-acf6d5d1...]
+[2025-04-19T12:15:47.543+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.546+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dfc7ab26-2cb9-41fc-902c-75f9198d...]
+[2025-04-19T12:15:47.969+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:47.975+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('da1c96ae-0279-42ab-8bbf-6334e3ea...]
+[2025-04-19T12:15:48.510+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:48.513+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1d24181c-2ed0-47d4-97bc-ad3ad0a1...]
+[2025-04-19T12:15:49.266+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:49.269+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1cf14654-2ab2-42c2-8c02-43c6e2d9...]
+[2025-04-19T12:15:49.695+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:49.699+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5bcd236c-c777-4fae-a137-58c39c7f...]
+[2025-04-19T12:15:50.128+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:50.131+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('032a09e0-5071-45f0-a7ac-590c42f9...]
+[2025-04-19T12:15:50.561+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:50.565+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a4331510-ad21-44cc-a9e8-f0d85883...]
+[2025-04-19T12:15:50.990+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:50.994+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3dab1614-5215-4ed8-bddc-a413c05d...]
+[2025-04-19T12:15:51.424+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:51.429+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('50e96888-7273-4e7b-bf9a-d277db49...]
+[2025-04-19T12:15:51.852+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:51.857+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9e7b1e95-f692-441a-9aad-10cecab2...]
+[2025-04-19T12:15:52.283+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:52.286+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('791f49f6-9996-4612-9ea8-7552c475...]
+[2025-04-19T12:15:52.821+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:52.824+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a2379e6f-d473-4534-9aea-63525763...]
+[2025-04-19T12:15:53.145+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:53.149+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b8b818cf-be15-4187-b783-e1d5d264...]
+[2025-04-19T12:15:53.578+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:53.580+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ed376567-0be7-428e-aa1a-ba9dc1d4...]
+[2025-04-19T12:15:54.012+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:54.017+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('95ca788d-d6bc-4712-aecc-a931ef70...]
+[2025-04-19T12:15:54.548+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:54.551+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b148b2a6-ea79-47e1-9be7-02abfac0...]
+[2025-04-19T12:15:55.086+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:55.091+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf98e734-e2ed-4686-b334-22cb9a3f...]
+[2025-04-19T12:15:55.523+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:55.527+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('21f6c63d-ac20-4f11-abd3-39275865...]
+[2025-04-19T12:15:55.953+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:55.959+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b5caa993-aaca-4101-b153-0f689215...]
+[2025-04-19T12:15:56.390+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:56.392+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ab95c72f-0d95-4af5-a534-21bc6180...]
+[2025-04-19T12:15:56.809+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:56.811+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d06405a8-5bd2-4cb1-8845-3b2f8a8a...]
+[2025-04-19T12:15:57.243+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:57.246+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c9c1ad45-f4ea-4b97-aaa4-15b56336...]
+[2025-04-19T12:15:57.785+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:57.788+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5e244824-a5cb-4c6e-b5a4-c55bb462...]
+[2025-04-19T12:15:58.433+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:58.438+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0a670143-6090-403c-9e8d-f8ad838b...]
+[2025-04-19T12:15:58.968+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:58.971+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('efffa2f4-b5ae-429d-b761-7d80549f...]
+[2025-04-19T12:15:59.510+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:15:59.514+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5bab7f4a-8cd7-4c27-929a-f586ca37...]
+[2025-04-19T12:16:00.227+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:00.238+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('369e5af8-e226-49ee-b8a0-6ffe5972...]
+[2025-04-19T12:16:00.804+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:00.808+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a6388854-fb2b-4b80-808b-d674d2dd...]
+[2025-04-19T12:16:01.214+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:01.216+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('61a1a29c-5228-4d8d-a2ba-9fceaebb...]
+[2025-04-19T12:16:01.555+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:01.559+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4be318a8-0b39-4ccf-bc9f-3bc37210...]
+[2025-04-19T12:16:01.987+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:01.990+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dd6d6b41-3692-4531-8609-7cd8a127...]
+[2025-04-19T12:16:02.383+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:02.388+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2d90e4ee-0de4-433e-92c0-620c1667...]
+[2025-04-19T12:16:02.743+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:02.747+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ac5d4e57-63b6-44f4-8452-f77950ff...]
+[2025-04-19T12:16:03.067+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:03.070+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9b47e639-4d25-41eb-af95-be79c971...]
+[2025-04-19T12:16:03.608+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:03.614+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bf2b43b4-22e9-4527-b849-1ecc8891...]
+[2025-04-19T12:16:04.045+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:04.049+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4e003d55-15ca-4faf-b26d-3dd38c2a...]
+[2025-04-19T12:16:04.467+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:04.471+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ccb68571-abc5-4545-ae6d-7a041d57...]
+[2025-04-19T12:16:05.546+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:05.549+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('94a1eab0-b9c0-47aa-b289-f58b1923...]
+[2025-04-19T12:16:05.983+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:05.989+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4e40bfba-a8cf-4589-9dc8-9e1a540e...]
+[2025-04-19T12:16:06.518+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:06.521+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bd64987e-b652-4e99-b8b5-e89ac921...]
+[2025-04-19T12:16:06.932+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:06.936+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c65720ae-5bd6-4d4d-b202-fae5767d...]
+[2025-04-19T12:16:07.271+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:07.292+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('139309d1-a06a-487d-a2e6-e7a6bbc9...]
+[2025-04-19T12:16:07.814+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:07.825+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('', 'Maurice', 'leleu', '03/06/20...]
+[2025-04-19T12:16:08.250+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:08.256+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('02b622e9-808e-48d2-9d26-4b1b6593...]
+[2025-04-19T12:16:08.676+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:08.682+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5bda0655-f06d-4a24-bbc6-e121bb64...]
+[2025-04-19T12:16:09.168+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:09.172+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e1ad640c-7463-435e-aafb-9f20783c...]
+[2025-04-19T12:16:09.538+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:09.541+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('91f60406-8b5a-4683-9421-30904368...]
+[2025-04-19T12:16:10.076+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:10.079+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8430f0fa-390f-4cf5-a841-0a39f901...]
+[2025-04-19T12:16:11.170+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:11.173+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('13bc0dc6-3ae0-4cdb-aa65-24af709d...]
+[2025-04-19T12:16:11.585+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:11.587+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('54899c37-cfa9-426b-aa24-1f463af7...]
+[2025-04-19T12:16:12.126+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:12.129+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3e612d66-05bf-4618-a930-b0c4d557...]
+[2025-04-19T12:16:12.666+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:12.670+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8442906f-2e16-40b6-ac25-7a75421d...]
+[2025-04-19T12:16:13.022+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:13.025+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2488c84d-99d0-40fd-a928-043ed492...]
+[2025-04-19T12:16:13.500+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:13.504+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ad51382-119f-403e-9731-4c9198b6...]
+[2025-04-19T12:16:13.851+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:13.854+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('998d65ba-9d60-42c5-a6cf-cbd879d2...]
+[2025-04-19T12:16:14.283+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:14.288+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0b1ec578-dff4-4c51-9ed1-0e7f6bb1...]
+[2025-04-19T12:16:14.714+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:14.717+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c40f5405-7a25-4d81-8128-17eb2246...]
+[2025-04-19T12:16:15.251+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:15.254+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a79055b0-6001-454d-81d7-7831850f...]
+[2025-04-19T12:16:15.684+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:15.686+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('908e3a95-6c6e-4796-893e-2b89dadf...]
+[2025-04-19T12:16:16.114+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:16.117+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7bd7b4bf-8e0e-4bb7-8f20-c5e75ec6...]
+[2025-04-19T12:16:14.921+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:15.032+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b3061300-c879-4932-b254-0ab73ad2...]
+[2025-04-19T12:16:15.375+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:15.378+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('015aba1d-a2c8-4f62-b6ee-137d639c...]
+[2025-04-19T12:16:15.772+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:15.776+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('09aa5570-9be9-40c7-947d-7bfc5eef...]
+[2025-04-19T12:16:16.199+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:16.201+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('33a315f3-02bd-4abe-b060-78eb7e8e...]
+[2025-04-19T12:16:16.632+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:16.635+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2b633b18-9d7d-4756-bb4e-c9f5b2cd...]
+[2025-04-19T12:16:16.957+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:16.962+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9609598e-67cb-427a-a528-1970ab6e...]
+[2025-04-19T12:16:17.388+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:17.391+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('746b161a-31cc-4738-b68a-e9b79b3a...]
+[2025-04-19T12:16:17.924+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:17.926+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5708013e-4b54-4670-80cf-b1db1287...]
+[2025-04-19T12:16:18.357+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:18.360+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c68da4b2-f613-4da0-96f4-01e5c1e9...]
+[2025-04-19T12:16:18.787+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:18.789+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('50d3ba03-ccd7-408f-badc-b38cb380...]
+[2025-04-19T12:16:19.326+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:19.328+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('79ff89d9-2db1-4deb-ae6f-fbea8df7...]
+[2025-04-19T12:16:19.663+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:19.666+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bc45144a-3c1f-4ff0-b31d-58bbbcb3...]
+[2025-04-19T12:16:20.084+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:20.088+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f4adfa22-ad02-45f5-9417-c2f9eb91...]
+[2025-04-19T12:16:20.513+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:20.518+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ea7f6c7d-c3a6-4204-bc01-4a222ed0...]
+[2025-04-19T12:16:21.159+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:21.161+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('afb3e3ad-dc43-4ed5-a4ca-a1c758e7...]
+[2025-04-19T12:16:21.697+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:21.701+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5c91f845-534f-496d-99ca-9c1b94bc...]
+[2025-04-19T12:16:22.144+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:22.147+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('35e574e0-6c87-4546-bfaf-64582f14...]
+[2025-04-19T12:16:22.653+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:22.656+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('af9e7a0e-936d-44a7-bab1-996a2192...]
+[2025-04-19T12:16:23.100+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:23.104+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fedd22d9-226c-4c6a-bfe5-a4b66be8...]
+[2025-04-19T12:16:23.531+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:23.535+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0f5e8b47-29d0-4613-b0c7-70021956...]
+[2025-04-19T12:16:24.069+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:24.072+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('41f9994a-cf5d-437f-ae8d-5daa8eb7...]
+[2025-04-19T12:16:24.502+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:24.505+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bc8cfa8f-c655-4597-bccc-63de82ac...]
+[2025-04-19T12:16:24.932+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:24.936+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6bfc2a47-565f-4491-adb6-8b81cec6...]
+[2025-04-19T12:16:25.366+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:25.372+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4a965478-a72b-4ddd-911e-eeb85040...]
+[2025-04-19T12:16:25.795+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:25.800+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('daada0b1-2f13-4a6d-aad5-5c0b69fb...]
+[2025-04-19T12:16:26.227+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:26.230+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e0f1e44c-efd1-4588-9054-b2d51876...]
+[2025-04-19T12:16:26.766+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:26.770+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('63ccf604-e2ae-4f87-ae7c-a782a7a3...]
+[2025-04-19T12:16:27.195+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:27.199+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('08ffeab0-0750-42d6-abac-f712d6a9...]
+[2025-04-19T12:16:27.628+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:27.633+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8a0ec018-b297-49b2-b2cf-fcaef833...]
+[2025-04-19T12:16:28.062+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:28.070+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ce015413-3a25-46fe-8a27-b0b07b4d...]
+[2025-04-19T12:16:28.450+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:28.453+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c21f84fc-d0bc-4ad5-85f8-0d9b0006...]
+[2025-04-19T12:16:28.857+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:28.863+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c4100108-0256-4389-8cb3-46637a21...]
+[2025-04-19T12:16:29.458+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:29.462+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a55fa725-bcb3-4168-b706-2cfa29cc...]
+[2025-04-19T12:16:29.830+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:29.834+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9cfbbce7-e8f2-4584-8cca-1e14c3b8...]
+[2025-04-19T12:16:30.220+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:30.224+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('22f9cafe-2eb2-4ca3-9186-da93da7d...]
+[2025-04-19T12:16:30.859+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:30.862+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0cb4afe1-26f3-41c8-84f7-18c85215...]
+[2025-04-19T12:16:31.398+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:31.401+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('6b950c1d-5787-49d9-b799-a3767e5b...]
+[2025-04-19T12:16:31.830+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:31.834+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('12464474-6475-40ee-8691-30694439...]
+[2025-04-19T12:16:32.372+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:32.375+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3f46057b-7165-436b-b997-c779c56f...]
+[2025-04-19T12:16:33.028+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:33.031+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4fe66636-f612-4d2c-ae73-00eb639d...]
+[2025-04-19T12:16:33.389+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:33.393+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f9287d26-37c0-487a-aaac-826edd18...]
+[2025-04-19T12:16:33.773+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:33.779+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f80590f0-0249-4a09-be3b-1a40ca05...]
+[2025-04-19T12:16:34.315+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:34.320+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('af9a1168-1766-4795-bffa-b493285e...]
+[2025-04-19T12:16:34.959+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:34.963+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8ef00de1-fb4f-4972-9115-d7ee3b90...]
+[2025-04-19T12:16:35.717+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:35.721+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e60ec813-402d-40fa-a27d-ceccb972...]
+[2025-04-19T12:16:36.363+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:36.368+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('77e8b762-bb7e-4979-92dc-bffd5900...]
+[2025-04-19T12:16:36.748+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:36.753+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c6a28e4e-002f-4ca4-b43e-85315dfb...]
+[2025-04-19T12:16:37.225+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:37.229+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c4072654-7f5f-41aa-aee7-c7a58629...]
+[2025-04-19T12:16:37.658+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:37.662+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d5cf3b4c-0b34-4c84-9111-ee29a8ad...]
+[2025-04-19T12:16:38.193+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:38.195+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b38950ce-9fbc-479e-869c-3a8e7d6a...]
+[2025-04-19T12:16:38.628+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:38.633+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a7df30b2-356f-4c0a-abc8-f6b7ee22...]
+[2025-04-19T12:16:39.058+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:39.062+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('13f39289-4dcc-405d-959e-f0fd1204...]
+[2025-04-19T12:16:39.596+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:39.598+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8ef4d74b-2dcc-4095-b28f-9444a015...]
+[2025-04-19T12:16:40.028+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:40.031+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('88adb388-287e-4086-a854-027e5667...]
+[2025-04-19T12:16:40.457+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:40.459+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('902a405c-3d9f-4e59-9bc0-fa9352cd...]
+[2025-04-19T12:16:41.000+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:41.004+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9883e9b1-48d3-42ce-bba3-091f08df...]
+[2025-04-19T12:16:41.536+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:41.540+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f17f3f92-d26a-4790-8582-8939058e...]
+[2025-04-19T12:16:41.970+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:41.972+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ff69f41-9508-4801-a3be-7ca05df9...]
+[2025-04-19T12:16:42.641+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:42.646+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b0894de4-e626-4164-9361-6b3a7cff...]
+[2025-04-19T12:16:43.154+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:43.156+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c559cd0f-ebff-453f-8e50-f355c7b6...]
+[2025-04-19T12:16:43.588+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:43.591+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0ddb545b-61ea-4a65-a1d7-70eac704...]
+[2025-04-19T12:16:43.967+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:43.970+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ff5376a4-bb48-4bba-ac73-5be00cee...]
+[2025-04-19T12:16:44.289+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:44.291+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('beccf760-9249-4e3a-b9d1-9c4e1521...]
+[2025-04-19T12:16:44.683+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:44.688+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7b1dbca3-2286-43f8-8314-96ea2160...]
+[2025-04-19T12:16:43.596+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:43.600+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c6da85f1-4429-4ca2-9257-429e3e08...]
+[2025-04-19T12:16:43.998+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:44.002+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a7c8f0c5-9808-452c-9832-c8de521b...]
+[2025-04-19T12:16:44.472+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:44.475+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ba7e1b86-c1fa-4753-a7ef-0a4b5fb2...]
+[2025-04-19T12:16:44.932+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:44.938+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('73373c2f-4e1c-4762-9c7c-b6edcde5...]
+[2025-04-19T12:16:45.345+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:45.349+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b1f02ea8-242f-4829-be07-832abadc...]
+[2025-04-19T12:16:45.734+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:45.736+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9e32f085-b24f-42b9-8a08-41de3360...]
+[2025-04-19T12:16:46.142+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:46.147+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e226a768-de0e-4c53-8ae0-fd7a04e2...]
+[2025-04-19T12:16:46.630+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:46.633+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('753e9662-f77f-43a7-802a-a6eb32e9...]
+[2025-04-19T12:16:47.063+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:47.066+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('af2f0773-58c6-4158-84b4-0ac92831...]
+[2025-04-19T12:16:47.503+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:47.507+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('e3f16406-631d-4c8b-a0f0-fe7941f7...]
+[2025-04-19T12:16:47.902+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:47.906+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('61d85365-bada-4c94-9679-bbe02323...]
+[2025-04-19T12:16:48.353+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:48.355+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a7087280-34ee-4b67-a1bb-d1838acf...]
+[2025-04-19T12:16:48.680+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:48.683+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f2d78d53-8870-4ae7-8ead-da9a115c...]
+[2025-04-19T12:16:49.324+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:49.327+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7168bdec-4da8-48b7-a947-cbacf610...]
+[2025-04-19T12:16:49.714+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:49.716+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('98ab182c-3b1d-4181-9cc3-c1f59129...]
+[2025-04-19T12:16:50.020+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:50.023+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('794e0838-7dcf-40fd-a330-98edda25...]
+[2025-04-19T12:16:50.398+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:50.401+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c1fda581-33ec-46b1-bcfd-8547abdc...]
+[2025-04-19T12:16:50.837+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:50.841+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0ab5207f-c6b6-420a-a7a5-59366d74...]
+[2025-04-19T12:16:51.363+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:51.366+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('09dbebb5-c973-4495-b440-b852e033...]
+[2025-04-19T12:16:51.692+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:51.695+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8420e0d8-632c-417e-8ec5-7d470a0c...]
+[2025-04-19T12:16:52.234+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:52.237+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0df6c527-eb45-4c38-9cf6-5e334b5f...]
+[2025-04-19T12:16:52.607+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:52.613+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f016716b-95df-46cb-875a-ec942e05...]
+[2025-04-19T12:16:53.099+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:53.102+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b66f3507-e588-4999-971e-ea397424...]
+[2025-04-19T12:16:53.557+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:53.560+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5ce9dbbc-a252-41f3-b30b-c657b4cb...]
+[2025-04-19T12:16:54.070+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:54.073+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('266c47fb-dcd8-4a8b-a8d6-faf6df0d...]
+[2025-04-19T12:16:54.501+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:54.506+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('33ee16e7-f5de-4eba-a1ae-a39be606...]
+[2025-04-19T12:16:55.146+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:55.150+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('74283491-79c8-42cb-a8d3-110e96bf...]
+[2025-04-19T12:16:55.564+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:55.569+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('da948e70-2537-41e4-8966-8d085959...]
+[2025-04-19T12:16:56.225+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:56.228+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9c7060da-48cd-49c5-ac0e-1f71294d...]
+[2025-04-19T12:16:56.658+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:56.661+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('61022b56-e5c4-42ff-9e5a-90c152a4...]
+[2025-04-19T12:16:57.087+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:57.090+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9caf8df1-3584-4d71-b221-e1c535b8...]
+[2025-04-19T12:16:57.629+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:57.632+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9f8ceda5-feb9-4a24-933c-8d008680...]
+[2025-04-19T12:16:58.059+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:58.063+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fab0a15d-4a5d-4cea-b565-f64e3b93...]
+[2025-04-19T12:16:58.597+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:58.600+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8f7763e0-5982-4a44-9573-68cf0ba5...]
+[2025-04-19T12:16:59.354+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:59.359+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c45c3fbb-52ec-4c27-8ccc-617e81b6...]
+[2025-04-19T12:16:59.784+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:16:59.788+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('56830783-d575-4337-949c-9eb931ab...]
+[2025-04-19T12:17:00.540+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:00.633+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ed83a4c8-69f8-43e4-906d-3943c8b3...]
+[2025-04-19T12:17:01.035+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:01.038+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ea8b31f5-ccae-48fe-94eb-8e20af7c...]
+[2025-04-19T12:17:01.401+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:01.403+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('985e7e89-2ff8-407a-a3ba-9d869b0e...]
+[2025-04-19T12:17:01.833+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:01.836+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('73b0220d-5f20-49ea-bcd6-1f5ee086...]
+[2025-04-19T12:17:02.371+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:02.374+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8188de48-719b-4dd6-97b4-e75be9d1...]
+[2025-04-19T12:17:02.910+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:02.914+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d277ab64-1927-43a7-9f2e-37e7c4fc...]
+[2025-04-19T12:17:03.342+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:03.345+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('164a9b18-df33-44c6-9823-3b06d91e...]
+[2025-04-19T12:17:03.880+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:03.883+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('70ecf41b-c5d5-4016-91b3-ccf58843...]
+[2025-04-19T12:17:04.311+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:04.314+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('51883a26-8ca3-4a54-99ae-73028ae3...]
+[2025-04-19T12:17:04.850+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:04.853+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7192e443-8a63-42ca-96b7-979ee46a...]
+[2025-04-19T12:17:05.392+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:05.395+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b465c027-2dd1-445b-a454-a82a6d2c...]
+[2025-04-19T12:17:06.472+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:06.475+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('21bd55eb-915a-43c0-b737-cfb5c3b1...]
+[2025-04-19T12:17:07.009+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:07.012+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9defeab9-e54c-46ca-9c70-ce2224ca...]
+[2025-04-19T12:17:07.444+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:07.446+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7613ef44-7a88-4162-99f8-068e1ce6...]
+[2025-04-19T12:17:07.871+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:07.875+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8e5fd65f-536c-42d0-9b63-205fcbf8...]
+[2025-04-19T12:17:08.410+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:08.415+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f950f7fa-28b5-4db5-8c46-63083e62...]
+[2025-04-19T12:17:08.952+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:08.956+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8b661d1f-579a-4954-898e-3f5b9134...]
+[2025-04-19T12:17:09.329+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:09.335+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('67e2189b-f4b4-4704-8edb-6dc82d19...]
+[2025-04-19T12:17:09.714+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:09.718+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c146ed52-e73b-4913-94ad-345ae323...]
+[2025-04-19T12:17:10.353+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:10.360+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('510c8c48-e09e-42a3-ae77-e24934a6...]
+[2025-04-19T12:17:10.785+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:10.788+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('82ab23a0-fc86-4110-9c8a-a8720214...]
+[2025-04-19T12:17:11.321+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:11.323+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9714fadc-b3c4-4030-ae84-e8323c38...]
+[2025-04-19T12:17:11.645+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:11.648+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('302fa247-239a-446d-b991-2c512c64...]
+[2025-04-19T12:17:12.186+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:12.190+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('04056d2b-a5fc-4671-925d-f20602f8...]
+[2025-04-19T12:17:12.616+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:12.620+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9abbe46b-b205-4cec-89f7-369fe4c1...]
+[2025-04-19T12:17:12.556+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:12.560+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('9ac55023-6cbd-4931-af90-005839ca...]
+[2025-04-19T12:17:12.199+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:12.203+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1cf8570b-5e5b-4ad8-b473-2eb67bb7...]
+[2025-04-19T12:17:12.631+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:12.634+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ec77a8f-16a4-4b83-9c2d-9672e3d1...]
+[2025-04-19T12:17:13.169+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:13.172+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5a589b67-6bc7-4635-94de-19cdbbdb...]
+[2025-04-19T12:17:13.576+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:13.579+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2b48c6e6-9401-4dfe-b921-0c7ca119...]
+[2025-04-19T12:17:13.914+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:13.917+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c8a4ae21-d9f8-40e9-93ad-3ead816e...]
+[2025-04-19T12:17:14.355+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:14.357+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7257dcb6-a8be-4c80-a6b0-d2c9bd2c...]
+[2025-04-19T12:17:14.761+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:14.764+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('d66de2a1-2776-44d0-925c-7d37ef16...]
+[2025-04-19T12:17:15.216+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:15.219+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('5856e1fc-d782-4ea3-bbff-16e993e7...]
+[2025-04-19T12:17:15.570+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:15.573+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ec264a0c-c09f-4c91-b2c0-a0cfbf03...]
+[2025-04-19T12:17:15.971+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:15.974+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cc1c7204-ed5e-449b-89ee-49690309...]
+[2025-04-19T12:17:16.423+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:16.426+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('dbbd3290-a6ed-4add-ab04-cd299c48...]
+[2025-04-19T12:17:16.942+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:16.945+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3de667f9-bfc4-4c0e-acdf-e0ffc5ed...]
+[2025-04-19T12:17:17.376+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:17.378+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1a99aae0-8677-481d-9902-c93b6947...]
+[2025-04-19T12:17:17.697+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:17.700+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3781d306-d5e0-4664-a4db-04c8a817...]
+[2025-04-19T12:17:18.237+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:18.240+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4b68d94d-40da-4c7d-af2b-dc13b216...]
+[2025-04-19T12:17:18.670+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:18.673+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c6f06a71-46fc-4ff2-92f1-78bdc7de...]
+[2025-04-19T12:17:19.313+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:19.315+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fabb6609-7de1-4a85-91c4-194a70c9...]
+[2025-04-19T12:17:19.745+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:19.749+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('08eca4c8-1a71-464d-824d-9430b724...]
+[2025-04-19T12:17:20.392+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:20.395+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('09af9883-eed2-4f94-8038-dc84a3ed...]
+[2025-04-19T12:17:20.929+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:20.932+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cff14c0e-c7eb-4d43-ba4e-f72fd813...]
+[2025-04-19T12:17:21.470+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:21.475+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0e213ce5-668e-410e-8d86-2412ae8c...]
+[2025-04-19T12:17:22.116+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:22.120+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('62588ce9-f7ae-4de8-8a11-9bac8df2...]
+[2025-04-19T12:17:22.768+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:22.770+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('701fb3ea-a1fe-4bc6-a29d-650a15b9...]
+[2025-04-19T12:17:23.302+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:23.305+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cfd0b040-d591-4d49-b707-371288b0...]
+[2025-04-19T12:17:23.851+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:23.855+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a762b59c-ce9e-4929-b630-8a601e41...]
+[2025-04-19T12:17:24.382+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:24.388+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a616dde4-b388-400a-be20-718a0bb9...]
+[2025-04-19T12:17:24.810+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:24.812+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('387770f0-9d99-44c5-8c96-bf439850...]
+[2025-04-19T12:17:25.349+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:25.352+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('36965c84-cb08-4605-b6f6-1488d620...]
+[2025-04-19T12:17:25.781+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:25.785+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ecf91245-3e5f-4e23-b04c-19e22a3d...]
+[2025-04-19T12:17:26.113+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:26.119+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b4ecfe8d-16d1-45ca-ad17-4fdd2dee...]
+[2025-04-19T12:17:26.642+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:26.645+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('734eab10-85e9-454f-855c-f668a3cb...]
+[2025-04-19T12:17:27.072+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:27.074+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('31208bde-3c52-468a-8ec6-1be5012b...]
+[2025-04-19T12:17:27.505+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:27.508+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cbeed3e3-1cd8-49e2-b197-91670d95...]
+[2025-04-19T12:17:28.047+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:28.052+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('35a7ac9b-48f9-4d0d-9d3b-c1d3a515...]
+[2025-04-19T12:17:28.489+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:28.492+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0770d18f-c916-4147-a875-ad5d2d06...]
+[2025-04-19T12:17:28.907+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:28.909+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3ae56c8d-5360-46e7-a5fb-c1c0ad46...]
+[2025-04-19T12:17:29.555+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:29.558+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7c0224e5-95c8-4b2d-b892-d14512d2...]
+[2025-04-19T12:17:30.024+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:30.026+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f9be07f3-5bcc-40fc-a1cc-22d831b4...]
+[2025-04-19T12:17:30.524+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:30.527+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c2a59d7b-2bd3-4971-ab10-b7867565...]
+[2025-04-19T12:17:31.065+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:31.068+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('7677a166-d644-49ae-b936-931e9771...]
+[2025-04-19T12:17:31.495+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:31.497+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('fdc419b2-0a41-4919-8b52-46f3faed...]
+[2025-04-19T12:17:32.036+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:32.038+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('8ef90060-1545-4c64-bd92-29527ecb...]
+[2025-04-19T12:17:32.454+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:32.459+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('0413ffc7-173a-4c96-bfbb-4bcca5cb...]
+[2025-04-19T12:17:32.869+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:32.874+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('df1e04cb-ca34-4e3c-af58-9a8167c5...]
+[2025-04-19T12:17:33.330+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:33.334+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b2b3bb39-4510-4aad-80bd-44c06d07...]
+[2025-04-19T12:17:33.976+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:33.979+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('77215daa-5d97-4cdc-a209-56a81c68...]
+[2025-04-19T12:17:34.361+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:34.365+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('236e9007-3468-4b6e-8609-0b78b597...]
+[2025-04-19T12:17:34.731+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:34.735+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ae2356f3-80e9-4300-8471-9067e5de...]
+[2025-04-19T12:17:35.271+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:35.275+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ac5dd02d-ccc6-4ffd-9e3e-ce609ef6...]
+[2025-04-19T12:17:35.809+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:35.813+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('1bff56f4-13b2-41ab-b4e5-80aaf550...]
+[2025-04-19T12:17:36.288+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:36.291+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('bcda835f-71a0-4ff8-ab8d-a34058c1...]
+[2025-04-19T12:17:36.780+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:36.784+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c96d525e-a563-4cf4-a7df-eb9257c1...]
+[2025-04-19T12:17:37.216+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:37.219+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('3a0e618f-428f-4941-8a0d-72ce2bf6...]
+[2025-04-19T12:17:37.603+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:37.608+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f92408c3-2ea9-4f6c-8905-eb93890a...]
+[2025-04-19T12:17:38.089+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:38.093+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('34850fcd-2f3b-4b18-9ea2-d56b42aa...]
+[2025-04-19T12:17:38.510+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:38.514+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('06617f95-eba1-4fa8-9f19-f85b4d33...]
+[2025-04-19T12:17:38.938+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:38.943+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('795235ad-4ba9-4d78-b498-75d0a5b1...]
+[2025-04-19T12:17:39.367+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:39.372+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4ede79b6-1deb-479d-8d0b-b6d7ad91...]
+[2025-04-19T12:17:39.801+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:39.803+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ef87bf0d-c802-4f8e-b8de-6b6e86c4...]
+[2025-04-19T12:17:40.556+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:40.559+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('51589375-7d8f-4350-b1c7-7a4464f8...]
+[2025-04-19T12:17:41.201+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:41.204+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('4edeae5f-59f2-474c-984c-b0f748de...]
+[2025-04-19T12:17:41.631+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:41.634+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('ba85e403-6c80-444b-a5d1-36e2f869...]
+[2025-04-19T12:17:40.424+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:40.427+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c190b0cf-9736-4b4f-b5c8-ce3ceee3...]
+[2025-04-19T12:17:40.947+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:40.950+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('230da680-ea35-4f17-8157-a7619162...]
+[2025-04-19T12:17:41.486+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:41.489+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('397a284f-76a4-479b-bd67-34588f2d...]
+[2025-04-19T12:17:42.031+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:42.035+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b0167db8-e823-4943-bdec-46052deb...]
+[2025-04-19T12:17:42.464+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:42.468+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('a0c45942-4206-4d80-9e4b-eb126fa2...]
+[2025-04-19T12:17:42.844+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:42.851+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('b17aff6d-e0d9-4670-b606-fa3451d6...]
+[2025-04-19T12:17:43.319+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:43.324+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2ee94ed9-a0c6-4223-8435-9252319d...]
+[2025-04-19T12:17:43.750+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:43.754+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('480afe9f-84a6-4693-a30f-1e69034d...]
+[2025-04-19T12:17:44.183+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:44.186+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('cb8c1d76-303c-4503-94e2-0134389a...]
+[2025-04-19T12:17:44.569+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:44.572+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('23966b83-5cd1-4b22-b0e8-b2fa4fc3...]
+[2025-04-19T12:17:44.933+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:44.936+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('20f36e92-38ec-41aa-9e5c-5da8d087...]
+[2025-04-19T12:17:45.471+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:45.474+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('c1e0a4a1-7bf8-40f6-8652-3c3d04d0...]
+[2025-04-19T12:17:46.042+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:46.138+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('02a13629-aae6-41a1-8d38-a8d010f5...]
+[2025-04-19T12:17:46.547+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:46.549+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('47021755-f11c-40a4-bf06-d520d88a...]
+[2025-04-19T12:17:47.111+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:47.114+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('f6d9fe17-3109-4211-b73f-6e64378d...]
+[2025-04-19T12:17:47.735+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:17:47.741+0000] {cursor.py:1028} INFO - query: [INSERT INTO EDU_DB.BRONZE.raw_students VALUES ('2e4c16e2-1b79-4e6b-b52e-f4a6ac6c...]
+[2025-04-19T12:17:47.990+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-04-19T12:17:48.001+0000] {process_utils.py:131} INFO - Sending 15 to group 950. PIDs of all processes in the group: [950]
+[2025-04-19T12:17:48.003+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 950
+[2025-04-19T12:17:48.005+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-04-19T12:17:48.145+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=950, status='terminated', exitcode=0, started='12:13:14') (950) terminated with exit code 0

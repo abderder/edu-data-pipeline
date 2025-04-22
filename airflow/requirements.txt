@@ -1,0 +1,11 @@
+# Airflow
+apache-airflow==2.8.1
+apache-airflow-providers-snowflake
+apache-airflow-providers-microsoft-azure
+
+# Snowflake & Azure
+snowflake-connector-python
+adlfs
+
+# Utilitaires
+pandas

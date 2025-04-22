@@ -1,0 +1,162 @@
+[2025-04-19T12:34:21.989+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:26:51.263068+00:00 [queued]>
+[2025-04-19T12:34:22.003+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:26:51.263068+00:00 [queued]>
+[2025-04-19T12:34:22.005+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2025-04-19T12:34:22.026+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_students> on 2025-04-19 12:26:51.263068+00:00
+[2025-04-19T12:34:22.035+0000] {standard_task_runner.py:60} INFO - Started process 1248 to run task
+[2025-04-19T12:34:22.040+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'ingest_students', 'manual__2025-04-19T12:26:51.263068+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmpmqq_bhlj']
+[2025-04-19T12:34:22.047+0000] {standard_task_runner.py:88} INFO - Job 34: Subtask ingest_students
+[2025-04-19T12:34:22.187+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.ingest_students manual__2025-04-19T12:26:51.263068+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T12:34:22.340+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='ingest_students' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T12:26:51.263068+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T12:26:51.263068+00:00'
+[2025-04-19T12:34:22.360+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9f11fee0-1d1a-11f0-a303-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:34:23.062+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0fcf91ed-001e-0067-3a27-b1821c000000'
+    'x-ms-client-request-id': '9f11fee0-1d1a-11f0-a303-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:34:22 GMT'
+[2025-04-19T12:34:23.075+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9f7eeca8-1d1a-11f0-a303-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:34:23.213+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0fcf9243-001e-0067-0327-b1821c000000'
+    'x-ms-client-request-id': '9f7eeca8-1d1a-11f0-a303-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:34:22 GMT'
+[2025-04-19T12:34:23.239+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/students.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '9f982a4c-1d1a-11f0-a303-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:34:23.381+0000] {_universal.py:550} INFO - Response status: 206
+Response headers:
+    'Content-Length': '98944'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:47 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B4332D36"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '0fcf92ad-001e-0067-6527-b1821c000000'
+    'x-ms-client-request-id': '9f982a4c-1d1a-11f0-a303-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:34:22 GMT'
+[2025-04-19T12:34:23.596+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.13, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-04-19T12:34:23.599+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-04-19T12:34:24.880+0000] {connection.py:547} WARNING - Certificate did not match expected hostname: lp63960.west-europe.snowflakecomputing.com. Certificate: {'subject': ((('commonName', '*.prod3.us-west-2.snowflakecomputing.com'),),), 'subjectAltName': [('DNS', '*.prod3.us-west-2.snowflakecomputing.com'), ('DNS', '*.us-west-2.snowflakecomputing.com'), ('DNS', '*.global.snowflakecomputing.com'), ('DNS', '*.snowflakecomputing.com'), ('DNS', '*.prod3.us-west-2.aws.snowflakecomputing.com')]}
+[2025-04-19T12:34:24.883+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(CertificateError("hostname 'lp63960.west-europe.snowflakecomputing.com' doesn't match either of '*.prod3.us-west-2.snowflakecomputing.com', '*.us-west-2.snowflakecomputing.com', '*.global.snowflakecomputing.com', '*.snowflakecomputing.com', '*.prod3.us-west-2.aws.snowflakecomputing.com'"))': /session/v1/login-request?request_id=a12b5ecd-75ac-4248-be01-5f31a4ddb844&databaseName=EDU_DB&schemaName=BRONZE&warehouse=WH_EDU&request_guid=90f654d9-e1f4-49fd-a1d8-fc3b26d13144
+[2025-04-19T12:34:25.820+0000] {connection.py:547} WARNING - Certificate did not match expected hostname: lp63960.west-europe.snowflakecomputing.com. Certificate: {'subject': ((('commonName', '*.prod3.us-west-2.snowflakecomputing.com'),),), 'subjectAltName': [('DNS', '*.prod3.us-west-2.snowflakecomputing.com'), ('DNS', '*.us-west-2.snowflakecomputing.com'), ('DNS', '*.global.snowflakecomputing.com'), ('DNS', '*.snowflakecomputing.com'), ('DNS', '*.prod3.us-west-2.aws.snowflakecomputing.com')]}
+[2025-04-19T12:34:25.829+0000] {network.py:1024} ERROR - Failed to get the response. Hanging? method: post, url: https://lp63960.west-europe.snowflakecomputing.com:443/session/v1/login-request?request_id=a12b5ecd-75ac-4248-be01-5f31a4ddb844&databaseName=EDU_DB&schemaName=BRONZE&warehouse=WH_EDU&request_guid=90f654d9-e1f4-49fd-a1d8-fc3b26d13144, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/3.6.0 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36) CPython/3.10.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "3.6.0", "SVN_REVISION": null, "ACCOUNT_NAME": "lp63960", "LOGIN_NAME": "aderder", "CLIENT_ENVIRONMENT": {"APPLICATION": "PythonConnector", "OS": "Linux", "OS_VERSION": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36", "PYTHON_VERSION": "3.10.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC 12.2.0", "OCSP_MODE": "FAIL_OPEN", "TRACING": 20, "LOGIN_TIMEOUT": null, "NETWORK_TIMEOUT": null, "SOCKET_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"CLIENT_PREFETCH_THREADS": 4}}}
+[2025-04-19T12:34:27.551+0000] {connection.py:547} WARNING - Certificate did not match expected hostname: lp63960.west-europe.snowflakecomputing.com. Certificate: {'subject': ((('commonName', '*.prod3.us-west-2.snowflakecomputing.com'),),), 'subjectAltName': [('DNS', '*.prod3.us-west-2.snowflakecomputing.com'), ('DNS', '*.us-west-2.snowflakecomputing.com'), ('DNS', '*.global.snowflakecomputing.com'), ('DNS', '*.snowflakecomputing.com'), ('DNS', '*.prod3.us-west-2.aws.snowflakecomputing.com')]}
+[2025-04-19T12:34:27.554+0000] {connectionpool.py:824} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(CertificateError("hostname 'lp63960.west-europe.snowflakecomputing.com' doesn't match either of '*.prod3.us-west-2.snowflakecomputing.com', '*.us-west-2.snowflakecomputing.com', '*.global.snowflakecomputing.com', '*.snowflakecomputing.com', '*.prod3.us-west-2.aws.snowflakecomputing.com'"))': /session/v1/login-request?request_id=dabefd5a-5330-4035-b34a-91d525297521&databaseName=EDU_DB&schemaName=BRONZE&warehouse=WH_EDU&request_guid=2be4a422-73c3-4493-a2df-9b4c5e84b2bc
+[2025-04-19T12:34:28.407+0000] {connection.py:547} WARNING - Certificate did not match expected hostname: lp63960.west-europe.snowflakecomputing.com. Certificate: {'subject': ((('commonName', '*.prod3.us-west-2.snowflakecomputing.com'),),), 'subjectAltName': [('DNS', '*.prod3.us-west-2.snowflakecomputing.com'), ('DNS', '*.us-west-2.snowflakecomputing.com'), ('DNS', '*.global.snowflakecomputing.com'), ('DNS', '*.snowflakecomputing.com'), ('DNS', '*.prod3.us-west-2.aws.snowflakecomputing.com')]}
+[2025-04-19T12:34:28.412+0000] {network.py:1024} ERROR - Failed to get the response. Hanging? method: post, url: https://lp63960.west-europe.snowflakecomputing.com:443/session/v1/login-request?request_id=dabefd5a-5330-4035-b34a-91d525297521&databaseName=EDU_DB&schemaName=BRONZE&warehouse=WH_EDU&request_guid=2be4a422-73c3-4493-a2df-9b4c5e84b2bc, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/3.6.0 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36) CPython/3.10.13', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "PythonConnector", "CLIENT_APP_VERSION": "3.6.0", "SVN_REVISION": null, "ACCOUNT_NAME": "lp63960", "LOGIN_NAME": "aderder", "CLIENT_ENVIRONMENT": {"APPLICATION": "PythonConnector", "OS": "Linux", "OS_VERSION": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36", "PYTHON_VERSION": "3.10.13", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "GCC 12.2.0", "OCSP_MODE": "FAIL_OPEN", "TRACING": 20, "LOGIN_TIMEOUT": null, "NETWORK_TIMEOUT": null, "SOCKET_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"CLIENT_PREFETCH_THREADS": 4}}}
+[2025-04-19T12:34:28.423+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 1305, in _authenticate
+    auth.authenticate(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/auth/_auth.py", line 250, in authenticate
+    ret = self._rest._post_request(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/network.py", line 729, in _post_request
+    ret = self.fetch(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/network.py", line 838, in fetch
+    ret = self._request_exec_wrapper(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/network.py", line 974, in _request_exec_wrapper
+    raise e
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/network.py", line 890, in _request_exec_wrapper
+    self._handle_unknown_error(method, full_url, headers, data, conn)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/network.py", line 1029, in _handle_unknown_error
+    Error.errorhandler_wrapper(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 348, in hand_to_other_handler
+    connection.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://lp63960.west-europe.snowflakecomputing.com:443/session/v1/login-request?request_id=a12b5ecd-75ac-4248-be01-5f31a4ddb844&databaseName=EDU_DB&schemaName=BRONZE&warehouse=WH_EDU&request_guid=90f654d9-e1f4-49fd-a1d8-fc3b26d13144
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/ingest_bronze_dag.py", line 70, in load_csv_to_snowflake
+    conn = snowflake.connector.connect(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/__init__.py", line 54, in Connect
+    return SnowflakeConnection(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 413, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 703, in connect
+    self.__open_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 1006, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 1277, in authenticate_with_retry
+    self._authenticate(auth_instance)
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 1349, in _authenticate
+    raise auth_op from e
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/connection.py", line 1326, in _authenticate
+    auth_instance.handle_timeout(
+  File "/home/airflow/.local/lib/python3.10/site-packages/snowflake/connector/auth/by_plugin.py", line 212, in handle_timeout
+    raise error
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+[2025-04-19T12:34:28.448+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=ingest_bronze_csv_to_snowflake, task_id=ingest_students, execution_date=20250419T122651, start_date=20250419T123421, end_date=20250419T123428
+[2025-04-19T12:34:28.478+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 34 for task ingest_students (250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting; 1248)
+[2025-04-19T12:34:28.521+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-04-19T12:34:28.580+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

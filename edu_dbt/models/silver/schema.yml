@@ -1,0 +1,85 @@
+version: 2
+
+models:
+
+  - name: silver_students
+    description: "Étudiants nettoyés depuis RAW_STUDENTS"
+    columns:
+      - name: student_id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+
+  - name: silver_enrollments
+    description: "Inscriptions nettoyées depuis RAW_ENROLLMENTS"
+    columns:
+      - name: enrollment_id
+        tests:
+          - not_null
+          - unique
+      - name: student_id
+        tests:
+          - not_null
+      - name: course_id
+        tests:
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['active', 'inactive', 'completed', 'cancelled', 'unknown']
+
+  - name: silver_courses
+    description: "Cours nettoyés depuis RAW_COURSES"
+    columns:
+      - name: course_id
+        tests:
+          - not_null
+          - unique
+      - name: course_name
+        tests:
+          - not_null
+
+  - name: silver_contacts
+    description: "Contacts nettoyés depuis RAW_CONTACTS"
+    columns:
+      - name: contact_id
+        tests:
+          - not_null
+          - unique
+      - name: email
+        tests:
+          - not_null
+
+  - name: silver_interactions
+    description: "Interactions nettoyées depuis RAW_INTERACTIONS"
+    columns:
+      - name: interaction_id
+        tests:
+          - not_null
+          - unique
+      - name: contact_id
+        tests:
+          - not_null
+      - name: interaction_type
+        tests:
+          - accepted_values:
+              values: ['call', 'email', 'meeting', 'appointment', 'unknown']
+
+  - name: silver_leads
+    description: "Leads nettoyés depuis RAW_LEADS"
+    columns:
+      - name: lead_id
+        tests:
+          - not_null
+          - unique
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['new', 'qualified', 'contacted', 'lost', 'unknown']
+      - name: source
+        tests:
+          - accepted_values:
+              values: ['web', 'email', 'social', 'referral', 'unknown']

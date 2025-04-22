@@ -1,0 +1,118 @@
+[2025-04-19T12:45:12.416+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_courses manual__2025-04-19T12:44:47.981222+00:00 [queued]>
+[2025-04-19T12:45:12.436+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_bronze_csv_to_snowflake.ingest_courses manual__2025-04-19T12:44:47.981222+00:00 [queued]>
+[2025-04-19T12:45:12.439+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-19T12:45:12.468+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_courses> on 2025-04-19 12:44:47.981222+00:00
+[2025-04-19T12:45:12.481+0000] {standard_task_runner.py:60} INFO - Started process 1468 to run task
+[2025-04-19T12:45:12.492+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ingest_bronze_csv_to_snowflake', 'ingest_courses', 'manual__2025-04-19T12:44:47.981222+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/ingest_bronze_dag.py', '--cfg-path', '/tmp/tmpb5ohdun5']
+[2025-04-19T12:45:12.502+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask ingest_courses
+[2025-04-19T12:45:12.609+0000] {task_command.py:423} INFO - Running <TaskInstance: ingest_bronze_csv_to_snowflake.ingest_courses manual__2025-04-19T12:44:47.981222+00:00 [running]> on host 66ec6d74a776
+[2025-04-19T12:45:12.768+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_bronze_csv_to_snowflake' AIRFLOW_CTX_TASK_ID='ingest_courses' AIRFLOW_CTX_EXECUTION_DATE='2025-04-19T12:44:47.981222+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-19T12:44:47.981222+00:00'
+[2025-04-19T12:45:12.793+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/courses.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '22c239fc-1d1c-11f0-8279-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:45:13.458+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '41975'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B3F5CD07"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8db62ae3-d01e-0016-0328-b16437000000'
+    'x-ms-client-request-id': '22c239fc-1d1c-11f0-8279-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:45:11 GMT'
+[2025-04-19T12:45:13.465+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/courses.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '2328d27a-1d1c-11f0-8279-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:45:13.606+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '41975'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B3F5CD07"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8db62b3f-d01e-0016-5428-b16437000000'
+    'x-ms-client-request-id': '2328d27a-1d1c-11f0-8279-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:45:11 GMT'
+[2025-04-19T12:45:13.621+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/ERP/courses.csv?sp=REDACTED&st=REDACTED&se=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '234097fc-1d1c-11f0-8279-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.10.13 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-19T12:45:13.851+0000] {_universal.py:550} INFO - Response status: 206
+Response headers:
+    'Content-Length': '41975'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B3F5CD07"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '8db62b80-d01e-0016-0d28-b16437000000'
+    'x-ms-client-request-id': '234097fc-1d1c-11f0-8279-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Sat, 19 Apr 2025 12:45:11 GMT'
+[2025-04-19T12:45:13.878+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.10.13, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-04-19T12:45:13.882+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-04-19T12:45:14.285+0000] {cursor.py:1028} INFO - query: [CREATE TABLE IF NOT EXISTS EDU_DB.BRONZE.raw_courses ("CourseID" TEXT, "Course N...]
+[2025-04-19T12:45:14.577+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:45:14.579+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:45:14.581+0000] {cursor.py:1028} INFO - query: [TRUNCATE TABLE EDU_DB.BRONZE.raw_courses]
+[2025-04-19T12:45:14.901+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:45:14.903+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:45:14.904+0000] {cursor.py:1028} INFO - query: [PUT file:///tmp/courses.csv @edu_stage OVERWRITE = TRUE]
+[2025-04-19T12:45:14.999+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:45:15.653+0000] {cursor.py:1028} INFO - query: [COPY INTO EDU_DB.BRONZE.raw_courses FROM @edu_stage/courses.csv FILE_FORMAT = (T...]
+[2025-04-19T12:45:16.452+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:45:16.454+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:45:16.456+0000] {cursor.py:1028} INFO - query: [COMMIT]
+[2025-04-19T12:45:16.585+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-19T12:45:16.588+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-19T12:45:16.590+0000] {connection.py:718} INFO - closed
+[2025-04-19T12:45:16.662+0000] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2025-04-19T12:45:16.762+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-04-19T12:45:16.781+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ingest_bronze_csv_to_snowflake, task_id=ingest_courses, execution_date=20250419T124447, start_date=20250419T124512, end_date=20250419T124516
+[2025-04-19T12:45:16.832+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-04-19T12:45:16.232+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

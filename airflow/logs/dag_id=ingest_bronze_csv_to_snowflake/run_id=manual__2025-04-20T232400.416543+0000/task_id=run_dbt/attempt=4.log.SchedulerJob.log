@@ -1,0 +1,1 @@
+[2025-04-20T23:30:29.178+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: ingest_bronze_csv_to_snowflake.run_dbt manual__2025-04-20T23:24:00.416543+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

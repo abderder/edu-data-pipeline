@@ -1,0 +1,2049 @@
+[0m10:07:35.243747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD7ABE440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD7DE37C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD8BB15D0>]}
+
+
+============================== 10:07:35.251741 | e63dd0db-0fc9-4451-b36a-4abbdcab73a2 ==============================
+[0m10:07:35.251741 [info ] [MainThread]: Running with dbt=1.9.4
+[0m10:07:35.253346 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'log_path': 'c:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:35.369675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e63dd0db-0fc9-4451-b36a-4abbdcab73a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD8B75900>]}
+[0m10:07:35.402652 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:07:35.403767 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m10:07:35.405669 [debug] [MainThread]: Command `cli deps` succeeded at 10:07:35.405669 after 0.28 seconds
+[0m10:07:35.406696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD7ABE440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD8D04550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026FD8C845B0>]}
+[0m10:07:35.406696 [debug] [MainThread]: Flushing usage events
+[0m10:07:35.941624 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:38:47.870483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6711e01ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670fb20310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670fb20eb0>]}
+
+
+============================== 23:38:47.910022 | 6b04c634-f086-4342-9c91-8e2e5ae9fc79 ==============================
+[0m23:38:47.910022 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:38:47.912943 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/opt/airflow/edu_dbt/profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh --profiles-dir /opt/airflow/edu_dbt/profiles', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:38:47.916864 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /opt/airflow/edu_dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:38:47.921504 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.13570122, "process_user_time": 2.770965, "process_kernel_time": 0.241829, "process_mem_max_rss": "215656", "process_in_blocks": "1160", "process_out_blocks": "2936", "command_success": false}
+[0m23:38:47.925191 [debug] [MainThread]: Command `dbt run` failed at 23:38:47.924803 after 0.14 seconds
+[0m23:38:47.928305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6711e01ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670fb20e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f670fb20310>]}
+[0m23:38:47.931692 [debug] [MainThread]: Flushing usage events
+[0m01:41:34.526380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BC74A440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE80DC60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE80C1F0>]}
+
+
+============================== 01:41:34.534437 | 8a8af4fa-8e6f-4fb2-b993-b0151985a944 ==============================
+[0m01:41:34.534437 [info ] [MainThread]: Running with dbt=1.9.4
+ object at 0x0000014D1B9E64A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DA7B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DA7A620>]}
+
+
+============================== 01:41:34.534437 | 88302f9c-966a-4563-867b-c26a39853865 ==============================
+[0m01:41:34.534437 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:41:34.534437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'c:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m01:41:34.534437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:41:34.547267 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m01:41:34.547267 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m01:41:34.547267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '88302f9c-966a-4563-867b-c26a39853865', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DAAD090>]}
+[0m01:41:34.547267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8a8af4fa-8e6f-4fb2-b993-b0151985a944', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE83D8A0>]}
+[0m01:41:34.705687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a8af4fa-8e6f-4fb2-b993-b0151985a944', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE83D2D0>]}
+[0m01:41:34.705687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88302f9c-966a-4563-867b-c26a39853865', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DA7BE20>]}
+[0m01:41:34.768323 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:41:34.768323 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:41:34.784116 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:41:34.784116 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:41:34.784116 [debug] [MainThread]: Command `cli deps` succeeded at 01:41:34.784116 after 0.35 seconds
+[0m01:41:34.784116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1B9E64A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DA7BE20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014D1DAADC60>]}
+[0m01:41:34.784116 [debug] [MainThread]: Flushing usage events
+[0m01:41:34.784116 [debug] [MainThread]: Command `cli deps` succeeded at 01:41:34.784116 after 0.37 seconds
+[0m01:41:34.784116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BC74A440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE83D2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1BE83C370>]}
+[0m01:41:34.784116 [debug] [MainThread]: Flushing usage events
+[0m01:41:35.337672 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:41:35.344445 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:41:50.698214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B7FA82500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B01CA61D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B01CA5FF0>]}
+
+
+============================== 01:41:50.709044 | 55fe7d2c-3677-4beb-bf0e-f69969d85deb ==============================
+[0m01:41:50.709044 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:41:50.709044 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m01:41:51.675506 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m01:41:51.675506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B024531C0>]}
+[0m01:41:51.879392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B0154F970>]}
+[0m01:41:51.945661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B023FB910>]}
+[0m01:41:51.945661 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m01:41:52.484541 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m01:41:52.486562 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:41:52.486562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B024EF3D0>]}
+[0m01:41:53.548914 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m01:41:53.553473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B02561E70>]}
+[0m01:41:53.632989 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\manifest.json
+[0m01:41:53.639068 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\semantic_manifest.json
+[0m01:41:53.702557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B038A7940>]}
+[0m01:41:53.704780 [info ] [MainThread]: Found 474 macros
+[0m01:41:53.706809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '55fe7d2c-3677-4beb-bf0e-f69969d85deb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B038A4FD0>]}
+[0m01:41:53.708839 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:41:53.710871 [debug] [MainThread]: Command end result
+[0m01:41:53.759253 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\manifest.json
+[0m01:41:53.765822 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\semantic_manifest.json
+[0m01:41:53.770806 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\run_results.json
+[0m01:41:53.772809 [debug] [MainThread]: Command `dbt run` succeeded at 01:41:53.772809 after 3.15 seconds
+[0m01:41:53.773806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B7FA82500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B7F4AD750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B02563460>]}
+[0m01:41:53.773806 [debug] [MainThread]: Flushing usage events
+[0m01:41:54.254184 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:42:18.821235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA932324D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA952E6260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA952E6080>]}
+
+
+============================== 01:42:18.829150 | 96f35c50-b63b-4d4e-b9a8-4b9c364b6a32 ==============================
+[0m01:42:18.829150 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:42:18.829150 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:42:19.242738 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m01:42:19.256169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA95A91240>]}
+[0m01:42:19.356710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA91FD8910>]}
+[0m01:42:19.397960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA95A13400>]}
+[0m01:42:19.397960 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m01:42:19.817096 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m01:42:19.965767 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:42:19.965767 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:42:19.965767 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m01:42:20.019399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA952E6320>]}
+[0m01:42:20.058376 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\manifest.json
+[0m01:42:20.062552 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\semantic_manifest.json
+[0m01:42:20.083812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA96F30F70>]}
+[0m01:42:20.083812 [info ] [MainThread]: Found 474 macros
+[0m01:42:20.085824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '96f35c50-b63b-4d4e-b9a8-4b9c364b6a32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA96F2ED10>]}
+[0m01:42:20.085824 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m01:42:20.087838 [debug] [MainThread]: Command end result
+[0m01:42:20.108654 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\manifest.json
+[0m01:42:20.113652 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\semantic_manifest.json
+[0m01:42:20.117650 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\edu_dbt/target\run_results.json
+[0m01:42:20.118650 [debug] [MainThread]: Command `dbt run` succeeded at 01:42:20.118650 after 1.39 seconds
+[0m01:42:20.119654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA932324D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA9453C310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA95A56A10>]}
+[0m01:42:20.119654 [debug] [MainThread]: Flushing usage events
+[0m01:42:20.649668 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:45:46.259820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59974A530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59A88A1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59A889FC0>]}
+
+
+============================== 01:45:46.265401 | d28fa4fd-fee2-45e0-8157-92ce88731c84 ==============================
+[0m01:45:46.265401 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:45:46.266399 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'c:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m01:45:46.274316 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m01:45:46.275348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd28fa4fd-fee2-45e0-8157-92ce88731c84', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59A88B610>]}
+[0m01:45:46.389479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd28fa4fd-fee2-45e0-8157-92ce88731c84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C599A62EC0>]}
+[0m01:45:46.424482 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:45:46.427907 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m01:45:46.432449 [debug] [MainThread]: Command `cli deps` succeeded at 01:45:46.431441 after 0.29 seconds
+[0m01:45:46.433443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59974A530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59A994610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C59A885AE0>]}
+[0m01:45:46.433443 [debug] [MainThread]: Flushing usage events
+[0m01:45:47.005185 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:47:09.510802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A6952500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A8A061D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A8A05FF0>]}
+
+
+============================== 01:47:09.515887 | c4d5a892-6f6e-468f-8059-4e671cabed36 ==============================
+[0m01:47:09.515887 [info ] [MainThread]: Running with dbt=1.9.4
+[0m01:47:09.515887 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\abder_gck1ko4\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\abder_gck1ko4\\OneDrive\\Desktop\\DERDER\\DataEngineeringProjects\\education-pipeline\\edu_dbt\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m01:47:09.922035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A8387550>]}
+[0m01:47:09.970614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A7C5E530>]}
+[0m01:47:09.970614 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m01:47:10.347204 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m01:47:10.586778 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m01:47:10.586778 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m01:47:10.640672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AA714130>]}
+[0m01:47:10.735439 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\target\manifest.json
+[0m01:47:10.738799 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\target\semantic_manifest.json
+[0m01:47:10.773814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AA717D30>]}
+[0m01:47:10.773814 [info ] [MainThread]: Found 12 models, 31 data tests, 6 sources, 475 macros
+[0m01:47:10.773814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AA715990>]}
+[0m01:47:10.773814 [info ] [MainThread]: 
+[0m01:47:10.773814 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m01:47:10.773814 [info ] [MainThread]: 
+[0m01:47:10.773814 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m01:47:10.789339 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m01:47:10.802294 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m01:47:10.942503 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m01:47:10.942503 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m01:47:10.945272 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m01:47:10.945272 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:47:10.945272 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m01:47:10.945272 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:47:11.561807 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.616 seconds
+[0m01:47:11.561807 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.618 seconds
+[0m01:47:11.561807 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB_GOLD'
+[0m01:47:11.561807 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB_SILVER'
+[0m01:47:11.580514 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_GOLD"
+[0m01:47:11.580514 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_SILVER"
+[0m01:47:11.580514 [debug] [ThreadPool]: On list_EDU_DB_GOLD: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_GOLD"} */
+show objects in EDU_DB.GOLD limit 10000;
+[0m01:47:11.585571 [debug] [ThreadPool]: On list_EDU_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_SILVER"} */
+show objects in EDU_DB.SILVER limit 10000;
+[0m01:47:11.586280 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:47:11.586280 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:47:11.989500 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.401 seconds
+[0m01:47:12.011556 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.424 seconds
+[0m01:47:12.019668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A22C06D0>]}
+[0m01:47:12.033460 [debug] [Thread-1 (]: Began running node model.edu_dbt.silver_contacts
+[0m01:47:12.033460 [debug] [Thread-2 (]: Began running node model.edu_dbt.silver_courses
+[0m01:47:12.033460 [debug] [Thread-3 (]: Began running node model.edu_dbt.silver_enrollments
+[0m01:47:12.033460 [debug] [Thread-4 (]: Began running node model.edu_dbt.silver_interactions
+[0m01:47:12.038959 [info ] [Thread-1 (]: 1 of 12 START sql table model SILVER.silver_contacts ........................... [RUN]
+[0m01:47:12.041496 [info ] [Thread-2 (]: 2 of 12 START sql table model SILVER.silver_courses ............................ [RUN]
+[0m01:47:12.041496 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.edu_dbt.silver_contacts'
+[0m01:47:12.041496 [info ] [Thread-3 (]: 3 of 12 START sql table model SILVER.silver_enrollments ........................ [RUN]
+[0m01:47:12.041496 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.edu_dbt.silver_courses'
+[0m01:47:12.041496 [info ] [Thread-4 (]: 4 of 12 START sql table model SILVER.silver_interactions ....................... [RUN]
+[0m01:47:12.041496 [debug] [Thread-1 (]: Began compiling node model.edu_dbt.silver_contacts
+[0m01:47:12.041496 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.edu_dbt.silver_enrollments'
+[0m01:47:12.045911 [debug] [Thread-2 (]: Began compiling node model.edu_dbt.silver_courses
+[0m01:47:12.045911 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.edu_dbt.silver_interactions'
+[0m01:47:12.064631 [debug] [Thread-1 (]: Writing injected SQL for node "model.edu_dbt.silver_contacts"
+[0m01:47:12.065556 [debug] [Thread-3 (]: Began compiling node model.edu_dbt.silver_enrollments
+[0m01:47:12.069678 [debug] [Thread-2 (]: Writing injected SQL for node "model.edu_dbt.silver_courses"
+[0m01:47:12.070633 [debug] [Thread-4 (]: Began compiling node model.edu_dbt.silver_interactions
+[0m01:47:12.075267 [debug] [Thread-3 (]: Writing injected SQL for node "model.edu_dbt.silver_enrollments"
+[0m01:47:12.076146 [debug] [Thread-4 (]: Writing injected SQL for node "model.edu_dbt.silver_interactions"
+[0m01:47:12.076146 [debug] [Thread-4 (]: Began executing node model.edu_dbt.silver_interactions
+[0m01:47:12.110515 [debug] [Thread-4 (]: Writing runtime sql for node "model.edu_dbt.silver_interactions"
+[0m01:47:12.111505 [debug] [Thread-1 (]: Began executing node model.edu_dbt.silver_contacts
+[0m01:47:12.112510 [debug] [Thread-3 (]: Began executing node model.edu_dbt.silver_enrollments
+[0m01:47:12.112510 [debug] [Thread-2 (]: Began executing node model.edu_dbt.silver_courses
+[0m01:47:12.115513 [debug] [Thread-1 (]: Writing runtime sql for node "model.edu_dbt.silver_contacts"
+[0m01:47:12.118513 [debug] [Thread-3 (]: Writing runtime sql for node "model.edu_dbt.silver_enrollments"
+[0m01:47:12.121908 [debug] [Thread-2 (]: Writing runtime sql for node "model.edu_dbt.silver_courses"
+[0m01:47:12.125445 [debug] [Thread-4 (]: Using snowflake connection "model.edu_dbt.silver_interactions"
+[0m01:47:12.128441 [debug] [Thread-1 (]: Using snowflake connection "model.edu_dbt.silver_contacts"
+[0m01:47:12.128441 [debug] [Thread-4 (]: On model.edu_dbt.silver_interactions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_interactions"} */
+create or replace transient table EDU_DB.SILVER.silver_interactions
+         as
+        (WITH raw AS (
+    SELECT
+        "InteractionId" AS raw_interaction_id,
+        "ContactId" AS raw_contact_id,
+        "Interaction Type" AS raw_type,
+        "Date" AS raw_date,
+        "Notes" AS raw_notes
+    FROM EDU_DB.BRONZE.RAW_INTERACTIONS
+),
+
+cleaned AS (
+    SELECT
+        raw_interaction_id AS interaction_id,
+        raw_contact_id AS contact_id,
+        raw_notes,
+
+        -- Nettoyage du type d’interaction
+        CASE
+            WHEN LOWER(raw_type) IN ('call', 'appel') THEN 'call'
+            WHEN LOWER(raw_type) IN ('meeting') THEN 'meeting'
+            WHEN LOWER(raw_type) IN ('rdv') THEN 'appointment'
+            WHEN LOWER(raw_type) IN ('email') THEN 'email'
+            ELSE 'unknown'
+        END AS interaction_type,
+
+        -- Gestion des dates multi-format
+        COALESCE(
+            TRY_TO_DATE(raw_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_date, 'YYYY/MM/DD')
+        ) AS interaction_date
+
+    FROM raw
+    WHERE raw_interaction_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where interaction_id IS NOT NULL AND contact_id IS NOT NULL
+        );
+[0m01:47:12.129435 [debug] [Thread-1 (]: On model.edu_dbt.silver_contacts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_contacts"} */
+create or replace transient table EDU_DB.SILVER.silver_contacts
+         as
+        (WITH raw AS (
+    SELECT
+        "Contact ID" AS raw_contact_id,
+        "First Name" AS raw_first_name,
+        "LastName" AS raw_last_name,
+        "phoneNumber" AS raw_phone,
+        "E-Mail" AS email_1,
+        "email" AS email_2,
+        "courriel" AS email_3,
+        "Mail" AS email_4,
+        "created_at" AS raw_created_at
+    FROM EDU_DB.BRONZE.RAW_CONTACTS
+),
+
+cleaned AS (
+    SELECT
+        raw_contact_id AS contact_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name)) AS last_name,
+
+        TRIM(raw_phone) AS phone,
+
+        -- Priorité aux premiers emails non vides
+        COALESCE(
+            NULLIF(TRIM(LOWER(email_1)), ''),
+            NULLIF(TRIM(LOWER(email_2)), ''),
+            NULLIF(TRIM(LOWER(email_3)), ''),
+            NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email,
+
+        COALESCE(
+            TRY_TO_DATE(raw_created_at, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_at, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_at, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_at, 'DD/MM/YYYY')
+        ) AS created_at
+
+    FROM raw
+    WHERE raw_contact_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where contact_id IS NOT NULL AND email IS NOT NULL
+        );
+[0m01:47:12.132446 [debug] [Thread-2 (]: Using snowflake connection "model.edu_dbt.silver_courses"
+[0m01:47:12.134444 [debug] [Thread-3 (]: Using snowflake connection "model.edu_dbt.silver_enrollments"
+[0m01:47:12.135436 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m01:47:12.135436 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:47:12.135436 [debug] [Thread-2 (]: On model.edu_dbt.silver_courses: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_courses"} */
+create or replace transient table EDU_DB.SILVER.silver_courses
+         as
+        (WITH raw AS (
+    SELECT
+        "CourseID" AS raw_course_id,
+        "Course Name" AS raw_course_name,
+        "credits" AS raw_credits,
+        "Start_Date" AS raw_start_date,
+        "endDate" AS raw_end_date
+    FROM EDU_DB.BRONZE.RAW_COURSES
+),
+
+cleaned AS (
+    SELECT
+        CAST(raw_course_id AS INT) AS course_id,
+
+        -- Nettoyage du nom du cours (capitalisation, suppression espaces, etc.)
+        INITCAP(TRIM(raw_course_name)) AS course_name,
+
+        CAST(raw_credits AS INT) AS credits,
+
+        -- Formats de dates divers
+        COALESCE(
+            TRY_TO_DATE(raw_start_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_start_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_start_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_start_date, 'YYYY/MM/DD')
+        ) AS start_date,
+
+        COALESCE(
+            TRY_TO_DATE(raw_end_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_end_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_end_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_end_date, 'YYYY/MM/DD')
+        ) AS end_date
+
+    FROM raw
+    WHERE raw_course_id IS NOT NULL
+),
+ranked AS (
+    SELECT *,
+        ROW_NUMBER() OVER (PARTITION BY course_id ORDER BY start_date DESC) AS row_num
+    FROM cleaned
+)
+SELECT
+    course_id,
+    course_name,
+    credits,
+    start_date,
+    end_date
+FROM ranked
+WHERE row_num = 1 and course_name is not null
+        );
+[0m01:47:12.136447 [debug] [Thread-3 (]: On model.edu_dbt.silver_enrollments: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_enrollments"} */
+create or replace transient table EDU_DB.SILVER.silver_enrollments
+         as
+        (WITH raw AS (
+
+    SELECT
+        "EnrollmentId" AS raw_enrollment_id,
+        "student_id" AS raw_student_id,
+        "Course ID" AS raw_course_id,
+        "EnrollDate" AS raw_enroll_date,
+        "Status" AS raw_status
+    FROM EDU_DB.BRONZE.RAW_ENROLLMENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_enrollment_id AS enrollment_id,
+        raw_student_id AS student_id,
+        CAST(raw_course_id AS INT) AS course_id,
+
+        COALESCE(
+            TRY_TO_DATE(raw_enroll_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_enroll_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD/MM/YYYY')
+        ) AS enrollment_date,
+
+        -- Mapping plus précis des statuts
+        CASE
+            WHEN LOWER(raw_status) IN ('active') THEN 'active'
+            WHEN LOWER(raw_status) IN ('done', 'valide', 'ok', 'completed') THEN 'completed'
+            WHEN LOWER(raw_status) IN ('cancelled', 'abandon', 'dropped', 'droped') THEN 'cancelled'
+            WHEN raw_status IS NULL OR TRIM(raw_status) = '' THEN 'unknown'
+            ELSE 'unknown'
+        END AS status
+
+    FROM raw
+    WHERE raw_enrollment_id IS NOT NULL
+)
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY enrollment_id) AS enrollment_key FROM cleaned
+WHERE enrollment_id IS NOT NULL AND student_id IS NOT NULL AND course_id IS NOT NULL
+        );
+[0m01:47:12.137447 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:47:12.141269 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m01:47:13.384560 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.244 seconds
+[0m01:47:13.405758 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.276 seconds
+[0m01:47:13.414072 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A4D00C40>]}
+[0m01:47:13.414072 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAD96C20>]}
+[0m01:47:13.414072 [info ] [Thread-3 (]: 3 of 12 OK created sql table model SILVER.silver_enrollments ................... [[32mSUCCESS 1[0m in 1.36s]
+[0m01:47:13.414072 [debug] [Thread-3 (]: Finished running node model.edu_dbt.silver_enrollments
+[0m01:47:13.414072 [info ] [Thread-4 (]: 4 of 12 OK created sql table model SILVER.silver_interactions .................. [[32mSUCCESS 1[0m in 1.36s]
+[0m01:47:13.414072 [debug] [Thread-3 (]: Began running node model.edu_dbt.silver_leads
+[0m01:47:13.414072 [debug] [Thread-4 (]: Finished running node model.edu_dbt.silver_interactions
+[0m01:47:13.420073 [debug] [Thread-4 (]: Began running node model.edu_dbt.silver_students
+[0m01:47:13.414072 [info ] [Thread-3 (]: 5 of 12 START sql table model SILVER.silver_leads .............................. [RUN]
+[0m01:47:13.420073 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_enrollments, now model.edu_dbt.silver_leads)
+[0m01:47:13.420073 [debug] [Thread-3 (]: Began compiling node model.edu_dbt.silver_leads
+[0m01:47:13.420073 [info ] [Thread-4 (]: 6 of 12 START sql table model SILVER.silver_students ........................... [RUN]
+[0m01:47:13.428327 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_interactions, now model.edu_dbt.silver_students)
+[0m01:47:13.428327 [debug] [Thread-3 (]: Writing injected SQL for node "model.edu_dbt.silver_leads"
+[0m01:47:13.430625 [debug] [Thread-4 (]: Began compiling node model.edu_dbt.silver_students
+[0m01:47:13.435387 [debug] [Thread-4 (]: Writing injected SQL for node "model.edu_dbt.silver_students"
+[0m01:47:13.439387 [debug] [Thread-4 (]: Began executing node model.edu_dbt.silver_students
+[0m01:47:13.445330 [debug] [Thread-4 (]: Writing runtime sql for node "model.edu_dbt.silver_students"
+[0m01:47:13.446354 [debug] [Thread-3 (]: Began executing node model.edu_dbt.silver_leads
+[0m01:47:13.454772 [debug] [Thread-3 (]: Writing runtime sql for node "model.edu_dbt.silver_leads"
+[0m01:47:13.459942 [debug] [Thread-4 (]: Using snowflake connection "model.edu_dbt.silver_students"
+[0m01:47:13.459942 [debug] [Thread-4 (]: On model.edu_dbt.silver_students: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_students"} */
+create or replace transient table EDU_DB.SILVER.silver_students
+         as
+        (WITH raw AS (
+
+    SELECT
+        "Student ID"     AS raw_student_id,
+        "FirstName"      AS raw_first_name,
+        "last_name"      AS raw_last_name,
+        "DOB"            AS raw_dob,
+        "reg_date"       AS raw_reg_date,
+        "email"          AS email_1,
+        "E-Mail"         AS email_2,
+        "mail"           AS email_3,
+        "courriel"       AS email_4
+
+    FROM EDU_DB.BRONZE.RAW_STUDENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_student_id AS student_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name))  AS last_name,
+
+        -- Normalisation de la date de naissance
+        COALESCE(
+            TRY_TO_DATE(raw_dob, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_dob, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_dob, 'DD-MM-YYYY')
+        ) AS date_of_birth,
+
+        -- Normalisation de la date d'inscription
+        COALESCE(
+            TRY_TO_DATE(raw_reg_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_reg_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_reg_date, 'DD-MM-YYYY')
+        ) AS registration_date,
+
+        -- Choix du premier email disponible (priorité dans l'ordre)
+        COALESCE(NULLIF(TRIM(LOWER(email_1)), ''),
+                 NULLIF(TRIM(LOWER(email_2)), ''),
+                 NULLIF(TRIM(LOWER(email_3)), ''),
+                 NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email
+
+    FROM raw
+
+)
+
+SELECT * FROM cleaned
+WHERE student_id IS NOT NULL
+AND email IS NOT NULL
+        );
+[0m01:47:13.465543 [debug] [Thread-3 (]: Using snowflake connection "model.edu_dbt.silver_leads"
+[0m01:47:13.467558 [debug] [Thread-3 (]: On model.edu_dbt.silver_leads: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_leads"} */
+create or replace transient table EDU_DB.SILVER.silver_leads
+         as
+        (WITH raw AS (
+    SELECT
+        "LeadID" AS raw_lead_id,
+        "Full Name" AS raw_full_name,
+        "Source" AS raw_source,
+        "Status" AS raw_status,
+        "CreatedDate" AS raw_created_date
+    FROM EDU_DB.BRONZE.RAW_LEADS
+),
+
+cleaned AS (
+    SELECT
+        raw_lead_id AS lead_id,
+
+        INITCAP(TRIM(raw_full_name)) AS full_name,
+
+        -- Standardisation de la source
+        CASE
+            WHEN LOWER(raw_source) IN ('social', 'social media') THEN 'social'
+            WHEN LOWER(raw_source) IN ('web') THEN 'web'
+            WHEN LOWER(raw_source) IN ('email', 'e-mail') THEN 'email'
+            WHEN LOWER(raw_source) IN ('referral', 'referal') THEN 'referral'
+            ELSE 'unknown'
+        END AS source,
+
+        -- Standardisation du statut
+        CASE
+            WHEN LOWER(raw_status) = 'new' THEN 'new'
+            WHEN LOWER(raw_status) = 'qualified' THEN 'qualified'
+            WHEN LOWER(raw_status) = 'contacted' THEN 'contacted'
+            WHEN LOWER(raw_status) = 'lost' THEN 'lost'
+            ELSE 'unknown'
+        END AS status,
+
+        -- Parsing de la date
+        COALESCE(
+            TRY_TO_DATE(raw_created_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_date, 'DD/MM/YYYY')
+        ) AS created_date
+
+    FROM raw
+    WHERE raw_lead_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where lead_id IS NOT NULL AND status IS NOT NULL AND source IS NOT NULL
+        );
+[0m01:47:13.475312 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.337 seconds
+[0m01:47:13.476267 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAE483D0>]}
+[0m01:47:13.485467 [info ] [Thread-2 (]: 2 of 12 OK created sql table model SILVER.silver_courses ....................... [[32mSUCCESS 1[0m in 1.43s]
+[0m01:47:13.490080 [debug] [Thread-2 (]: Finished running node model.edu_dbt.silver_courses
+[0m01:47:13.492076 [debug] [Thread-2 (]: Began running node model.edu_dbt.dim_courses
+[0m01:47:13.495079 [info ] [Thread-2 (]: 7 of 12 START sql view model GOLD.dim_courses .................................. [RUN]
+[0m01:47:13.497076 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_courses, now model.edu_dbt.dim_courses)
+[0m01:47:13.498082 [debug] [Thread-2 (]: Began compiling node model.edu_dbt.dim_courses
+[0m01:47:13.506307 [debug] [Thread-2 (]: Writing injected SQL for node "model.edu_dbt.dim_courses"
+[0m01:47:13.506307 [debug] [Thread-2 (]: Began executing node model.edu_dbt.dim_courses
+[0m01:47:13.542210 [debug] [Thread-2 (]: Writing runtime sql for node "model.edu_dbt.dim_courses"
+[0m01:47:13.542210 [debug] [Thread-2 (]: Using snowflake connection "model.edu_dbt.dim_courses"
+[0m01:47:13.542210 [debug] [Thread-2 (]: On model.edu_dbt.dim_courses: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_courses"} */
+create or replace   view EDU_DB.GOLD.dim_courses
+  
+   as (
+    
+
+SELECT *,ROW_NUMBER() OVER (ORDER BY COURSE_ID) AS COURSE_KEY
+FROM EDU_DB.SILVER.silver_courses
+  );
+[0m01:47:13.819436 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.269 seconds
+[0m01:47:13.822426 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAEAE0E0>]}
+[0m01:47:13.824422 [info ] [Thread-2 (]: 7 of 12 OK created sql view model GOLD.dim_courses ............................. [[32mSUCCESS 1[0m in 0.33s]
+[0m01:47:13.825734 [debug] [Thread-2 (]: Finished running node model.edu_dbt.dim_courses
+[0m01:47:13.884367 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.749 seconds
+[0m01:47:13.888002 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAD5A170>]}
+[0m01:47:13.889006 [info ] [Thread-1 (]: 1 of 12 OK created sql table model SILVER.silver_contacts ...................... [[32mSUCCESS 1[0m in 1.85s]
+[0m01:47:13.890001 [debug] [Thread-1 (]: Finished running node model.edu_dbt.silver_contacts
+[0m01:47:13.891004 [debug] [Thread-2 (]: Began running node model.edu_dbt.dim_contacts
+[0m01:47:13.892003 [info ] [Thread-2 (]: 8 of 12 START sql view model GOLD.dim_contacts ................................. [RUN]
+[0m01:47:13.893013 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_courses, now model.edu_dbt.dim_contacts)
+[0m01:47:13.894021 [debug] [Thread-2 (]: Began compiling node model.edu_dbt.dim_contacts
+[0m01:47:13.898558 [debug] [Thread-2 (]: Writing injected SQL for node "model.edu_dbt.dim_contacts"
+[0m01:47:13.900555 [debug] [Thread-2 (]: Began executing node model.edu_dbt.dim_contacts
+[0m01:47:13.905388 [debug] [Thread-2 (]: Writing runtime sql for node "model.edu_dbt.dim_contacts"
+[0m01:47:13.907509 [debug] [Thread-2 (]: Using snowflake connection "model.edu_dbt.dim_contacts"
+[0m01:47:13.907509 [debug] [Thread-2 (]: On model.edu_dbt.dim_contacts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_contacts"} */
+create or replace   view EDU_DB.GOLD.dim_contacts
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_contacts
+  );
+[0m01:47:14.126379 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.664 seconds
+[0m01:47:14.128402 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAE67F10>]}
+[0m01:47:14.128402 [info ] [Thread-4 (]: 6 of 12 OK created sql table model SILVER.silver_students ...................... [[32mSUCCESS 1[0m in 0.70s]
+[0m01:47:14.137715 [debug] [Thread-4 (]: Finished running node model.edu_dbt.silver_students
+[0m01:47:14.139739 [debug] [Thread-1 (]: Began running node model.edu_dbt.dim_students
+[0m01:47:14.141754 [info ] [Thread-1 (]: 9 of 12 START sql view model GOLD.dim_students ................................. [RUN]
+[0m01:47:14.144225 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_contacts, now model.edu_dbt.dim_students)
+[0m01:47:14.145740 [debug] [Thread-1 (]: Began compiling node model.edu_dbt.dim_students
+[0m01:47:14.156765 [debug] [Thread-1 (]: Writing injected SQL for node "model.edu_dbt.dim_students"
+[0m01:47:14.162590 [debug] [Thread-1 (]: Began executing node model.edu_dbt.dim_students
+[0m01:47:14.162590 [debug] [Thread-1 (]: Writing runtime sql for node "model.edu_dbt.dim_students"
+[0m01:47:14.174835 [debug] [Thread-1 (]: Using snowflake connection "model.edu_dbt.dim_students"
+[0m01:47:14.178262 [debug] [Thread-1 (]: On model.edu_dbt.dim_students: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_students"} */
+create or replace   view EDU_DB.GOLD.dim_students
+  
+   as (
+    
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY STUDENT_ID) AS student_key
+
+FROM EDU_DB.SILVER.silver_students
+  );
+[0m01:47:14.258084 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.352 seconds
+[0m01:47:14.262120 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAECEC80>]}
+[0m01:47:14.262120 [info ] [Thread-2 (]: 8 of 12 OK created sql view model GOLD.dim_contacts ............................ [[32mSUCCESS 1[0m in 0.37s]
+[0m01:47:14.264138 [debug] [Thread-2 (]: Finished running node model.edu_dbt.dim_contacts
+[0m01:47:14.264138 [debug] [Thread-4 (]: Began running node model.edu_dbt.fact_interactions
+[0m01:47:14.264138 [info ] [Thread-4 (]: 10 of 12 START sql view model GOLD.fact_interactions ........................... [RUN]
+[0m01:47:14.266151 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_students, now model.edu_dbt.fact_interactions)
+[0m01:47:14.266669 [debug] [Thread-4 (]: Began compiling node model.edu_dbt.fact_interactions
+[0m01:47:14.268681 [debug] [Thread-4 (]: Writing injected SQL for node "model.edu_dbt.fact_interactions"
+[0m01:47:14.270908 [debug] [Thread-4 (]: Began executing node model.edu_dbt.fact_interactions
+[0m01:47:14.276703 [debug] [Thread-4 (]: Writing runtime sql for node "model.edu_dbt.fact_interactions"
+[0m01:47:14.280751 [debug] [Thread-4 (]: Using snowflake connection "model.edu_dbt.fact_interactions"
+[0m01:47:14.282769 [debug] [Thread-4 (]: On model.edu_dbt.fact_interactions: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_interactions"} */
+create or replace   view EDU_DB.GOLD.fact_interactions
+  
+   as (
+    
+
+SELECT
+    i.interaction_id,
+    i.contact_id,
+    c.first_name AS contact_first_name,
+    c.last_name AS contact_last_name,
+    c.email AS contact_email,
+    i.interaction_type,
+    i.interaction_date,
+    i.raw_notes AS notes
+
+FROM EDU_DB.SILVER.silver_interactions i
+
+LEFT JOIN EDU_DB.GOLD.dim_contacts c
+    ON i.contact_id = c.contact_id
+  );
+[0m01:47:14.513438 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.336 seconds
+[0m01:47:14.513438 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAE67F10>]}
+[0m01:47:14.513438 [info ] [Thread-1 (]: 9 of 12 OK created sql view model GOLD.dim_students ............................ [[32mSUCCESS 1[0m in 0.37s]
+[0m01:47:14.513438 [debug] [Thread-1 (]: Finished running node model.edu_dbt.dim_students
+[0m01:47:14.513438 [debug] [Thread-2 (]: Began running node model.edu_dbt.fact_enrollments
+[0m01:47:14.513438 [info ] [Thread-2 (]: 11 of 12 START sql view model GOLD.fact_enrollments ............................ [RUN]
+[0m01:47:14.513438 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_contacts, now model.edu_dbt.fact_enrollments)
+[0m01:47:14.513438 [debug] [Thread-2 (]: Began compiling node model.edu_dbt.fact_enrollments
+[0m01:47:14.513438 [debug] [Thread-2 (]: Writing injected SQL for node "model.edu_dbt.fact_enrollments"
+[0m01:47:14.513438 [debug] [Thread-2 (]: Began executing node model.edu_dbt.fact_enrollments
+[0m01:47:14.530748 [debug] [Thread-2 (]: Writing runtime sql for node "model.edu_dbt.fact_enrollments"
+[0m01:47:14.533657 [debug] [Thread-2 (]: Using snowflake connection "model.edu_dbt.fact_enrollments"
+[0m01:47:14.533657 [debug] [Thread-2 (]: On model.edu_dbt.fact_enrollments: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_enrollments"} */
+create or replace   view EDU_DB.GOLD.fact_enrollments
+  
+   as (
+    
+
+SELECT
+    e.enrollment_key,
+    s.student_key,
+    s.first_name AS student_first_name,
+    s.last_name AS student_last_name,
+    s.email AS student_email,
+
+    c.course_key,
+    c.course_name,
+    c.credits,
+
+    e.enrollment_date,
+    e.status
+
+FROM EDU_DB.SILVER.silver_enrollments e
+
+LEFT JOIN EDU_DB.GOLD.dim_students s
+    ON e.student_id = s.student_id
+
+LEFT JOIN EDU_DB.GOLD.dim_courses c
+    ON e.course_id = c.course_id
+  );
+[0m01:47:14.610591 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.328 seconds
+[0m01:47:14.615661 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAD20400>]}
+[0m01:47:14.617680 [info ] [Thread-4 (]: 10 of 12 OK created sql view model GOLD.fact_interactions ...................... [[32mSUCCESS 1[0m in 0.35s]
+[0m01:47:14.620054 [debug] [Thread-4 (]: Finished running node model.edu_dbt.fact_interactions
+[0m01:47:15.157101 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.623 seconds
+[0m01:47:15.157101 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAF3C130>]}
+[0m01:47:15.157101 [info ] [Thread-2 (]: 11 of 12 OK created sql view model GOLD.fact_enrollments ....................... [[32mSUCCESS 1[0m in 0.64s]
+[0m01:47:15.157101 [debug] [Thread-2 (]: Finished running node model.edu_dbt.fact_enrollments
+[0m01:47:16.112008 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.652 seconds
+[0m01:47:16.125629 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAD3DDB0>]}
+[0m01:47:16.127655 [info ] [Thread-3 (]: 5 of 12 OK created sql table model SILVER.silver_leads ......................... [[32mSUCCESS 1[0m in 2.71s]
+[0m01:47:16.130567 [debug] [Thread-3 (]: Finished running node model.edu_dbt.silver_leads
+[0m01:47:16.130567 [debug] [Thread-1 (]: Began running node model.edu_dbt.dim_leads
+[0m01:47:16.130567 [info ] [Thread-1 (]: 12 of 12 START sql view model GOLD.dim_leads ................................... [RUN]
+[0m01:47:16.130567 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_students, now model.edu_dbt.dim_leads)
+[0m01:47:16.130567 [debug] [Thread-1 (]: Began compiling node model.edu_dbt.dim_leads
+[0m01:47:16.147284 [debug] [Thread-1 (]: Writing injected SQL for node "model.edu_dbt.dim_leads"
+[0m01:47:16.150226 [debug] [Thread-1 (]: Began executing node model.edu_dbt.dim_leads
+[0m01:47:16.162313 [debug] [Thread-1 (]: Writing runtime sql for node "model.edu_dbt.dim_leads"
+[0m01:47:16.169579 [debug] [Thread-1 (]: Using snowflake connection "model.edu_dbt.dim_leads"
+[0m01:47:16.173841 [debug] [Thread-1 (]: On model.edu_dbt.dim_leads: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_leads"} */
+create or replace   view EDU_DB.GOLD.dim_leads
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_leads
+  );
+[0m01:47:16.455542 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.278 seconds
+[0m01:47:16.460545 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c4d5a892-6f6e-468f-8059-4e671cabed36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AAE449A0>]}
+[0m01:47:16.462543 [info ] [Thread-1 (]: 12 of 12 OK created sql view model GOLD.dim_leads .............................. [[32mSUCCESS 1[0m in 0.33s]
+[0m01:47:16.464873 [debug] [Thread-1 (]: Finished running node model.edu_dbt.dim_leads
+[0m01:47:16.469386 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:47:16.470152 [debug] [MainThread]: Connection 'list_EDU_DB' was left open.
+[0m01:47:16.472555 [debug] [MainThread]: On list_EDU_DB: Close
+[0m01:47:16.629670 [debug] [MainThread]: Connection 'list_EDU_DB' was left open.
+[0m01:47:16.631697 [debug] [MainThread]: On list_EDU_DB: Close
+[0m01:47:17.030776 [debug] [MainThread]: Connection 'list_EDU_DB_GOLD' was left open.
+[0m01:47:17.032793 [debug] [MainThread]: On list_EDU_DB_GOLD: Close
+[0m01:47:17.182095 [debug] [MainThread]: Connection 'list_EDU_DB_SILVER' was left open.
+[0m01:47:17.182095 [debug] [MainThread]: On list_EDU_DB_SILVER: Close
+[0m01:47:17.313737 [debug] [MainThread]: Connection 'model.edu_dbt.dim_leads' was left open.
+[0m01:47:17.315749 [debug] [MainThread]: On model.edu_dbt.dim_leads: Close
+[0m01:47:17.456915 [debug] [MainThread]: Connection 'model.edu_dbt.fact_enrollments' was left open.
+[0m01:47:17.457621 [debug] [MainThread]: On model.edu_dbt.fact_enrollments: Close
+[0m01:47:17.589051 [debug] [MainThread]: Connection 'model.edu_dbt.silver_leads' was left open.
+[0m01:47:17.589051 [debug] [MainThread]: On model.edu_dbt.silver_leads: Close
+[0m01:47:17.721769 [debug] [MainThread]: Connection 'model.edu_dbt.fact_interactions' was left open.
+[0m01:47:17.721769 [debug] [MainThread]: On model.edu_dbt.fact_interactions: Close
+[0m01:47:17.865362 [info ] [MainThread]: 
+[0m01:47:17.865362 [info ] [MainThread]: Finished running 6 table models, 6 view models in 0 hours 0 minutes and 7.09 seconds (7.09s).
+[0m01:47:17.870432 [debug] [MainThread]: Command end result
+[0m01:47:18.035811 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\target\manifest.json
+[0m01:47:18.045288 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\target\semantic_manifest.json
+[0m01:47:18.050163 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\abder_gck1ko4\OneDrive\Desktop\DERDER\DataEngineeringProjects\education-pipeline\edu_dbt\target\run_results.json
+[0m01:47:18.054500 [info ] [MainThread]: 
+[0m01:47:18.055857 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m01:47:18.056857 [info ] [MainThread]: 
+[0m01:47:18.058368 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 TOTAL=12
+[0m01:47:18.060381 [debug] [MainThread]: Command `dbt run` succeeded at 01:47:18.060381 after 8.63 seconds
+[0m01:47:18.060381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A6952500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257AA7014E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000257A7C5BC40>]}
+[0m01:47:18.061379 [debug] [MainThread]: Flushing usage events
+[0m01:47:18.623078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:48:09.223788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19c3455490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19c3948100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19c116e550>]}
+
+
+============================== 23:48:09.239334 | 80edf280-8385-495c-92f9-3e3c50be36b9 ==============================
+[0m23:48:09.239334 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:48:09.242348 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/opt/airflow/edu_dbt/profiles', 'log_path': '/opt/airflow/edu_dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh --profiles-dir /opt/airflow/edu_dbt/profiles', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:48:10.296785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19c116ee50>]}
+[0m23:48:10.391042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f199664df40>]}
+[0m23:48:10.393744 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m23:48:10.420340 [debug] [MainThread]: checksum: 61e99fc04fd80d06ce91efefd25c0802dcce8a048167599a1a188233d6ce8ed9, vars: {}, profile: , target: , version: 1.7.2
+[0m23:48:10.481623 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m23:48:10.484188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1996634eb0>]}
+[0m23:48:12.555836 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.edu_dbt.relationships_fact_enrollments_student_key__student_id__ref_dim_student_.f4456c5e8a' (models/gold/schema.yml) depends on a node named 'dim_student' in package '' which was not found
+[0m23:48:12.559240 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.edu_dbt.relationships_fact_enrollments_course_key__course_id__ref_dim_course_.c8376d9900' (models/gold/schema.yml) depends on a node named 'dim_course' in package '' which was not found
+[0m23:48:12.561570 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.edu_dbt.relationships_fact_interactions_contact_id__contact_id__ref_dim_contact_.3a6dc06f65' (models/gold/schema.yml) depends on a node named 'dim_contact' in package '' which was not found
+[0m23:48:12.628189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19946f90d0>]}
+[0m23:48:12.731823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19965611c0>]}
+[0m23:48:12.737752 [info ] [MainThread]: Found 12 models, 31 tests, 6 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m23:48:12.743135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19949daca0>]}
+[0m23:48:12.754326 [info ] [MainThread]: 
+[0m23:48:12.760397 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m23:48:12.769038 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m23:48:12.771964 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m23:48:12.805559 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m23:48:12.802980 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m23:48:12.807325 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m23:48:12.808740 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m23:48:12.810566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:48:12.812894 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:48:13.392189 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m23:48:13.394103 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m23:48:13.397722 [debug] [ThreadPool]: On list_EDU_DB: Close
+[0m23:48:13.401493 [debug] [ThreadPool]: On list_EDU_DB: Close
+[0m23:48:13.565108 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EDU_DB, now list_EDU_DB_SILVER)
+[0m23:48:13.566687 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EDU_DB, now list_EDU_DB_GOLD)
+[0m23:48:13.581558 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_SILVER"
+[0m23:48:13.586666 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_GOLD"
+[0m23:48:13.591406 [debug] [ThreadPool]: On list_EDU_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_SILVER"} */
+show terse objects in EDU_DB.SILVER limit 10000
+[0m23:48:13.595134 [debug] [ThreadPool]: On list_EDU_DB_GOLD: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_GOLD"} */
+show terse objects in EDU_DB.GOLD limit 10000
+[0m23:48:13.596663 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:48:13.598419 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:48:14.062129 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.0 seconds
+[0m23:48:14.071686 [debug] [ThreadPool]: On list_EDU_DB_GOLD: Close
+[0m23:48:14.285027 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.0 seconds
+[0m23:48:14.292823 [debug] [ThreadPool]: On list_EDU_DB_SILVER: Close
+[0m23:48:14.443887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19946f9130>]}
+[0m23:48:14.447258 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:48:14.449616 [info ] [MainThread]: 
+[0m23:48:14.468948 [debug] [Thread-1  ]: Began running node model.edu_dbt.silver_contacts
+[0m23:48:14.470694 [debug] [Thread-2  ]: Began running node model.edu_dbt.silver_courses
+[0m23:48:14.472670 [debug] [Thread-3  ]: Began running node model.edu_dbt.silver_enrollments
+[0m23:48:14.475720 [debug] [Thread-4  ]: Began running node model.edu_dbt.silver_interactions
+[0m23:48:14.478549 [info ] [Thread-1  ]: 1 of 12 START sql table model SILVER.silver_contacts ........................... [RUN]
+[0m23:48:14.483022 [info ] [Thread-2  ]: 2 of 12 START sql table model SILVER.silver_courses ............................ [RUN]
+[0m23:48:14.487259 [info ] [Thread-3  ]: 3 of 12 START sql table model SILVER.silver_enrollments ........................ [RUN]
+[0m23:48:14.490669 [info ] [Thread-4  ]: 4 of 12 START sql table model SILVER.silver_interactions ....................... [RUN]
+[0m23:48:14.494797 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_EDU_DB_SILVER, now model.edu_dbt.silver_contacts)
+[0m23:48:14.500168 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_EDU_DB_GOLD, now model.edu_dbt.silver_courses)
+[0m23:48:14.503568 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.edu_dbt.silver_enrollments'
+[0m23:48:14.506373 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.edu_dbt.silver_interactions'
+[0m23:48:14.508457 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.silver_contacts
+[0m23:48:14.511628 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.silver_courses
+[0m23:48:14.513885 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.silver_enrollments
+[0m23:48:14.515902 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.silver_interactions
+[0m23:48:14.525992 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.silver_contacts"
+[0m23:48:14.532096 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.silver_courses"
+[0m23:48:14.540685 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.silver_enrollments"
+[0m23:48:14.554598 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.silver_interactions"
+[0m23:48:14.580276 [debug] [Thread-3  ]: Timing info for model.edu_dbt.silver_enrollments (compile): 23:48:14.533636 => 23:48:14.579169
+[0m23:48:14.585991 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_interactions (compile): 23:48:14.543462 => 23:48:14.584105
+[0m23:48:14.588231 [debug] [Thread-3  ]: Began executing node model.edu_dbt.silver_enrollments
+[0m23:48:14.590939 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_contacts (compile): 23:48:14.517314 => 23:48:14.589169
+[0m23:48:14.593619 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_courses (compile): 23:48:14.528084 => 23:48:14.592978
+[0m23:48:14.596935 [debug] [Thread-4  ]: Began executing node model.edu_dbt.silver_interactions
+[0m23:48:14.625072 [debug] [Thread-1  ]: Began executing node model.edu_dbt.silver_contacts
+[0m23:48:14.643223 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.silver_enrollments"
+[0m23:48:14.645254 [debug] [Thread-2  ]: Began executing node model.edu_dbt.silver_courses
+[0m23:48:14.654346 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.silver_interactions"
+[0m23:48:14.664137 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.silver_contacts"
+[0m23:48:14.677385 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.silver_courses"
+[0m23:48:14.695820 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.silver_enrollments"
+[0m23:48:14.700941 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.silver_contacts"
+[0m23:48:14.706607 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.silver_interactions"
+[0m23:48:14.711594 [debug] [Thread-3  ]: On model.edu_dbt.silver_enrollments: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_enrollments"} */
+create or replace transient table EDU_DB.SILVER.silver_enrollments
+         as
+        (WITH raw AS (
+
+    SELECT
+        "EnrollmentId" AS raw_enrollment_id,
+        "student_id" AS raw_student_id,
+        "Course ID" AS raw_course_id,
+        "EnrollDate" AS raw_enroll_date,
+        "Status" AS raw_status
+    FROM EDU_DB.BRONZE.RAW_ENROLLMENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_enrollment_id AS enrollment_id,
+        raw_student_id AS student_id,
+        CAST(raw_course_id AS INT) AS course_id,
+
+        COALESCE(
+            TRY_TO_DATE(raw_enroll_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_enroll_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD/MM/YYYY')
+        ) AS enrollment_date,
+
+        -- Mapping plus précis des statuts
+        CASE
+            WHEN LOWER(raw_status) IN ('active') THEN 'active'
+            WHEN LOWER(raw_status) IN ('done', 'valide', 'ok', 'completed') THEN 'completed'
+            WHEN LOWER(raw_status) IN ('cancelled', 'abandon', 'dropped', 'droped') THEN 'cancelled'
+            WHEN raw_status IS NULL OR TRIM(raw_status) = '' THEN 'unknown'
+            ELSE 'unknown'
+        END AS status
+
+    FROM raw
+    WHERE raw_enrollment_id IS NOT NULL
+)
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY enrollment_id) AS enrollment_key FROM cleaned
+WHERE enrollment_id IS NOT NULL AND student_id IS NOT NULL AND course_id IS NOT NULL
+        );
+[0m23:48:14.722085 [debug] [Thread-1  ]: On model.edu_dbt.silver_contacts: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_contacts"} */
+create or replace transient table EDU_DB.SILVER.silver_contacts
+         as
+        (WITH raw AS (
+    SELECT
+        "Contact ID" AS raw_contact_id,
+        "First Name" AS raw_first_name,
+        "LastName" AS raw_last_name,
+        "phoneNumber" AS raw_phone,
+        "E-Mail" AS email_1,
+        "email" AS email_2,
+        "courriel" AS email_3,
+        "Mail" AS email_4,
+        "created_at" AS raw_created_at
+    FROM EDU_DB.BRONZE.RAW_CONTACTS
+),
+
+cleaned AS (
+    SELECT
+        raw_contact_id AS contact_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name)) AS last_name,
+
+        TRIM(raw_phone) AS phone,
+
+        -- Priorité aux premiers emails non vides
+        COALESCE(
+            NULLIF(TRIM(LOWER(email_1)), ''),
+            NULLIF(TRIM(LOWER(email_2)), ''),
+            NULLIF(TRIM(LOWER(email_3)), ''),
+            NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email,
+
+        COALESCE(
+            TRY_TO_DATE(raw_created_at, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_at, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_at, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_at, 'DD/MM/YYYY')
+        ) AS created_at
+
+    FROM raw
+    WHERE raw_contact_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where contact_id IS NOT NULL AND email IS NOT NULL
+        );
+[0m23:48:14.723864 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.silver_courses"
+[0m23:48:14.729054 [debug] [Thread-4  ]: On model.edu_dbt.silver_interactions: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_interactions"} */
+create or replace transient table EDU_DB.SILVER.silver_interactions
+         as
+        (WITH raw AS (
+    SELECT
+        "InteractionId" AS raw_interaction_id,
+        "ContactId" AS raw_contact_id,
+        "Interaction Type" AS raw_type,
+        "Date" AS raw_date,
+        "Notes" AS raw_notes
+    FROM EDU_DB.BRONZE.RAW_INTERACTIONS
+),
+
+cleaned AS (
+    SELECT
+        raw_interaction_id AS interaction_id,
+        raw_contact_id AS contact_id,
+        raw_notes,
+
+        -- Nettoyage du type d’interaction
+        CASE
+            WHEN LOWER(raw_type) IN ('call', 'appel') THEN 'call'
+            WHEN LOWER(raw_type) IN ('meeting') THEN 'meeting'
+            WHEN LOWER(raw_type) IN ('rdv') THEN 'appointment'
+            WHEN LOWER(raw_type) IN ('email') THEN 'email'
+            ELSE 'unknown'
+        END AS interaction_type,
+
+        -- Gestion des dates multi-format
+        COALESCE(
+            TRY_TO_DATE(raw_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_date, 'YYYY/MM/DD')
+        ) AS interaction_date
+
+    FROM raw
+    WHERE raw_interaction_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where interaction_id IS NOT NULL AND contact_id IS NOT NULL
+        );
+[0m23:48:14.733002 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m23:48:14.734838 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m23:48:14.736812 [debug] [Thread-2  ]: On model.edu_dbt.silver_courses: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_courses"} */
+create or replace transient table EDU_DB.SILVER.silver_courses
+         as
+        (WITH raw AS (
+    SELECT
+        "CourseID" AS raw_course_id,
+        "Course Name" AS raw_course_name,
+        "credits" AS raw_credits,
+        "Start_Date" AS raw_start_date,
+        "endDate" AS raw_end_date
+    FROM EDU_DB.BRONZE.RAW_COURSES
+),
+
+cleaned AS (
+    SELECT
+        CAST(raw_course_id AS INT) AS course_id,
+
+        -- Nettoyage du nom du cours (capitalisation, suppression espaces, etc.)
+        INITCAP(TRIM(raw_course_name)) AS course_name,
+
+        CAST(raw_credits AS INT) AS credits,
+
+        -- Formats de dates divers
+        COALESCE(
+            TRY_TO_DATE(raw_start_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_start_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_start_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_start_date, 'YYYY/MM/DD')
+        ) AS start_date,
+
+        COALESCE(
+            TRY_TO_DATE(raw_end_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_end_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_end_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_end_date, 'YYYY/MM/DD')
+        ) AS end_date
+
+    FROM raw
+    WHERE raw_course_id IS NOT NULL
+),
+ranked AS (
+    SELECT *,
+        ROW_NUMBER() OVER (PARTITION BY course_id ORDER BY start_date DESC) AS row_num
+    FROM cleaned
+)
+SELECT
+    course_id,
+    course_name,
+    credits,
+    start_date,
+    end_date
+FROM ranked
+WHERE row_num = 1 and course_name is not null
+        );
+[0m23:48:14.739677 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m23:48:14.756845 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m23:48:15.941789 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:15.952521 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:15.953714 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:15.979086 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_interactions (execute): 23:48:14.648484 => 23:48:15.978531
+[0m23:48:15.980404 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:15.983532 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_contacts (execute): 23:48:14.656802 => 23:48:15.983302
+[0m23:48:15.989233 [debug] [Thread-3  ]: Timing info for model.edu_dbt.silver_enrollments (execute): 23:48:14.600121 => 23:48:15.988814
+[0m23:48:15.992141 [debug] [Thread-4  ]: On model.edu_dbt.silver_interactions: Close
+[0m23:48:15.998402 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_courses (execute): 23:48:14.671154 => 23:48:15.997909
+[0m23:48:16.001175 [debug] [Thread-1  ]: On model.edu_dbt.silver_contacts: Close
+[0m23:48:16.003609 [debug] [Thread-3  ]: On model.edu_dbt.silver_enrollments: Close
+[0m23:48:16.009214 [debug] [Thread-2  ]: On model.edu_dbt.silver_courses: Close
+[0m23:48:16.134153 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19946273a0>]}
+[0m23:48:16.136680 [info ] [Thread-4  ]: 4 of 12 OK created sql table model SILVER.silver_interactions .................. [[32mSUCCESS 1[0m in 1.63s]
+[0m23:48:16.139204 [debug] [Thread-4  ]: Finished running node model.edu_dbt.silver_interactions
+[0m23:48:16.141435 [debug] [Thread-4  ]: Began running node model.edu_dbt.silver_leads
+[0m23:48:16.143897 [info ] [Thread-4  ]: 5 of 12 START sql table model SILVER.silver_leads .............................. [RUN]
+[0m23:48:16.146685 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_interactions, now model.edu_dbt.silver_leads)
+[0m23:48:16.148564 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.silver_leads
+[0m23:48:16.154210 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.silver_leads"
+[0m23:48:16.170191 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19944d1280>]}
+[0m23:48:16.172411 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_leads (compile): 23:48:16.150377 => 23:48:16.171499
+[0m23:48:16.177002 [info ] [Thread-2  ]: 2 of 12 OK created sql table model SILVER.silver_courses ....................... [[32mSUCCESS 1[0m in 1.67s]
+[0m23:48:16.180702 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f199440bb80>]}
+[0m23:48:16.184842 [debug] [Thread-4  ]: Began executing node model.edu_dbt.silver_leads
+[0m23:48:16.187545 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f199448efa0>]}
+[0m23:48:16.190969 [debug] [Thread-2  ]: Finished running node model.edu_dbt.silver_courses
+[0m23:48:16.195763 [info ] [Thread-1  ]: 1 of 12 OK created sql table model SILVER.silver_contacts ...................... [[32mSUCCESS 1[0m in 1.69s]
+[0m23:48:16.205034 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.silver_leads"
+[0m23:48:16.207676 [info ] [Thread-3  ]: 3 of 12 OK created sql table model SILVER.silver_enrollments ................... [[32mSUCCESS 1[0m in 1.68s]
+[0m23:48:16.211554 [debug] [Thread-2  ]: Began running node model.edu_dbt.silver_students
+[0m23:48:16.216014 [debug] [Thread-1  ]: Finished running node model.edu_dbt.silver_contacts
+[0m23:48:16.221654 [debug] [Thread-3  ]: Finished running node model.edu_dbt.silver_enrollments
+[0m23:48:16.224175 [info ] [Thread-2  ]: 6 of 12 START sql table model SILVER.silver_students ........................... [RUN]
+[0m23:48:16.227758 [debug] [Thread-1  ]: Began running node model.edu_dbt.dim_courses
+[0m23:48:16.230201 [debug] [Thread-3  ]: Began running node model.edu_dbt.dim_contacts
+[0m23:48:16.233159 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_courses, now model.edu_dbt.silver_students)
+[0m23:48:16.236791 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.silver_leads"
+[0m23:48:16.239164 [info ] [Thread-1  ]: 7 of 12 START sql view model GOLD.dim_courses .................................. [RUN]
+[0m23:48:16.241390 [info ] [Thread-3  ]: 8 of 12 START sql view model GOLD.dim_contacts ................................. [RUN]
+[0m23:48:16.243770 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.silver_students
+[0m23:48:16.246537 [debug] [Thread-4  ]: On model.edu_dbt.silver_leads: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_leads"} */
+create or replace transient table EDU_DB.SILVER.silver_leads
+         as
+        (WITH raw AS (
+    SELECT
+        "LeadID" AS raw_lead_id,
+        "Full Name" AS raw_full_name,
+        "Source" AS raw_source,
+        "Status" AS raw_status,
+        "CreatedDate" AS raw_created_date
+    FROM EDU_DB.BRONZE.RAW_LEADS
+),
+
+cleaned AS (
+    SELECT
+        raw_lead_id AS lead_id,
+
+        INITCAP(TRIM(raw_full_name)) AS full_name,
+
+        -- Standardisation de la source
+        CASE
+            WHEN LOWER(raw_source) IN ('social', 'social media') THEN 'social'
+            WHEN LOWER(raw_source) IN ('web') THEN 'web'
+            WHEN LOWER(raw_source) IN ('email', 'e-mail') THEN 'email'
+            WHEN LOWER(raw_source) IN ('referral', 'referal') THEN 'referral'
+            ELSE 'unknown'
+        END AS source,
+
+        -- Standardisation du statut
+        CASE
+            WHEN LOWER(raw_status) = 'new' THEN 'new'
+            WHEN LOWER(raw_status) = 'qualified' THEN 'qualified'
+            WHEN LOWER(raw_status) = 'contacted' THEN 'contacted'
+            WHEN LOWER(raw_status) = 'lost' THEN 'lost'
+            ELSE 'unknown'
+        END AS status,
+
+        -- Parsing de la date
+        COALESCE(
+            TRY_TO_DATE(raw_created_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_date, 'DD/MM/YYYY')
+        ) AS created_date
+
+    FROM raw
+    WHERE raw_lead_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where lead_id IS NOT NULL AND status IS NOT NULL AND source IS NOT NULL
+        );
+[0m23:48:16.250286 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_contacts, now model.edu_dbt.dim_courses)
+[0m23:48:16.253119 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_enrollments, now model.edu_dbt.dim_contacts)
+[0m23:48:16.260582 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.silver_students"
+[0m23:48:16.262411 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m23:48:16.264215 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.dim_courses
+[0m23:48:16.266608 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.dim_contacts
+[0m23:48:16.280862 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.dim_courses"
+[0m23:48:16.286123 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.dim_contacts"
+[0m23:48:16.289532 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_students (compile): 23:48:16.254929 => 23:48:16.288856
+[0m23:48:16.292682 [debug] [Thread-2  ]: Began executing node model.edu_dbt.silver_students
+[0m23:48:16.299111 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.silver_students"
+[0m23:48:16.301987 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_courses (compile): 23:48:16.275924 => 23:48:16.301317
+[0m23:48:16.303024 [debug] [Thread-3  ]: Timing info for model.edu_dbt.dim_contacts (compile): 23:48:16.282435 => 23:48:16.302435
+[0m23:48:16.304807 [debug] [Thread-1  ]: Began executing node model.edu_dbt.dim_courses
+[0m23:48:16.307300 [debug] [Thread-3  ]: Began executing node model.edu_dbt.dim_contacts
+[0m23:48:16.360544 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.dim_contacts"
+[0m23:48:16.361723 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.dim_courses"
+[0m23:48:16.366281 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.silver_students"
+[0m23:48:16.369539 [debug] [Thread-2  ]: On model.edu_dbt.silver_students: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_students"} */
+create or replace transient table EDU_DB.SILVER.silver_students
+         as
+        (WITH raw AS (
+
+    SELECT
+        "Student ID"     AS raw_student_id,
+        "FirstName"      AS raw_first_name,
+        "last_name"      AS raw_last_name,
+        "DOB"            AS raw_dob,
+        "reg_date"       AS raw_reg_date,
+        "email"          AS email_1,
+        "E-Mail"         AS email_2,
+        "mail"           AS email_3,
+        "courriel"       AS email_4
+
+    FROM EDU_DB.BRONZE.RAW_STUDENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_student_id AS student_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name))  AS last_name,
+
+        -- Normalisation de la date de naissance
+        COALESCE(
+            TRY_TO_DATE(raw_dob, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_dob, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_dob, 'DD-MM-YYYY')
+        ) AS date_of_birth,
+
+        -- Normalisation de la date d'inscription
+        COALESCE(
+            TRY_TO_DATE(raw_reg_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_reg_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_reg_date, 'DD-MM-YYYY')
+        ) AS registration_date,
+
+        -- Choix du premier email disponible (priorité dans l'ordre)
+        COALESCE(NULLIF(TRIM(LOWER(email_1)), ''),
+                 NULLIF(TRIM(LOWER(email_2)), ''),
+                 NULLIF(TRIM(LOWER(email_3)), ''),
+                 NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email
+
+    FROM raw
+
+)
+
+SELECT * FROM cleaned
+WHERE student_id IS NOT NULL
+AND email IS NOT NULL
+        );
+[0m23:48:16.371713 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m23:48:16.377737 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.dim_contacts"
+[0m23:48:16.380446 [debug] [Thread-3  ]: On model.edu_dbt.dim_contacts: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_contacts"} */
+create or replace   view EDU_DB.GOLD.dim_contacts
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_contacts
+  );
+[0m23:48:16.382526 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.dim_courses"
+[0m23:48:16.384189 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m23:48:16.386698 [debug] [Thread-1  ]: On model.edu_dbt.dim_courses: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_courses"} */
+create or replace   view EDU_DB.GOLD.dim_courses
+  
+   as (
+    
+
+SELECT *,ROW_NUMBER() OVER (ORDER BY COURSE_ID) AS COURSE_KEY
+FROM EDU_DB.SILVER.silver_courses
+  );
+[0m23:48:16.393120 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m23:48:17.320017 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:17.322299 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:17.325776 [debug] [Thread-3  ]: Timing info for model.edu_dbt.dim_contacts (execute): 23:48:16.333637 => 23:48:17.325513
+[0m23:48:17.330892 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_courses (execute): 23:48:16.309139 => 23:48:17.330649
+[0m23:48:17.334658 [debug] [Thread-3  ]: On model.edu_dbt.dim_contacts: Close
+[0m23:48:17.340077 [debug] [Thread-1  ]: On model.edu_dbt.dim_courses: Close
+[0m23:48:17.475667 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19943d3ca0>]}
+[0m23:48:17.479318 [info ] [Thread-3  ]: 8 of 12 OK created sql view model GOLD.dim_contacts ............................ [[32mSUCCESS 1[0m in 1.22s]
+[0m23:48:17.483232 [debug] [Thread-3  ]: Finished running node model.edu_dbt.dim_contacts
+[0m23:48:17.487641 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:17.491850 [debug] [Thread-3  ]: Began running node model.edu_dbt.fact_interactions
+[0m23:48:17.497524 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_leads (execute): 23:48:16.197805 => 23:48:17.497091
+[0m23:48:17.500456 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1994448b50>]}
+[0m23:48:17.503232 [info ] [Thread-3  ]: 9 of 12 START sql view model GOLD.fact_interactions ............................ [RUN]
+[0m23:48:17.506195 [debug] [Thread-4  ]: On model.edu_dbt.silver_leads: Close
+[0m23:48:17.509396 [info ] [Thread-1  ]: 7 of 12 OK created sql view model GOLD.dim_courses ............................. [[32mSUCCESS 1[0m in 1.25s]
+[0m23:48:17.513316 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_contacts, now model.edu_dbt.fact_interactions)
+[0m23:48:17.521866 [debug] [Thread-1  ]: Finished running node model.edu_dbt.dim_courses
+[0m23:48:17.524249 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.fact_interactions
+[0m23:48:17.534025 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.fact_interactions"
+[0m23:48:17.550575 [debug] [Thread-3  ]: Timing info for model.edu_dbt.fact_interactions (compile): 23:48:17.527849 => 23:48:17.549849
+[0m23:48:17.553240 [debug] [Thread-3  ]: Began executing node model.edu_dbt.fact_interactions
+[0m23:48:17.559288 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.fact_interactions"
+[0m23:48:17.581746 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.fact_interactions"
+[0m23:48:17.586935 [debug] [Thread-3  ]: On model.edu_dbt.fact_interactions: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_interactions"} */
+create or replace   view EDU_DB.GOLD.fact_interactions
+  
+   as (
+    
+
+SELECT
+    i.interaction_id,
+    i.contact_id,
+    c.first_name AS contact_first_name,
+    c.last_name AS contact_last_name,
+    c.email AS contact_email,
+    i.interaction_type,
+    i.interaction_date,
+    i.raw_notes AS notes
+
+FROM EDU_DB.SILVER.silver_interactions i
+
+LEFT JOIN EDU_DB.GOLD.dim_contacts c
+    ON i.contact_id = c.contact_id
+  );
+[0m23:48:17.598590 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m23:48:17.618590 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:17.625747 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_students (execute): 23:48:16.294431 => 23:48:17.625400
+[0m23:48:17.628400 [debug] [Thread-2  ]: On model.edu_dbt.silver_students: Close
+[0m23:48:17.666986 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19946273a0>]}
+[0m23:48:17.670609 [info ] [Thread-4  ]: 5 of 12 OK created sql table model SILVER.silver_leads ......................... [[32mSUCCESS 1[0m in 1.52s]
+[0m23:48:17.674637 [debug] [Thread-4  ]: Finished running node model.edu_dbt.silver_leads
+[0m23:48:17.679187 [debug] [Thread-1  ]: Began running node model.edu_dbt.dim_leads
+[0m23:48:17.683094 [info ] [Thread-1  ]: 10 of 12 START sql view model GOLD.dim_leads ................................... [RUN]
+[0m23:48:17.686854 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_courses, now model.edu_dbt.dim_leads)
+[0m23:48:17.689383 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.dim_leads
+[0m23:48:17.696249 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.dim_leads"
+[0m23:48:17.719509 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_leads (compile): 23:48:17.691637 => 23:48:17.718452
+[0m23:48:17.740135 [debug] [Thread-1  ]: Began executing node model.edu_dbt.dim_leads
+[0m23:48:17.762699 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.dim_leads"
+[0m23:48:17.784780 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.dim_leads"
+[0m23:48:17.786893 [debug] [Thread-1  ]: On model.edu_dbt.dim_leads: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_leads"} */
+create or replace   view EDU_DB.GOLD.dim_leads
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_leads
+  );
+[0m23:48:17.789203 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m23:48:17.805797 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19943f0d90>]}
+[0m23:48:17.808036 [info ] [Thread-2  ]: 6 of 12 OK created sql table model SILVER.silver_students ...................... [[32mSUCCESS 1[0m in 1.57s]
+[0m23:48:17.810536 [debug] [Thread-2  ]: Finished running node model.edu_dbt.silver_students
+[0m23:48:17.813568 [debug] [Thread-4  ]: Began running node model.edu_dbt.dim_students
+[0m23:48:17.816568 [info ] [Thread-4  ]: 11 of 12 START sql view model GOLD.dim_students ................................ [RUN]
+[0m23:48:17.819293 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_leads, now model.edu_dbt.dim_students)
+[0m23:48:17.821191 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.dim_students
+[0m23:48:17.826660 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.dim_students"
+[0m23:48:17.848031 [debug] [Thread-4  ]: Timing info for model.edu_dbt.dim_students (compile): 23:48:17.823173 => 23:48:17.846883
+[0m23:48:17.850660 [debug] [Thread-4  ]: Began executing node model.edu_dbt.dim_students
+[0m23:48:17.858322 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.dim_students"
+[0m23:48:17.880946 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.dim_students"
+[0m23:48:17.883837 [debug] [Thread-4  ]: On model.edu_dbt.dim_students: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_students"} */
+create or replace   view EDU_DB.GOLD.dim_students
+  
+   as (
+    
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY STUDENT_ID) AS student_key
+
+FROM EDU_DB.SILVER.silver_students
+  );
+[0m23:48:17.886900 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m23:48:18.371775 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:18.385481 [debug] [Thread-3  ]: Timing info for model.edu_dbt.fact_interactions (execute): 23:48:17.554834 => 23:48:18.384729
+[0m23:48:18.390660 [debug] [Thread-3  ]: On model.edu_dbt.fact_interactions: Close
+[0m23:48:18.469028 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:18.480248 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_leads (execute): 23:48:17.757846 => 23:48:18.479297
+[0m23:48:18.484511 [debug] [Thread-1  ]: On model.edu_dbt.dim_leads: Close
+[0m23:48:18.547475 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19942f3d00>]}
+[0m23:48:18.552141 [info ] [Thread-3  ]: 9 of 12 OK created sql view model GOLD.fact_interactions ....................... [[32mSUCCESS 1[0m in 1.04s]
+[0m23:48:18.563789 [debug] [Thread-3  ]: Finished running node model.edu_dbt.fact_interactions
+[0m23:48:18.610399 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:18.621546 [debug] [Thread-4  ]: Timing info for model.edu_dbt.dim_students (execute): 23:48:17.852977 => 23:48:18.619171
+[0m23:48:18.625339 [debug] [Thread-4  ]: On model.edu_dbt.dim_students: Close
+[0m23:48:18.699629 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19944252b0>]}
+[0m23:48:18.709203 [info ] [Thread-1  ]: 10 of 12 OK created sql view model GOLD.dim_leads .............................. [[32mSUCCESS 1[0m in 1.01s]
+[0m23:48:18.713780 [debug] [Thread-1  ]: Finished running node model.edu_dbt.dim_leads
+[0m23:48:18.875289 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19943300d0>]}
+[0m23:48:18.881708 [info ] [Thread-4  ]: 11 of 12 OK created sql view model GOLD.dim_students ........................... [[32mSUCCESS 1[0m in 1.06s]
+[0m23:48:18.889244 [debug] [Thread-4  ]: Finished running node model.edu_dbt.dim_students
+[0m23:48:18.898242 [debug] [Thread-2  ]: Began running node model.edu_dbt.fact_enrollments
+[0m23:48:18.906570 [info ] [Thread-2  ]: 12 of 12 START sql view model GOLD.fact_enrollments ............................ [RUN]
+[0m23:48:18.919105 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_students, now model.edu_dbt.fact_enrollments)
+[0m23:48:18.924473 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.fact_enrollments
+[0m23:48:18.946911 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.fact_enrollments"
+[0m23:48:18.980907 [debug] [Thread-2  ]: Timing info for model.edu_dbt.fact_enrollments (compile): 23:48:18.928670 => 23:48:18.979065
+[0m23:48:18.985759 [debug] [Thread-2  ]: Began executing node model.edu_dbt.fact_enrollments
+[0m23:48:18.999069 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.fact_enrollments"
+[0m23:48:19.018208 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.fact_enrollments"
+[0m23:48:19.020645 [debug] [Thread-2  ]: On model.edu_dbt.fact_enrollments: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_enrollments"} */
+create or replace   view EDU_DB.GOLD.fact_enrollments
+  
+   as (
+    
+
+SELECT
+    e.enrollment_key,
+    s.student_key,
+    s.first_name AS student_first_name,
+    s.last_name AS student_last_name,
+    s.email AS student_email,
+
+    c.course_key,
+    c.course_name,
+    c.credits,
+
+    e.enrollment_date,
+    e.status
+
+FROM EDU_DB.SILVER.silver_enrollments e
+
+LEFT JOIN EDU_DB.GOLD.dim_students s
+    ON e.student_id = s.student_id
+
+LEFT JOIN EDU_DB.GOLD.dim_courses c
+    ON e.course_id = c.course_id
+  );
+[0m23:48:19.023276 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m23:48:19.832611 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m23:48:19.852236 [debug] [Thread-2  ]: Timing info for model.edu_dbt.fact_enrollments (execute): 23:48:18.989626 => 23:48:19.850955
+[0m23:48:19.858358 [debug] [Thread-2  ]: On model.edu_dbt.fact_enrollments: Close
+[0m23:48:19.984962 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80edf280-8385-495c-92f9-3e3c50be36b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1994477550>]}
+[0m23:48:19.987505 [info ] [Thread-2  ]: 12 of 12 OK created sql view model GOLD.fact_enrollments ....................... [[32mSUCCESS 1[0m in 1.07s]
+[0m23:48:19.989893 [debug] [Thread-2  ]: Finished running node model.edu_dbt.fact_enrollments
+[0m23:48:19.995032 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:48:19.996946 [debug] [MainThread]: Connection 'model.edu_dbt.dim_leads' was properly closed.
+[0m23:48:19.998365 [debug] [MainThread]: Connection 'model.edu_dbt.fact_enrollments' was properly closed.
+[0m23:48:20.000612 [debug] [MainThread]: Connection 'model.edu_dbt.fact_interactions' was properly closed.
+[0m23:48:20.002953 [debug] [MainThread]: Connection 'model.edu_dbt.dim_students' was properly closed.
+[0m23:48:20.005546 [info ] [MainThread]: 
+[0m23:48:20.008064 [info ] [MainThread]: Finished running 6 table models, 6 view models in 0 hours 0 minutes and 7.25 seconds (7.25s).
+[0m23:48:20.014931 [debug] [MainThread]: Command end result
+[0m23:48:20.066341 [info ] [MainThread]: 
+[0m23:48:20.069354 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:48:20.071886 [info ] [MainThread]: 
+[0m23:48:20.075392 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 TOTAL=12
+[0m23:48:20.079797 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.9787035, "process_user_time": 7.373714, "process_kernel_time": 1.444849, "process_mem_max_rss": "243100", "process_in_blocks": "560", "process_out_blocks": "8"}
+[0m23:48:20.083376 [debug] [MainThread]: Command `dbt run` succeeded at 23:48:20.082780 after 10.98 seconds
+[0m23:48:20.085719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19c3455490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19944625e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1996561bb0>]}
+[0m23:48:20.088265 [debug] [MainThread]: Flushing usage events
+[0m00:02:12.956515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4786c90ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f478499b130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47849af730>]}
+
+
+============================== 00:02:13.020716 | 506e217a-b7df-4d97-99d0-511e555a3222 ==============================
+[0m00:02:13.020716 [info ] [MainThread]: Running with dbt=1.7.2
+[0m00:02:13.025693 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/airflow/edu_dbt/profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/opt/airflow/edu_dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --full-refresh --profiles-dir /opt/airflow/edu_dbt/profiles', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:02:14.302591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f478499bdf0>]}
+[0m00:02:14.429329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759eb4a60>]}
+[0m00:02:14.431572 [info ] [MainThread]: Registered adapter: snowflake=1.7.2
+[0m00:02:14.458014 [debug] [MainThread]: checksum: 61e99fc04fd80d06ce91efefd25c0802dcce8a048167599a1a188233d6ce8ed9, vars: {}, profile: , target: , version: 1.7.2
+[0m00:02:15.307226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:02:15.310081 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:02:15.328638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759a6b0d0>]}
+[0m00:02:15.473317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759c83c70>]}
+[0m00:02:15.477652 [info ] [MainThread]: Found 12 models, 31 tests, 6 sources, 0 exposures, 0 metrics, 431 macros, 0 groups, 0 semantic models
+[0m00:02:15.484553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759c83d90>]}
+[0m00:02:15.494467 [info ] [MainThread]: 
+[0m00:02:15.501449 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:02:15.514095 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m00:02:15.519636 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EDU_DB'
+[0m00:02:15.605182 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m00:02:15.602406 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB"
+[0m00:02:15.606685 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m00:02:15.608024 [debug] [ThreadPool]: On list_EDU_DB: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB"} */
+show terse schemas in database EDU_DB
+    limit 10000
+[0m00:02:15.609507 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:02:15.612370 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:02:16.442040 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m00:02:16.446234 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.0 seconds
+[0m00:02:16.458188 [debug] [ThreadPool]: On list_EDU_DB: Close
+[0m00:02:16.467389 [debug] [ThreadPool]: On list_EDU_DB: Close
+[0m00:02:16.649619 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EDU_DB, now list_EDU_DB_GOLD)
+[0m00:02:16.654016 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_EDU_DB, now list_EDU_DB_SILVER)
+[0m00:02:16.720616 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_GOLD"
+[0m00:02:16.729436 [debug] [ThreadPool]: Using snowflake connection "list_EDU_DB_SILVER"
+[0m00:02:16.732360 [debug] [ThreadPool]: On list_EDU_DB_GOLD: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_GOLD"} */
+show terse objects in EDU_DB.GOLD limit 10000
+[0m00:02:16.737219 [debug] [ThreadPool]: On list_EDU_DB_SILVER: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "connection_name": "list_EDU_DB_SILVER"} */
+show terse objects in EDU_DB.SILVER limit 10000
+[0m00:02:16.741218 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:02:16.745283 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:02:17.231381 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.0 seconds
+[0m00:02:17.239618 [debug] [ThreadPool]: On list_EDU_DB_GOLD: Close
+[0m00:02:17.286248 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.0 seconds
+[0m00:02:17.294378 [debug] [ThreadPool]: On list_EDU_DB_SILVER: Close
+[0m00:02:17.461432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759941cd0>]}
+[0m00:02:17.469442 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:02:17.474175 [info ] [MainThread]: 
+[0m00:02:17.507618 [debug] [Thread-1  ]: Began running node model.edu_dbt.silver_contacts
+[0m00:02:17.509152 [debug] [Thread-2  ]: Began running node model.edu_dbt.silver_courses
+[0m00:02:17.511413 [debug] [Thread-3  ]: Began running node model.edu_dbt.silver_enrollments
+[0m00:02:17.514585 [debug] [Thread-4  ]: Began running node model.edu_dbt.silver_interactions
+[0m00:02:17.521611 [info ] [Thread-1  ]: 1 of 12 START sql table model SILVER.silver_contacts ........................... [RUN]
+[0m00:02:17.525074 [info ] [Thread-2  ]: 2 of 12 START sql table model SILVER.silver_courses ............................ [RUN]
+[0m00:02:17.530477 [info ] [Thread-3  ]: 3 of 12 START sql table model SILVER.silver_enrollments ........................ [RUN]
+[0m00:02:17.536106 [info ] [Thread-4  ]: 4 of 12 START sql table model SILVER.silver_interactions ....................... [RUN]
+[0m00:02:17.544360 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_EDU_DB_GOLD, now model.edu_dbt.silver_contacts)
+[0m00:02:17.552470 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly list_EDU_DB_SILVER, now model.edu_dbt.silver_courses)
+[0m00:02:17.560822 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.edu_dbt.silver_enrollments'
+[0m00:02:17.569804 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.edu_dbt.silver_interactions'
+[0m00:02:17.576035 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.silver_contacts
+[0m00:02:17.581750 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.silver_courses
+[0m00:02:17.587915 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.silver_enrollments
+[0m00:02:17.593999 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.silver_interactions
+[0m00:02:17.630840 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.silver_courses"
+[0m00:02:17.635394 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.silver_contacts"
+[0m00:02:17.643827 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.silver_enrollments"
+[0m00:02:17.653641 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.silver_interactions"
+[0m00:02:17.669814 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_interactions (compile): 00:02:17.645536 => 00:02:17.668887
+[0m00:02:17.671172 [debug] [Thread-3  ]: Timing info for model.edu_dbt.silver_enrollments (compile): 00:02:17.638085 => 00:02:17.670431
+[0m00:02:17.676545 [debug] [Thread-4  ]: Began executing node model.edu_dbt.silver_interactions
+[0m00:02:17.678260 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_courses (compile): 00:02:17.621984 => 00:02:17.677458
+[0m00:02:17.680582 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_contacts (compile): 00:02:17.598803 => 00:02:17.679128
+[0m00:02:17.684980 [debug] [Thread-3  ]: Began executing node model.edu_dbt.silver_enrollments
+[0m00:02:17.715114 [debug] [Thread-2  ]: Began executing node model.edu_dbt.silver_courses
+[0m00:02:17.743921 [debug] [Thread-1  ]: Began executing node model.edu_dbt.silver_contacts
+[0m00:02:17.754802 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.silver_interactions"
+[0m00:02:17.759559 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.silver_enrollments"
+[0m00:02:17.769056 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.silver_courses"
+[0m00:02:17.777589 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.silver_contacts"
+[0m00:02:17.814239 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.silver_interactions"
+[0m00:02:17.821466 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.silver_enrollments"
+[0m00:02:17.827211 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.silver_courses"
+[0m00:02:17.833506 [debug] [Thread-4  ]: On model.edu_dbt.silver_interactions: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_interactions"} */
+create or replace transient table EDU_DB.SILVER.silver_interactions
+         as
+        (WITH raw AS (
+    SELECT
+        "InteractionId" AS raw_interaction_id,
+        "ContactId" AS raw_contact_id,
+        "Interaction Type" AS raw_type,
+        "Date" AS raw_date,
+        "Notes" AS raw_notes
+    FROM EDU_DB.BRONZE.RAW_INTERACTIONS
+),
+
+cleaned AS (
+    SELECT
+        raw_interaction_id AS interaction_id,
+        raw_contact_id AS contact_id,
+        raw_notes,
+
+        -- Nettoyage du type d’interaction
+        CASE
+            WHEN LOWER(raw_type) IN ('call', 'appel') THEN 'call'
+            WHEN LOWER(raw_type) IN ('meeting') THEN 'meeting'
+            WHEN LOWER(raw_type) IN ('rdv') THEN 'appointment'
+            WHEN LOWER(raw_type) IN ('email') THEN 'email'
+            ELSE 'unknown'
+        END AS interaction_type,
+
+        -- Gestion des dates multi-format
+        COALESCE(
+            TRY_TO_DATE(raw_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_date, 'YYYY/MM/DD')
+        ) AS interaction_date
+
+    FROM raw
+    WHERE raw_interaction_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where interaction_id IS NOT NULL AND contact_id IS NOT NULL
+        );
+[0m00:02:17.844886 [debug] [Thread-3  ]: On model.edu_dbt.silver_enrollments: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_enrollments"} */
+create or replace transient table EDU_DB.SILVER.silver_enrollments
+         as
+        (WITH raw AS (
+
+    SELECT
+        "EnrollmentId" AS raw_enrollment_id,
+        "student_id" AS raw_student_id,
+        "Course ID" AS raw_course_id,
+        "EnrollDate" AS raw_enroll_date,
+        "Status" AS raw_status
+    FROM EDU_DB.BRONZE.RAW_ENROLLMENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_enrollment_id AS enrollment_id,
+        raw_student_id AS student_id,
+        CAST(raw_course_id AS INT) AS course_id,
+
+        COALESCE(
+            TRY_TO_DATE(raw_enroll_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_enroll_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_enroll_date, 'DD/MM/YYYY')
+        ) AS enrollment_date,
+
+        -- Mapping plus précis des statuts
+        CASE
+            WHEN LOWER(raw_status) IN ('active') THEN 'active'
+            WHEN LOWER(raw_status) IN ('done', 'valide', 'ok', 'completed') THEN 'completed'
+            WHEN LOWER(raw_status) IN ('cancelled', 'abandon', 'dropped', 'droped') THEN 'cancelled'
+            WHEN raw_status IS NULL OR TRIM(raw_status) = '' THEN 'unknown'
+            ELSE 'unknown'
+        END AS status
+
+    FROM raw
+    WHERE raw_enrollment_id IS NOT NULL
+)
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY enrollment_id) AS enrollment_key FROM cleaned
+WHERE enrollment_id IS NOT NULL AND student_id IS NOT NULL AND course_id IS NOT NULL
+        );
+[0m00:02:17.842728 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.silver_contacts"
+[0m00:02:17.853634 [debug] [Thread-2  ]: On model.edu_dbt.silver_courses: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_courses"} */
+create or replace transient table EDU_DB.SILVER.silver_courses
+         as
+        (WITH raw AS (
+    SELECT
+        "CourseID" AS raw_course_id,
+        "Course Name" AS raw_course_name,
+        "credits" AS raw_credits,
+        "Start_Date" AS raw_start_date,
+        "endDate" AS raw_end_date
+    FROM EDU_DB.BRONZE.RAW_COURSES
+),
+
+cleaned AS (
+    SELECT
+        CAST(raw_course_id AS INT) AS course_id,
+
+        -- Nettoyage du nom du cours (capitalisation, suppression espaces, etc.)
+        INITCAP(TRIM(raw_course_name)) AS course_name,
+
+        CAST(raw_credits AS INT) AS credits,
+
+        -- Formats de dates divers
+        COALESCE(
+            TRY_TO_DATE(raw_start_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_start_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_start_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_start_date, 'YYYY/MM/DD')
+        ) AS start_date,
+
+        COALESCE(
+            TRY_TO_DATE(raw_end_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_end_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_end_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_end_date, 'YYYY/MM/DD')
+        ) AS end_date
+
+    FROM raw
+    WHERE raw_course_id IS NOT NULL
+),
+ranked AS (
+    SELECT *,
+        ROW_NUMBER() OVER (PARTITION BY course_id ORDER BY start_date DESC) AS row_num
+    FROM cleaned
+)
+SELECT
+    course_id,
+    course_name,
+    credits,
+    start_date,
+    end_date
+FROM ranked
+WHERE row_num = 1 and course_name is not null
+        );
+[0m00:02:17.859344 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m00:02:17.864680 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m00:02:17.870435 [debug] [Thread-1  ]: On model.edu_dbt.silver_contacts: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_contacts"} */
+create or replace transient table EDU_DB.SILVER.silver_contacts
+         as
+        (WITH raw AS (
+    SELECT
+        "Contact ID" AS raw_contact_id,
+        "First Name" AS raw_first_name,
+        "LastName" AS raw_last_name,
+        "phoneNumber" AS raw_phone,
+        "E-Mail" AS email_1,
+        "email" AS email_2,
+        "courriel" AS email_3,
+        "Mail" AS email_4,
+        "created_at" AS raw_created_at
+    FROM EDU_DB.BRONZE.RAW_CONTACTS
+),
+
+cleaned AS (
+    SELECT
+        raw_contact_id AS contact_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name)) AS last_name,
+
+        TRIM(raw_phone) AS phone,
+
+        -- Priorité aux premiers emails non vides
+        COALESCE(
+            NULLIF(TRIM(LOWER(email_1)), ''),
+            NULLIF(TRIM(LOWER(email_2)), ''),
+            NULLIF(TRIM(LOWER(email_3)), ''),
+            NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email,
+
+        COALESCE(
+            TRY_TO_DATE(raw_created_at, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_at, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_at, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_at, 'DD/MM/YYYY')
+        ) AS created_at
+
+    FROM raw
+    WHERE raw_contact_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where contact_id IS NOT NULL AND email IS NOT NULL
+        );
+[0m00:02:17.875341 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m00:02:17.901087 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m00:02:19.452954 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m00:02:19.456370 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m00:02:19.575402 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_contacts (execute): 00:02:17.771067 => 00:02:19.574843
+[0m00:02:19.572242 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_courses (execute): 00:02:17.762642 => 00:02:19.571799
+[0m00:02:19.581746 [debug] [Thread-1  ]: On model.edu_dbt.silver_contacts: Close
+[0m00:02:19.584871 [debug] [Thread-2  ]: On model.edu_dbt.silver_courses: Close
+[0m00:02:19.754020 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759a92ca0>]}
+[0m00:02:19.761290 [info ] [Thread-1  ]: 1 of 12 OK created sql table model SILVER.silver_contacts ...................... [[32mSUCCESS 1[0m in 2.21s]
+[0m00:02:19.767853 [debug] [Thread-1  ]: Finished running node model.edu_dbt.silver_contacts
+[0m00:02:19.773674 [debug] [Thread-1  ]: Began running node model.edu_dbt.silver_leads
+[0m00:02:19.780094 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4758909e50>]}
+[0m00:02:19.784375 [info ] [Thread-1  ]: 5 of 12 START sql table model SILVER.silver_leads .............................. [RUN]
+[0m00:02:19.788146 [info ] [Thread-2  ]: 2 of 12 OK created sql table model SILVER.silver_courses ....................... [[32mSUCCESS 1[0m in 2.23s]
+[0m00:02:19.795582 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_contacts, now model.edu_dbt.silver_leads)
+[0m00:02:19.799613 [debug] [Thread-2  ]: Finished running node model.edu_dbt.silver_courses
+[0m00:02:19.802289 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.silver_leads
+[0m00:02:19.806249 [debug] [Thread-2  ]: Began running node model.edu_dbt.silver_students
+[0m00:02:19.829702 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.silver_leads"
+[0m00:02:19.832404 [info ] [Thread-2  ]: 6 of 12 START sql table model SILVER.silver_students ........................... [RUN]
+[0m00:02:19.837827 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_courses, now model.edu_dbt.silver_students)
+[0m00:02:19.842818 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.silver_students
+[0m00:02:19.859208 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.silver_students"
+[0m00:02:19.864841 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_leads (compile): 00:02:19.812282 => 00:02:19.863514
+[0m00:02:19.869737 [debug] [Thread-1  ]: Began executing node model.edu_dbt.silver_leads
+[0m00:02:19.889163 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.silver_leads"
+[0m00:02:19.898200 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_students (compile): 00:02:19.846359 => 00:02:19.896402
+[0m00:02:19.903170 [debug] [Thread-2  ]: Began executing node model.edu_dbt.silver_students
+[0m00:02:19.919628 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.silver_students"
+[0m00:02:19.932068 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.silver_leads"
+[0m00:02:19.936902 [debug] [Thread-1  ]: On model.edu_dbt.silver_leads: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_leads"} */
+create or replace transient table EDU_DB.SILVER.silver_leads
+         as
+        (WITH raw AS (
+    SELECT
+        "LeadID" AS raw_lead_id,
+        "Full Name" AS raw_full_name,
+        "Source" AS raw_source,
+        "Status" AS raw_status,
+        "CreatedDate" AS raw_created_date
+    FROM EDU_DB.BRONZE.RAW_LEADS
+),
+
+cleaned AS (
+    SELECT
+        raw_lead_id AS lead_id,
+
+        INITCAP(TRIM(raw_full_name)) AS full_name,
+
+        -- Standardisation de la source
+        CASE
+            WHEN LOWER(raw_source) IN ('social', 'social media') THEN 'social'
+            WHEN LOWER(raw_source) IN ('web') THEN 'web'
+            WHEN LOWER(raw_source) IN ('email', 'e-mail') THEN 'email'
+            WHEN LOWER(raw_source) IN ('referral', 'referal') THEN 'referral'
+            ELSE 'unknown'
+        END AS source,
+
+        -- Standardisation du statut
+        CASE
+            WHEN LOWER(raw_status) = 'new' THEN 'new'
+            WHEN LOWER(raw_status) = 'qualified' THEN 'qualified'
+            WHEN LOWER(raw_status) = 'contacted' THEN 'contacted'
+            WHEN LOWER(raw_status) = 'lost' THEN 'lost'
+            ELSE 'unknown'
+        END AS status,
+
+        -- Parsing de la date
+        COALESCE(
+            TRY_TO_DATE(raw_created_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_created_date, 'DD-MM-YYYY'),
+            TRY_TO_DATE(raw_created_date, 'YYYY/MM/DD'),
+            TRY_TO_DATE(raw_created_date, 'DD/MM/YYYY')
+        ) AS created_date
+
+    FROM raw
+    WHERE raw_lead_id IS NOT NULL
+)
+
+SELECT * FROM cleaned
+where lead_id IS NOT NULL AND status IS NOT NULL AND source IS NOT NULL
+        );
+[0m00:02:19.942824 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m00:02:19.968416 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.silver_students"
+[0m00:02:19.978064 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m00:02:19.982705 [debug] [Thread-2  ]: On model.edu_dbt.silver_students: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.silver_students"} */
+create or replace transient table EDU_DB.SILVER.silver_students
+         as
+        (WITH raw AS (
+
+    SELECT
+        "Student ID"     AS raw_student_id,
+        "FirstName"      AS raw_first_name,
+        "last_name"      AS raw_last_name,
+        "DOB"            AS raw_dob,
+        "reg_date"       AS raw_reg_date,
+        "email"          AS email_1,
+        "E-Mail"         AS email_2,
+        "mail"           AS email_3,
+        "courriel"       AS email_4
+
+    FROM EDU_DB.BRONZE.RAW_STUDENTS
+
+), cleaned AS (
+
+    SELECT
+        raw_student_id AS student_id,
+
+        INITCAP(TRIM(raw_first_name)) AS first_name,
+        INITCAP(TRIM(raw_last_name))  AS last_name,
+
+        -- Normalisation de la date de naissance
+        COALESCE(
+            TRY_TO_DATE(raw_dob, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_dob, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_dob, 'DD-MM-YYYY')
+        ) AS date_of_birth,
+
+        -- Normalisation de la date d'inscription
+        COALESCE(
+            TRY_TO_DATE(raw_reg_date, 'YYYY-MM-DD'),
+            TRY_TO_DATE(raw_reg_date, 'DD/MM/YYYY'),
+            TRY_TO_DATE(raw_reg_date, 'DD-MM-YYYY')
+        ) AS registration_date,
+
+        -- Choix du premier email disponible (priorité dans l'ordre)
+        COALESCE(NULLIF(TRIM(LOWER(email_1)), ''),
+                 NULLIF(TRIM(LOWER(email_2)), ''),
+                 NULLIF(TRIM(LOWER(email_3)), ''),
+                 NULLIF(TRIM(LOWER(email_4)), '')
+        ) AS email
+
+    FROM raw
+
+)
+
+SELECT * FROM cleaned
+WHERE student_id IS NOT NULL
+AND email IS NOT NULL
+        );
+[0m00:02:19.998390 [debug] [Thread-3  ]: Timing info for model.edu_dbt.silver_enrollments (execute): 00:02:17.756211 => 00:02:19.996876
+[0m00:02:20.002557 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m00:02:20.010030 [debug] [Thread-3  ]: On model.edu_dbt.silver_enrollments: Close
+[0m00:02:20.166069 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f475885b0a0>]}
+[0m00:02:20.170489 [info ] [Thread-3  ]: 3 of 12 OK created sql table model SILVER.silver_enrollments ................... [[32mSUCCESS 1[0m in 2.61s]
+[0m00:02:20.176639 [debug] [Thread-3  ]: Finished running node model.edu_dbt.silver_enrollments
+[0m00:02:20.180786 [debug] [Thread-3  ]: Began running node model.edu_dbt.dim_contacts
+[0m00:02:20.184356 [info ] [Thread-3  ]: 7 of 12 START sql view model GOLD.dim_contacts ................................. [RUN]
+[0m00:02:20.190548 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_enrollments, now model.edu_dbt.dim_contacts)
+[0m00:02:20.194834 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.dim_contacts
+[0m00:02:20.206269 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.dim_contacts"
+[0m00:02:20.211757 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m00:02:20.228751 [debug] [Thread-4  ]: Timing info for model.edu_dbt.silver_interactions (execute): 00:02:17.689217 => 00:02:20.227794
+[0m00:02:20.233440 [debug] [Thread-4  ]: On model.edu_dbt.silver_interactions: Close
+[0m00:02:20.259986 [debug] [Thread-3  ]: Timing info for model.edu_dbt.dim_contacts (compile): 00:02:20.197850 => 00:02:20.258210
+[0m00:02:20.267365 [debug] [Thread-3  ]: Began executing node model.edu_dbt.dim_contacts
+[0m00:02:20.380727 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.dim_contacts"
+[0m00:02:20.401594 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759d17580>]}
+[0m00:02:20.407593 [info ] [Thread-4  ]: 4 of 12 OK created sql table model SILVER.silver_interactions .................. [[32mSUCCESS 1[0m in 2.83s]
+[0m00:02:20.414257 [debug] [Thread-4  ]: Finished running node model.edu_dbt.silver_interactions
+[0m00:02:20.418428 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.dim_contacts"
+[0m00:02:20.423618 [debug] [Thread-4  ]: Began running node model.edu_dbt.dim_courses
+[0m00:02:20.428699 [debug] [Thread-3  ]: On model.edu_dbt.dim_contacts: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_contacts"} */
+create or replace   view EDU_DB.GOLD.dim_contacts
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_contacts
+  );
+[0m00:02:20.434057 [info ] [Thread-4  ]: 8 of 12 START sql view model GOLD.dim_courses .................................. [RUN]
+[0m00:02:20.440379 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m00:02:20.445438 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_interactions, now model.edu_dbt.dim_courses)
+[0m00:02:20.457866 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.dim_courses
+[0m00:02:20.477131 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.dim_courses"
+[0m00:02:20.523699 [debug] [Thread-4  ]: Timing info for model.edu_dbt.dim_courses (compile): 00:02:20.462777 => 00:02:20.521752
+[0m00:02:20.528645 [debug] [Thread-4  ]: Began executing node model.edu_dbt.dim_courses
+[0m00:02:20.543338 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.dim_courses"
+[0m00:02:20.572287 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.dim_courses"
+[0m00:02:20.577339 [debug] [Thread-4  ]: On model.edu_dbt.dim_courses: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_courses"} */
+create or replace   view EDU_DB.GOLD.dim_courses
+  
+   as (
+    
+
+SELECT *,ROW_NUMBER() OVER (ORDER BY COURSE_ID) AS COURSE_KEY
+FROM EDU_DB.SILVER.silver_courses
+  );
+[0m00:02:20.581901 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m00:02:20.875555 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:20.894731 [debug] [Thread-1  ]: Timing info for model.edu_dbt.silver_leads (execute): 00:02:19.873583 => 00:02:20.893863
+[0m00:02:20.900038 [debug] [Thread-1  ]: On model.edu_dbt.silver_leads: Close
+[0m00:02:21.049047 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759943130>]}
+[0m00:02:21.054826 [info ] [Thread-1  ]: 5 of 12 OK created sql table model SILVER.silver_leads ......................... [[32mSUCCESS 1[0m in 1.26s]
+[0m00:02:21.061427 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:21.066351 [debug] [Thread-1  ]: Finished running node model.edu_dbt.silver_leads
+[0m00:02:21.078131 [debug] [Thread-2  ]: Timing info for model.edu_dbt.silver_students (execute): 00:02:19.906131 => 00:02:21.076966
+[0m00:02:21.084583 [debug] [Thread-1  ]: Began running node model.edu_dbt.dim_leads
+[0m00:02:21.088008 [debug] [Thread-2  ]: On model.edu_dbt.silver_students: Close
+[0m00:02:21.091418 [info ] [Thread-1  ]: 9 of 12 START sql view model GOLD.dim_leads .................................... [RUN]
+[0m00:02:21.104399 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_leads, now model.edu_dbt.dim_leads)
+[0m00:02:21.108859 [debug] [Thread-1  ]: Began compiling node model.edu_dbt.dim_leads
+[0m00:02:21.123880 [debug] [Thread-1  ]: Writing injected SQL for node "model.edu_dbt.dim_leads"
+[0m00:02:21.155932 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_leads (compile): 00:02:21.114014 => 00:02:21.154554
+[0m00:02:21.168805 [debug] [Thread-1  ]: Began executing node model.edu_dbt.dim_leads
+[0m00:02:21.178457 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:21.194440 [debug] [Thread-1  ]: Writing runtime sql for node "model.edu_dbt.dim_leads"
+[0m00:02:21.207401 [debug] [Thread-3  ]: Timing info for model.edu_dbt.dim_contacts (execute): 00:02:20.273030 => 00:02:21.206534
+[0m00:02:21.216573 [debug] [Thread-3  ]: On model.edu_dbt.dim_contacts: Close
+[0m00:02:21.224446 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:21.255592 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47587fae80>]}
+[0m00:02:21.265165 [debug] [Thread-4  ]: Timing info for model.edu_dbt.dim_courses (execute): 00:02:20.532262 => 00:02:21.263314
+[0m00:02:21.269964 [info ] [Thread-2  ]: 6 of 12 OK created sql table model SILVER.silver_students ...................... [[32mSUCCESS 1[0m in 1.42s]
+[0m00:02:21.274649 [debug] [Thread-1  ]: Using snowflake connection "model.edu_dbt.dim_leads"
+[0m00:02:21.278661 [debug] [Thread-4  ]: On model.edu_dbt.dim_courses: Close
+[0m00:02:21.284829 [debug] [Thread-2  ]: Finished running node model.edu_dbt.silver_students
+[0m00:02:21.288834 [debug] [Thread-1  ]: On model.edu_dbt.dim_leads: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_leads"} */
+create or replace   view EDU_DB.GOLD.dim_leads
+  
+   as (
+    
+
+SELECT *
+FROM EDU_DB.SILVER.silver_leads
+  );
+[0m00:02:21.303993 [debug] [Thread-2  ]: Began running node model.edu_dbt.dim_students
+[0m00:02:21.307789 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m00:02:21.315004 [info ] [Thread-2  ]: 10 of 12 START sql view model GOLD.dim_students ................................ [RUN]
+[0m00:02:21.343178 [debug] [Thread-2  ]: Re-using an available connection from the pool (formerly model.edu_dbt.silver_students, now model.edu_dbt.dim_students)
+[0m00:02:21.349512 [debug] [Thread-2  ]: Began compiling node model.edu_dbt.dim_students
+[0m00:02:21.366009 [debug] [Thread-2  ]: Writing injected SQL for node "model.edu_dbt.dim_students"
+[0m00:02:21.405877 [debug] [Thread-2  ]: Timing info for model.edu_dbt.dim_students (compile): 00:02:21.354781 => 00:02:21.404538
+[0m00:02:21.422555 [debug] [Thread-2  ]: Began executing node model.edu_dbt.dim_students
+[0m00:02:21.420162 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47587c4fd0>]}
+[0m00:02:21.450115 [debug] [Thread-2  ]: Writing runtime sql for node "model.edu_dbt.dim_students"
+[0m00:02:21.455081 [info ] [Thread-3  ]: 7 of 12 OK created sql view model GOLD.dim_contacts ............................ [[32mSUCCESS 1[0m in 1.23s]
+[0m00:02:21.477301 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4758722c10>]}
+[0m00:02:21.482629 [debug] [Thread-3  ]: Finished running node model.edu_dbt.dim_contacts
+[0m00:02:21.516042 [info ] [Thread-4  ]: 8 of 12 OK created sql view model GOLD.dim_courses ............................. [[32mSUCCESS 1[0m in 1.03s]
+[0m00:02:21.519821 [debug] [Thread-2  ]: Using snowflake connection "model.edu_dbt.dim_students"
+[0m00:02:21.526031 [debug] [Thread-3  ]: Began running node model.edu_dbt.fact_interactions
+[0m00:02:21.530895 [debug] [Thread-4  ]: Finished running node model.edu_dbt.dim_courses
+[0m00:02:21.535605 [debug] [Thread-2  ]: On model.edu_dbt.dim_students: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.dim_students"} */
+create or replace   view EDU_DB.GOLD.dim_students
+  
+   as (
+    
+
+SELECT *, ROW_NUMBER() OVER (ORDER BY STUDENT_ID) AS student_key
+
+FROM EDU_DB.SILVER.silver_students
+  );
+[0m00:02:21.541553 [info ] [Thread-3  ]: 11 of 12 START sql view model GOLD.fact_interactions ........................... [RUN]
+[0m00:02:21.549135 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+[0m00:02:21.553368 [debug] [Thread-3  ]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_contacts, now model.edu_dbt.fact_interactions)
+[0m00:02:21.568891 [debug] [Thread-3  ]: Began compiling node model.edu_dbt.fact_interactions
+[0m00:02:21.584615 [debug] [Thread-3  ]: Writing injected SQL for node "model.edu_dbt.fact_interactions"
+[0m00:02:21.634473 [debug] [Thread-3  ]: Timing info for model.edu_dbt.fact_interactions (compile): 00:02:21.572670 => 00:02:21.632853
+[0m00:02:21.638175 [debug] [Thread-3  ]: Began executing node model.edu_dbt.fact_interactions
+[0m00:02:21.647342 [debug] [Thread-3  ]: Writing runtime sql for node "model.edu_dbt.fact_interactions"
+[0m00:02:21.670710 [debug] [Thread-3  ]: Using snowflake connection "model.edu_dbt.fact_interactions"
+[0m00:02:21.675031 [debug] [Thread-3  ]: On model.edu_dbt.fact_interactions: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_interactions"} */
+create or replace   view EDU_DB.GOLD.fact_interactions
+  
+   as (
+    
+
+SELECT
+    i.interaction_id,
+    i.contact_id,
+    c.first_name AS contact_first_name,
+    c.last_name AS contact_last_name,
+    c.email AS contact_email,
+    i.interaction_type,
+    i.interaction_date,
+    i.raw_notes AS notes
+
+FROM EDU_DB.SILVER.silver_interactions i
+
+LEFT JOIN EDU_DB.GOLD.dim_contacts c
+    ON i.contact_id = c.contact_id
+  );
+[0m00:02:21.678611 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+[0m00:02:22.215037 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:22.227125 [debug] [Thread-1  ]: Timing info for model.edu_dbt.dim_leads (execute): 00:02:21.182562 => 00:02:22.226245
+[0m00:02:22.232999 [debug] [Thread-1  ]: On model.edu_dbt.dim_leads: Close
+[0m00:02:22.315620 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:22.326395 [debug] [Thread-2  ]: Timing info for model.edu_dbt.dim_students (execute): 00:02:21.427981 => 00:02:22.325816
+[0m00:02:22.330247 [debug] [Thread-2  ]: On model.edu_dbt.dim_students: Close
+[0m00:02:22.374188 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f475872b040>]}
+[0m00:02:22.378730 [info ] [Thread-1  ]: 9 of 12 OK created sql view model GOLD.dim_leads ............................... [[32mSUCCESS 1[0m in 1.27s]
+[0m00:02:22.385280 [debug] [Thread-1  ]: Finished running node model.edu_dbt.dim_leads
+[0m00:02:22.440853 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:22.453668 [debug] [Thread-3  ]: Timing info for model.edu_dbt.fact_interactions (execute): 00:02:21.641567 => 00:02:22.452712
+[0m00:02:22.460378 [debug] [Thread-3  ]: On model.edu_dbt.fact_interactions: Close
+[0m00:02:22.504325 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f475885b640>]}
+[0m00:02:22.514057 [info ] [Thread-2  ]: 10 of 12 OK created sql view model GOLD.dim_students ........................... [[32mSUCCESS 1[0m in 1.16s]
+[0m00:02:22.520312 [debug] [Thread-2  ]: Finished running node model.edu_dbt.dim_students
+[0m00:02:22.525523 [debug] [Thread-4  ]: Began running node model.edu_dbt.fact_enrollments
+[0m00:02:22.532685 [info ] [Thread-4  ]: 12 of 12 START sql view model GOLD.fact_enrollments ............................ [RUN]
+[0m00:02:22.538556 [debug] [Thread-4  ]: Re-using an available connection from the pool (formerly model.edu_dbt.dim_courses, now model.edu_dbt.fact_enrollments)
+[0m00:02:22.546103 [debug] [Thread-4  ]: Began compiling node model.edu_dbt.fact_enrollments
+[0m00:02:22.561635 [debug] [Thread-4  ]: Writing injected SQL for node "model.edu_dbt.fact_enrollments"
+[0m00:02:22.583990 [debug] [Thread-4  ]: Timing info for model.edu_dbt.fact_enrollments (compile): 00:02:22.550652 => 00:02:22.582844
+[0m00:02:22.587472 [debug] [Thread-4  ]: Began executing node model.edu_dbt.fact_enrollments
+[0m00:02:22.596311 [debug] [Thread-4  ]: Writing runtime sql for node "model.edu_dbt.fact_enrollments"
+[0m00:02:22.604140 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47586e8eb0>]}
+[0m00:02:22.606262 [info ] [Thread-3  ]: 11 of 12 OK created sql view model GOLD.fact_interactions ...................... [[32mSUCCESS 1[0m in 1.05s]
+[0m00:02:22.608869 [debug] [Thread-3  ]: Finished running node model.edu_dbt.fact_interactions
+[0m00:02:22.618243 [debug] [Thread-4  ]: Using snowflake connection "model.edu_dbt.fact_enrollments"
+[0m00:02:22.621448 [debug] [Thread-4  ]: On model.edu_dbt.fact_enrollments: /* {"app": "dbt", "dbt_version": "1.7.2", "profile_name": "edu_dbt", "target_name": "dev", "node_id": "model.edu_dbt.fact_enrollments"} */
+create or replace   view EDU_DB.GOLD.fact_enrollments
+  
+   as (
+    
+
+SELECT
+    e.enrollment_key,
+    s.student_key,
+    s.first_name AS student_first_name,
+    s.last_name AS student_last_name,
+    s.email AS student_email,
+
+    c.course_key,
+    c.course_name,
+    c.credits,
+
+    e.enrollment_date,
+    e.status
+
+FROM EDU_DB.SILVER.silver_enrollments e
+
+LEFT JOIN EDU_DB.GOLD.dim_students s
+    ON e.student_id = s.student_id
+
+LEFT JOIN EDU_DB.GOLD.dim_courses c
+    ON e.course_id = c.course_id
+  );
+[0m00:02:22.627108 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+[0m00:02:23.570082 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m00:02:23.582168 [debug] [Thread-4  ]: Timing info for model.edu_dbt.fact_enrollments (execute): 00:02:22.589742 => 00:02:23.581499
+[0m00:02:23.586033 [debug] [Thread-4  ]: On model.edu_dbt.fact_enrollments: Close
+[0m00:02:23.724548 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '506e217a-b7df-4d97-99d0-511e555a3222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47588e8550>]}
+[0m00:02:23.727035 [info ] [Thread-4  ]: 12 of 12 OK created sql view model GOLD.fact_enrollments ....................... [[32mSUCCESS 1[0m in 1.19s]
+[0m00:02:23.729458 [debug] [Thread-4  ]: Finished running node model.edu_dbt.fact_enrollments
+[0m00:02:23.733897 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:02:23.735460 [debug] [MainThread]: Connection 'model.edu_dbt.dim_students' was properly closed.
+[0m00:02:23.737005 [debug] [MainThread]: Connection 'model.edu_dbt.dim_leads' was properly closed.
+[0m00:02:23.738527 [debug] [MainThread]: Connection 'model.edu_dbt.fact_interactions' was properly closed.
+[0m00:02:23.740153 [debug] [MainThread]: Connection 'model.edu_dbt.fact_enrollments' was properly closed.
+[0m00:02:23.742056 [info ] [MainThread]: 
+[0m00:02:23.744125 [info ] [MainThread]: Finished running 6 table models, 6 view models in 0 hours 0 minutes and 8.24 seconds (8.24s).
+[0m00:02:23.747414 [debug] [MainThread]: Command end result
+[0m00:02:23.793768 [info ] [MainThread]: 
+[0m00:02:23.797200 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:02:23.801452 [info ] [MainThread]: 
+[0m00:02:23.807391 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 TOTAL=12
+[0m00:02:23.815662 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.015432, "process_user_time": 9.960797, "process_kernel_time": 1.581888, "process_mem_max_rss": "242144", "process_in_blocks": "976", "process_out_blocks": "2944"}
+[0m00:02:23.819567 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:23.818834 after 11.02 seconds
+[0m00:02:23.822739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4786c90ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759d44760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4759d17160>]}
+[0m00:02:23.826329 [debug] [MainThread]: Flushing usage events

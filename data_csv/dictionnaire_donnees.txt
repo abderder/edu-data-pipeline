@@ -1,0 +1,53 @@
+==========================
+Dictionnaire de Données
+==========================
+
+ERP
+---
+
+📄 students.csv
+- Student ID : Identifiant unique de l'étudiant
+- FirstName : Prénom de l'étudiant
+- last_name : Nom de famille
+- DOB : Date de naissance
+- reg_date : Date d'inscription
+- email / E-Mail / mail / courriel : Adresse email de l'étudiant
+
+📄 enrollments.csv
+- EnrollmentId : Identifiant unique de l'inscription
+- student_id : Référence vers l'étudiant
+- Course ID : Référence vers le cours
+- EnrollDate : Date d'inscription au cours
+- Status : Statut de l'inscription (active, completed, dropped, etc.)
+
+📄 courses.csv
+- CourseID : Identifiant du cours
+- Course Name : Nom du cours
+- credits : Nombre de crédits associés
+- Start_Date : Date de début du cours
+- endDate : Date de fin du cours
+
+CRM
+---
+
+📄 contacts.csv
+- Contact ID : Identifiant du contact
+- First Name : Prénom du contact
+- LastName : Nom du contact
+- phoneNumber : Numéro de téléphone
+- email / E-Mail / Mail / courriel : Email du contact
+- created_at : Date de création du contact
+
+📄 interactions.csv
+- InteractionId : Identifiant de l'interaction
+- ContactId : Référence vers le contact
+- Interaction Type : Type d'interaction (appel, email, meeting, etc.)
+- Date : Date de l'interaction
+- Notes : Notes associées
+
+📄 leads.csv
+- LeadID : Identifiant du lead
+- Full Name : Nom complet
+- Source : Origine du lead (web, email, etc.)
+- Status : Statut du lead (new, contacted, qualified, lost)
+- CreatedDate : Date de création du lead

@@ -1,0 +1,120 @@
+[2025-04-21T00:01:55.958+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: edu_pipeline_etl.ingest_leads manual__2025-04-21T00:01:46.384508+00:00 [queued]>
+[2025-04-21T00:01:55.979+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: edu_pipeline_etl.ingest_leads manual__2025-04-21T00:01:46.384508+00:00 [queued]>
+[2025-04-21T00:01:55.982+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-04-21T00:01:56.018+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): ingest_leads> on 2025-04-21 00:01:46.384508+00:00
+[2025-04-21T00:01:56.034+0000] {standard_task_runner.py:60} INFO - Started process 153 to run task
+[2025-04-21T00:01:56.047+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'edu_pipeline_etl', 'ingest_leads', 'manual__2025-04-21T00:01:46.384508+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/edu_pipeline_etl.py', '--cfg-path', '/tmp/tmppzl9eif2']
+[2025-04-21T00:01:56.072+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask ingest_leads
+[2025-04-21T00:01:56.251+0000] {task_command.py:423} INFO - Running <TaskInstance: edu_pipeline_etl.ingest_leads manual__2025-04-21T00:01:46.384508+00:00 [running]> on host 5edb91fd105d
+[2025-04-21T00:01:56.410+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='edu_pipeline_etl' AIRFLOW_CTX_TASK_ID='ingest_leads' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T00:01:46.384508+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T00:01:46.384508+00:00'
+[2025-04-21T00:01:56.440+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/CRM/leads.csv?sp=REDACTED&st=REDACTED&se=REDACTED&spr=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd6d4bd7a-1e43-11f0-8fd5-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.9.18 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-21T00:01:56.990+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '80259'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B406AA05"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15e7339b-f01e-002e-6150-b2c0f7000000'
+    'x-ms-client-request-id': 'd6d4bd7a-1e43-11f0-8fd5-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Mon, 21 Apr 2025 00:01:57 GMT'
+[2025-04-21T00:01:56.999+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/CRM/leads.csv?sp=REDACTED&st=REDACTED&se=REDACTED&spr=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd72a0974-1e43-11f0-8fd5-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.9.18 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-21T00:01:57.117+0000] {_universal.py:550} INFO - Response status: 200
+Response headers:
+    'Content-Length': '80259'
+    'Content-Type': 'text/csv'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B406AA05"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15e733d8-f01e-002e-1950-b2c0f7000000'
+    'x-ms-client-request-id': 'd72a0974-1e43-11f0-8fd5-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-access-tier': 'REDACTED'
+    'x-ms-access-tier-inferred': 'REDACTED'
+    'Date': 'Mon, 21 Apr 2025 00:01:57 GMT'
+[2025-04-21T00:01:57.151+0000] {_universal.py:514} INFO - Request URL: 'https://edudatastorage.blob.core.windows.net/edudata/CRM/leads.csv?sp=REDACTED&st=REDACTED&se=REDACTED&spr=REDACTED&sv=REDACTED&sr=REDACTED&sig=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'd7415d9a-1e43-11f0-8fd5-0242ac120004'
+    'User-Agent': 'azsdk-python-storage-blob/12.19.0 Python/3.9.18 (Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36)'
+No body was attached to the request
+[2025-04-21T00:01:57.365+0000] {_universal.py:550} INFO - Response status: 206
+Response headers:
+    'Content-Length': '80259'
+    'Content-Type': 'text/csv'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Sat, 19 Apr 2025 09:36:46 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'Etag': '"0x8DD7F25B406AA05"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '15e73417-f01e-002e-5050-b2c0f7000000'
+    'x-ms-client-request-id': 'd7415d9a-1e43-11f0-8fd5-0242ac120004'
+    'x-ms-version': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'Date': 'Mon, 21 Apr 2025 00:01:57 GMT'
+[2025-04-21T00:01:57.480+0000] {connection.py:370} INFO - Snowflake Connector for Python Version: 3.6.0, Python Version: 3.9.18, Platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2025-04-21T00:01:57.484+0000] {connection.py:1171} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-04-21T00:01:57.834+0000] {cursor.py:1028} INFO - query: [CREATE TABLE IF NOT EXISTS EDU_DB.BRONZE.raw_leads ("LeadID" TEXT, "Full Name" T...]
+[2025-04-21T00:01:58.101+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-21T00:01:58.105+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-21T00:01:58.107+0000] {cursor.py:1028} INFO - query: [TRUNCATE TABLE EDU_DB.BRONZE.raw_leads]
+[2025-04-21T00:01:58.363+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-21T00:01:58.365+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-21T00:01:58.367+0000] {cursor.py:1028} INFO - query: [PUT file:///tmp/leads.csv @edu_stage OVERWRITE = TRUE]
+[2025-04-21T00:01:58.840+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-21T00:01:59.127+0000] {ocsp_snowflake.py:1075} ERROR - WARNING!!! Using fail-open to connect. Driver is connecting to an HTTPS endpoint without OCSP based Certificate Revocation checking as it could not obtain a valid OCSP Response to use from the CA OCSP responder. Details: 
+ {'driver': 'PythonConnector', 'version': '3.6.0', 'eventType': 'RevocationCheckFailure', 'eventSubType': 'OCSPResponseAttachedCertInvalid', 'sfcPeerHost': 'sqytcisfcb1stg.blob.core.windows.net', 'certId': 'MEowBwYFKw4DAhoEFLNP/OrByo2+E/2LhziwI/PYlvOsBBT+CXFAVQUQRNikgXW4nhrpSgaIyAITMwGUmKKf5h9lItWw8wAAAZSYog==', 'ocspRequestBase64': <asn1crypto.ocsp.OCSPRequest 139928645314688 b'0R0P0N0L0J0\x07\x06\x05+\x0e\x03\x02\x1a\x04\x14\xb3O\xfc\xea\xc1\xca\x8d\xbe\x13\xfd\x8b\x878\xb0#\xf3\xd8\x96\xf3\xac\x04\x14\xfe\tq@U\x05\x10D\xd8\xa4\x81u\xb8\x9e\x1a\xe9J\x06\x88\xc8\x02\x133\x01\x94\x98\xa2\x9f\xe6\x1fe"\xd5\xb0\xf3\x00\x00\x01\x94\x98\xa2'>, 'ocspResponderURL': 'http://oneocsp.microsoft.com/ocsp', 'errorMessage': '254009: 254009: Failed to verify the signature', 'insecureMode': False, 'failOpen': True, 'cacheEnabled': True, 'cacheHit': True}
+[2025-04-21T00:01:59.439+0000] {cursor.py:1028} INFO - query: [COPY INTO EDU_DB.BRONZE.raw_leads FROM @edu_stage/leads.csv FILE_FORMAT = (TYPE ...]
+[2025-04-21T00:02:03.135+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-21T00:02:03.137+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-21T00:02:03.139+0000] {cursor.py:1028} INFO - query: [COMMIT]
+[2025-04-21T00:02:03.225+0000] {cursor.py:1041} INFO - query execution done
+[2025-04-21T00:02:03.226+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-04-21T00:02:03.227+0000] {connection.py:718} INFO - closed
+[2025-04-21T00:02:03.292+0000] {connection.py:724} INFO - No async queries seem to be running, deleting session
+[2025-04-21T00:02:03.430+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-04-21T00:02:03.459+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=edu_pipeline_etl, task_id=ingest_leads, execution_date=20250421T000146, start_date=20250421T000155, end_date=20250421T000203
+[2025-04-21T00:02:03.509+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-04-21T00:02:03.541+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
