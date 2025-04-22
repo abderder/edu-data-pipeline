@@ -45,7 +45,7 @@ Cette architecture permet de :
 
 ### Schéma du pipeline
 
-![Architecture du pipeline](edu_pipeline.png)
+![Architecture du pipeline](./images/edu_pipeline.png)
 
 Ce schéma illustre le flux complet :
 - Les données sont extraites de **Azure Blob Storage**.
@@ -54,7 +54,7 @@ Ce schéma illustre le flux complet :
 - Orchestration assurée par **Apache Airflow** via des conteneurs **Docker**.
 
 Le schéma ci-dessous détaille les tables à chaque niveau du pipeline (**bronze / silver / gold**) :
-![Flux des tables dans le pipeline](tables_dataflow.png)
+![Flux des tables dans le pipeline](./images/tables_dataflow.png)
 
 ---
 
@@ -115,10 +115,26 @@ L'étape d'ingestion permet de charger les données brutes des fichiers CSV stoc
 - **Flux de dépendances** :
   - Les vérifications de connexion (à Azure et Snowflake) doivent réussir avant d'exécuter les ingestions.
   - Toutes les ingestions doivent être terminées avant de lancer **DBT**.
+### Remarque: 
+**Connexion à Azure Blob Storage**
+L'ingestion commence par la connexion à **Azure Blob Storage**, où sont stockés les fichiers CSV.
+
+- Un **SAS Token** (Shared Access Signature) a été généré depuis Azure Blob Storage pour permettre un accès sécurisé aux fichiers.
+- Ce token, ainsi que les informations du compte et du conteneur, sont passés sous forme de **variables d'environnement** dans Airflow.
+**Intégration de DBT dans Airflow**
+- Le projet **DBT** est exécuté depuis **Airflow** via un `BashOperator` qui lance la commande `dbt run`.
+- Pour permettre l'exécution de DBT dans le conteneur **Airflow**, il est nécessaire de **monter le dossier du projet DBT** dans le conteneur avec Docker :
+<pre>
+volumes:
+  - ../edu_dbt:/opt/airflow/edu_dbt
+</pre>
+- Le fichier `profiles.yml` est indispensable pour que DBT puisse se connecter à Snowflake. Il doit être placé dans un sous-dossier appelé profiles à l'intérieur du projet DBT monté.
+
+
 
 ### Exemple de visualisation du DAG
 
-![DAG Airflow](dag_airflow.png)
+![DAG Airflow](./images/dag_airflow.png)
 
 Ce graphique montre les dépendances entre les tâches du pipeline :
 - Connexions validées (Azure, Snowflake).
@@ -165,7 +181,7 @@ Ces tables sont construites avec **DBT** à partir des tables **silver**.
 
 Une fois les modèles créés, les schémas **gold** contiennent les tables prêtes pour l'analyse :
 
-![Schéma Snowflake après DBT](table_remplies.png)
+![Schéma Snowflake après DBT](./images/table_remplies.png)
 
 ### Gestion des clés primaires
 
@@ -184,6 +200,7 @@ Dans `dim_students`, la colonne **student_key** est générée ainsi :
 
 
 `row_number() over (order by student_id)`
+
 
 ---
 
